@@ -1,0 +1,19 @@
+# NAME: PartyAnimals_Optimized
+# DESCRIPTION: Party Animals 专用直连规则，仅包含游戏核心域名 + 可选 AWS 精准匹配
+# UPDATED: 2026-04-17
+
+# ---- 游戏核心 ----
+DOMAIN-SUFFIX,partyanimalsgame.com
+DOMAIN-SUFFIX,partyanimals.com
+DOMAIN-SUFFIX,partyanimals.cn
+DOMAIN-SUFFIX,recreategames.com.cn
+
+# ---- API子域 ----
+DOMAIN-KEYWORD,partyanimals.api
+
+# ---- 国区 AWS（重点）----
+DOMAIN-SUFFIX,amazonaws.com.cn
+
+# ---- 精确 API 子域 ----
+DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
+DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn

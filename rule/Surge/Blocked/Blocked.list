@@ -1,0 +1,18 @@
+# NAME: Block
+# AUTHOR: myself
+# REPO: https://github.com/NikoCera/Surge
+# UPDATED: 2026-04-15
+# DOMAIN-SUFFIX: unknown
+# TOTAL: unknown
+
+# ═══════════════════════ 拦截规则 ═══════════════════════
+# --- 防泄露高优先级规则 ---
+# 拦截常用的 WebRTC STUN 端口 (UDP 3478)
+AND,((PROTOCOL,UDP), (DEST-PORT,3478)),REJECT
+# 拦截 Google 常用的 WebRTC 端口 (UDP 19302)
+AND,((PROTOCOL,UDP), (DEST-PORT,19302)),REJECT
+
+# Netflix 防掉解锁
+DOMAIN,ios.ngp.prod.cloud.netflix.com,REJECT
+DOMAIN,ios.prod.cloud.netflix.com,REJECT
+DOMAIN,appboot.netflix.com,REJECT

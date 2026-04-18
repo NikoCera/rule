@@ -1,0 +1,30 @@
+# NAME: IP_Check
+# AUTHOR: myself
+# REPO: https://github.com/NikoCera/Surge
+# UPDATED: 2026-04-15
+# DOMAIN-SUFFIX: unknown
+# TOTAL: unknown
+
+# ═══════════════════════ IP 检测 / 测速 ═══════════════════════
+# > IP & Network Check & SpeedTest & NAT Check
+DOMAIN-SUFFIX,cc.mastersgo.cc // Claude AI IP 风险检测
+DOMAIN-SUFFIX,meowvps.com/tools/ip-check/
+DOMAIN-SUFFIX,ip.sy
+DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,testipv6.cn
+DOMAIN-SUFFIX,net-lsp-x.com
+DOMAIN-SUFFIX,iplark.com
+DOMAIN-SUFFIX,ip2location.com
+DOMAIN-SUFFIX,ipdata.co
+DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,scamalytics.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,ippure.com // IP 纯净度
+DOMAIN-SUFFIX,ping0.cc // IP 纯净度
+DOMAIN-SUFFIX,ipjiance.com // IP 纯净度
+DOMAIN-SUFFIX,ifconfig.me // My IP Address
+DOMAIN-SUFFIX,dyebean.com // NAT 检测
+DOMAIN-SUFFIX,api-huacloud.dev // 测速
