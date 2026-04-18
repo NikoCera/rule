@@ -1,0 +1,107 @@
+# NAME: HK_Rules
+# AUTHOR: myself
+# REPO: https://github.com/NikoCera/Surge
+# UPDATED: 2026-04-15
+# DOMAIN-SUFFIX: unknown
+# TOTAL: unknown
+
+# ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
+# > ZA Bank (众安银行)
+DOMAIN-SUFFIX,za.group // ZA Bank
+DOMAIN-SUFFIX,zafinsvc.com // ZA Bank 业务接口
+DOMAIN-SUFFIX,zajourney.com // ZA Bank 埋点/统计
+DOMAIN-SUFFIX,zaticdn.com // ZA Bank 静态资源CDN
+
+# > HSBC HK (汇丰香港)
+DOMAIN-SUFFIX,hsbc.com.hk // HSBC HK 官网/App
+DOMAIN-SUFFIX,hsbc.hk // HSBC HK 缩略域名
+DOMAIN-SUFFIX,hsbcnet.com // HSBC 商务/全球接口
+DOMAIN-SUFFIX,hsbc.com // HSBC 全球通用入口
+
+# > BOCHK (中银香港)
+DOMAIN-SUFFIX,bochk.com // 中银香港
+DOMAIN-SUFFIX,bankofchina.com.hk // 中银香港业务
+
+# > Airstar Bank (天星银行)
+DOMAIN-SUFFIX,airstarbank.com // 天星银行
+DOMAIN-SUFFIX,airstarbank.com.cn // 天星银行相关业务
+
+# > WeLab Bank (汇立银行)
+DOMAIN-SUFFIX,welab.bank // WeLab Bank
+DOMAIN-SUFFIX,welab-group.com // WeLab 集团接口
+
+# > Ant Bank & AlipayHK (蚂蚁银行 & 支付)
+DOMAIN-SUFFIX,antbank.hk // 蚂蚁银行
+DOMAIN-SUFFIX,ant-bank.hk // 蚂蚁银行备用
+DOMAIN-SUFFIX,alipay.hk // AlipayHK 支付核心
+DOMAIN-SUFFIX,alipayhk.com // AlipayHK 业务
+
+# > Octopus (八达通)
+DOMAIN-SUFFIX,octopus.com.hk // 八达通官网
+DOMAIN-SUFFIX,octopuscards.com // 八达通卡业务
+DOMAIN-SUFFIX,octopus.hk // 八达通缩略域名
+
+# > MPay & Macau Pass (澳门通)
+DOMAIN-SUFFIX,macaupass.com // 澳门通官网
+DOMAIN-SUFFIX,mpay.com.mo // MPay App 业务接口
+DOMAIN-SUFFIX,macaupasspay.com // 澳门通支付接口
+
+# > HKT（香港电讯）
+DOMAIN-SUFFIX,hkcsl.com
+DOMAIN-SUFFIX,clubsim.com.hk // Club Sim App
+DOMAIN-SUFFIX,theclub.com.hk // The Club 会员中心
+DOMAIN-SUFFIX,pccw.com // 电讯盈科核心域名
+
+# > CTM (澳门电讯)
+DOMAIN-SUFFIX,ctm.net // CTM 核心业务
+DOMAIN-SUFFIX,cyberctm.com // CTM 门户
+
+# > My3 (3HK)
+DOMAIN-SUFFIX,three.com.hk // 3HK 官网
+DOMAIN-SUFFIX,mobile.three.com.hk // 3HK App接口
+
+# >BNE eSim
+DOMAIN-SUFFIX,bne.li // BNE eSim
+
+# > PokePay
+DOMAIN-KEYWORD,pokepay
+
+# > DogPay
+DOMAIN-KEYWORD,dogpay
+
+# > Polymarket
+DOMAIN-KEYWORD,polymarket
+
+# > China Unicom Global (CUniq)
+DOMAIN-SUFFIX,cuniq.com
+
+# > iFAST / FSMOne
+DOMAIN-KEYWORD,ifast
+DOMAIN-KEYWORD,fsmone
+
+# > lowiro (Arcaea)
+DOMAIN-KEYWORD,lowiro
+
+# > PEXX
+DOMAIN-KEYWORD,pexx
+
+# > Bitget Wallet (BitKeep)
+DOMAIN-KEYWORD,bitkeep
+DOMAIN-SUFFIX,bitapi.vip
+
+# > Naixi Forum
+# DOMAIN-SUFFIX,forum.naixi.net
+
+# > osu!
+# DOMAIN-SUFFIX,osu.ppy.sh
+
+# > App Store
+# DOMAIN,downloaddispatch.itunes.apple.com // 字节系软件下载，走US节点会导致无法下载!
+
+# ═══════════════════════ WiFi Calling ═══════════════════════
+# > csl & ClubSim
+DOMAIN-SUFFIX,csl.prod.ondemandconnectivity.com
+DOMAIN-SUFFIX,hhk.prod.ondemandconnectivity.com
+DOMAIN-SUFFIX,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org

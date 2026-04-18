@@ -1,0 +1,38 @@
+# NAME: Cloudflare_Optimized
+# DESCRIPTION: Only Cloudflare's own services, no CDN IP ranges
+# UPDATED: 2026-04-15
+
+# Cloudflare Dashboard & API
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare.net
+DOMAIN-SUFFIX,cloudflare.tv
+
+# Cloudflare DNS (1.1.1.1)
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,one.one.one
+DOMAIN-SUFFIX,every1dns.net
+
+# Cloudflare WARP / Zero Trust
+DOMAIN-SUFFIX,cloudflareclient.com
+DOMAIN-SUFFIX,cloudflarewarp.com
+DOMAIN-SUFFIX,warp.plus
+DOMAIN-SUFFIX,cloudflareaccess.com
+
+# Cloudflare Workers & Pages
+DOMAIN-SUFFIX,workers.dev
+DOMAIN-SUFFIX,pages.dev
+DOMAIN-SUFFIX,trycloudflare.com
+
+# Cloudflare Stream & Storage
+DOMAIN-SUFFIX,cloudflarestream.com
+DOMAIN-SUFFIX,videodelivery.net
+DOMAIN-SUFFIX,cloudflarestorage.com
+
+# Cloudflare Status & SSL
+DOMAIN-SUFFIX,cloudflarestatus.com
+DOMAIN-SUFFIX,cloudflaressl.com
+DOMAIN-SUFFIX,cloudflareinsights.com
+
+# Cloudflare IPFS
+DOMAIN-SUFFIX,cloudflare-ipfs.com
+DOMAIN-SUFFIX,cf-ipfs.com
