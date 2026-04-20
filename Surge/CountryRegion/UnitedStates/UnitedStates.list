@@ -46,8 +46,8 @@ DOMAIN-SUFFIX,vzw.com
 # ══════════ US WiFi Calling
 # > AT&T & T-Mobile
 DOMAIN-SUFFIX,att-idns.net
-DOMAIN-SUFFIX,telephony.goog
 DOMAIN-SUFFIX,epdg.epc.att.net
+DOMAIN-SUFFIX,fp-us-att.rcs.telephony.goog
 IP-CIDR,66.94.0.0/19,no-resolve // T-Mobile/ATT WiFi Calling
 IP-CIDR,107.122.0.0/16,no-resolve // T-Mobile/ATT WiFi Calling
 IP-CIDR,208.54.0.0/16,no-resolve // T-Mobile/ATT WiFi Calling

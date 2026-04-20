@@ -1,9 +1,6 @@
-# NAME: IP_Check
+# NAME: IPCheck
 # AUTHOR: myself
-# REPO: https://github.com/NikoCera/Surge
 # UPDATED: 2026-04-19
-# DOMAIN-SUFFIX: unknown
-# TOTAL: unknown
 
 # ═══════════════════════ IP 信息查询 ═══════════════════════
 DOMAIN-SUFFIX,ipinfo.io

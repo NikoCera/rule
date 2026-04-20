@@ -5,6 +5,8 @@
 # > Monzo
 DOMAIN-SUFFIX,monzo.com
 DOMAIN-SUFFIX,monzo.me
+DOMAIN-SUFFIX,monzo-alt.net
+DOMAIN-SUFFIX,braze.eu
 
 # > Wise
 DOMAIN-SUFFIX,wise.com
@@ -13,6 +15,14 @@ DOMAIN-SUFFIX,transferwise.com
 # > Wirex
 DOMAIN-SUFFIX,wirexapp.com
 DOMAIN-SUFFIX,wirex.com
+DOMAIN-SUFFIX,branch.io
+DOMAIN-SUFFIX,fra-01.braze.eu
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,eu.sardine.ai
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,eu.freshchat.com
+DOMAIN-SUFFIX,appsflyer.com
+DOMAIN-SUFFIX,eu-central-1.amazonaws.com
 
 # > iFAST Global Bank
 DOMAIN-SUFFIX,ifastgb.com
@@ -58,6 +68,8 @@ IP-CIDR, 87.194.0.0/16,no-resolve
 # > CTE
 DOMAIN-SUFFIX, ct.ee.co.uk
 IP-CIDR, 31.94.0.0/16,no-resolve
+
+fp-gb-ee.rcs.telephony.goog
 
 # > ═══════════════════════ Crypto ═══════════════════════
 # > untitled

@@ -91,6 +91,13 @@ DOMAIN-SUFFIX,okcoin.com
 # > Bybit(非 EU,走国际版)
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybitglobal.com
+DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
+DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,byabcde.com
+DOMAIN-SUFFIX,wsot2022.com
+DOMAIN-SUFFIX,bybdc6.com
+DOMAIN-SUFFIX,byd3c3.com
+DOMAIN-SUFFIX,byapps.net
 
 # > Bitget & Bitget Wallet
 DOMAIN-SUFFIX,bitget.com
