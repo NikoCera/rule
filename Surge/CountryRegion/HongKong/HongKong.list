@@ -43,9 +43,8 @@ DOMAIN-SUFFIX,macaupass.com
 DOMAIN-SUFFIX,mpay.com.mo
 DOMAIN-SUFFIX,macaupasspay.com
 
-# > iFAST / FSMOne
-DOMAIN-KEYWORD,ifast
-DOMAIN-KEYWORD,fsmone
+# > FSMOne
+DOMAIN-SUFFIX,fsmone.com
 
 # ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
 # > ══════════ HK 运营商
@@ -124,16 +123,46 @@ IP-CIDR,8.223.0.0/16
 # > SafePal
 DOMAIN-SUFFIX,safepal.com
 DOMAIN-SUFFIX,safepal.io
+DOMAIN-SUFFIX,isafepal.com
+DOMAIN-SUFFIX,binance.vision
+DOMAIN-SUFFIX,binance.org
+DOMAIN-SUFFIX,nodereal.io
+DOMAIN-SUFFIX,drpc.org
+DOMAIN-SUFFIX,fantom.network
+DOMAIN-SUFFIX,optimism.io
+DOMAIN-SUFFIX,flare.network
+DOMAIN-SUFFIX,rsk.co
+DOMAIN-SUFFIX,solidifi.app
+DOMAIN-SUFFIX,thirdweb.com
+DOMAIN-SUFFIX,onfinality.io
+DOMAIN-SUFFIX,mainnet.base.org
+DOMAIN-SUFFIX,rpc.coredao.org
+DOMAIN-SUFFIX,rpc.blast.io
+DOMAIN-SUFFIX,manta.network
+DOMAIN-SUFFIX,rpc.taiko.xyz
+DOMAIN-SUFFIX,sapphire.oasis.io
+DOMAIN-SUFFIX,rpc.bitlayer.org
+DOMAIN-SUFFIX,rpc.xlayer.tech
+
 
 # > UR Card
 DOMAIN-SUFFIX,ur.io
+DOMAIN-SUFFIX,ur.app
+DOMAIN-SUFFIX,ur.io
+DOMAIN-SUFFIX,ur.io
 DOMAIN-SUFFIX,urcard.io
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,turingfraud.net
 
 # > Fiat24 底层服务(Bitget Wallet/SafePal/UR)
 DOMAIN-SUFFIX,fiat24.com
 
 # > ether.fi
 DOMAIN-SUFFIX,ether.fi
+DOMAIN-SUFFIX,onesignal.com
+DOMAIN-SUFFIX,web3modal.com
+DOMAIN-SUFFIX,walletconnect.com
+DOMAIN-SUFFIX,ampaeservices.com
 
 # > BitMart
 DOMAIN-SUFFIX,bitmart.com
@@ -173,6 +202,11 @@ DOMAIN-SUFFIX,dogpay.com
 # > Savo
 DOMAIN-SUFFIX,savo.cash
 DOMAIN-SUFFIX,savo.io
+DOMAIN-SUFFIX,zztfly.com
+DOMAIN-SUFFIX,ourdreamevents.com
+DOMAIN-SUFFIX,changing-time.com
+DOMAIN-SUFFIX,push.mob.com // REJECT
+DOMAIN-SUFFIX,dutils.com // REJECT
 
 # > PEXX
 DOMAIN-SUFFIX,pexx.com

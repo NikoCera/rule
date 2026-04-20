@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,wirexapp.com
 DOMAIN-SUFFIX,wirex.com
 DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,fra-01.braze.eu
-DOMAIN-SUFFIX,amplitude.com
+# DOMAIN-SUFFIX,amplitude.com // UR already use
 DOMAIN-SUFFIX,eu.sardine.ai
 DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,eu.freshchat.com
@@ -26,10 +26,6 @@ DOMAIN-SUFFIX,eu-central-1.amazonaws.com
 
 # > iFAST Global Bank
 DOMAIN-SUFFIX,ifastgb.com
-
-# > LemFi
-DOMAIN-SUFFIX,lemfi.com
-DOMAIN-SUFFIX,lemonade.finance
 
 # > PayPal UK
 # > USe PayPal.list to switch
@@ -46,30 +42,30 @@ DOMAIN-SUFFIX,ctexcel.co.uk
 
 # ══════════ UK WiFi Calling
 # > 地区检测
-# DOMAIN-SUFFIX, gspe1-ssl.ls.apple.com // 与 Apple News 冲突
-DOMAIN-KEYWORD, mcc234
+# DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com // 与 Apple News 冲突
+DOMAIN-KEYWORD,mcc234
 
 # > 沃达丰
-DOMAIN-SUFFIX, entsrv-uk.vodafone.com
-DOMAIN-SUFFIX, vuk-gto.prod.ondemandconnectivity.com
-IP-CIDR, 88.82.0.0/19,no-resolve
-IP-CIDR, 148.252.160.0/19,no-resolve
+DOMAIN-SUFFIX,entsrv-uk.vodafone.com
+DOMAIN-SUFFIX,vuk-gto.prod.ondemandconnectivity.com
+IP-CIDR,88.82.0.0/19,no-resolve
+IP-CIDR,148.252.160.0/19,no-resolve
 
 # > VOXI
-IP-CIDR, 148.252.160.0/19,no-resolve
-DOMAIN, vfgb.idemia.io
+IP-CIDR,148.252.160.0/19,no-resolve
+DOMAIN,vfgb.idemia.io
 
 # > CMLinkUK EE
-IP-CIDR, 46.68.0.0/17,no-resolve
+IP-CIDR,46.68.0.0/17,no-resolve
 
 # > Giffgaff
-IP-CIDR, 87.194.0.0/16,no-resolve
+IP-CIDR,87.194.0.0/16,no-resolve
 
 # > CTE
-DOMAIN-SUFFIX, ct.ee.co.uk
-IP-CIDR, 31.94.0.0/16,no-resolve
+DOMAIN-SUFFIX,ct.ee.co.uk
+IP-CIDR,31.94.0.0/16,no-resolve
 
-fp-gb-ee.rcs.telephony.goog
+DOMAIN-SUFFIX,fp-gb-ee.rcs.telephony.goog
 
 # > ═══════════════════════ Crypto ═══════════════════════
 # > untitled

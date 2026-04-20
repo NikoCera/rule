@@ -16,15 +16,28 @@ DOMAIN-SUFFIX,browser-intake-datadoghq.eu
 DOMAIN-SUFFIX,n26-admedia.s3.eu-central-1.amazonaws.com
 DOMAIN-SUFFIX,auth-main-1.external.core-production.keyless.technology
 
+# > LemFi
+DOMAIN-SUFFIX,lemfi.com
+DOMAIN-SUFFIX,lemonade.finance
+
 # > Krak
 DOMAIN-SUFFIX,krak.app
 DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,u.expo.dev
+DOMAIN-SUFFIX,d.sardine.ai
+DOMAIN-SUFFIX,launchdarkly.com
 
 # > Bybit EU
 DOMAIN-SUFFIX,bybit.eu
+# DOMAIN-SUFFIX,bybdc6.com // Bybit already use
+# DOMAIN-SUFFIX,byabcde.com // Bybit already use
 
 # > Kast
 DOMAIN-SUFFIX,kast.xyz
+DOMAIN-SUFFIX,id-01.braze.com
+DOMAIN-SUFFIX,lokalise.com
+DOMAIN-SUFFIX,ip-api.com
+DOMAIN-SUFFIX,kastapi.com
 
 # ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
 # ══════════ DE 运营商
