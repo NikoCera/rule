@@ -68,13 +68,8 @@ DOMAIN-SUFFIX,cuniq.com
 # >BNE eSim
 DOMAIN-SUFFIX,bne.li
 
-# > HK WiFi Calling
-# > csl & ClubSim
-DOMAIN-SUFFIX,csl.prod.ondemandconnectivity.com
-DOMAIN-SUFFIX,hhk.prod.ondemandconnectivity.com
-DOMAIN-SUFFIX,epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
-DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc000.mcc454.pub.3gppnetwork.org
+# ══════════ HK WiFi Calling
+# Move to other list due to UDP not support. 
 
 # ═══════════════════════ Crypto ═══════════════════════
 # > Binance(国际版)
