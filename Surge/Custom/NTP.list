@@ -1,0 +1,14 @@
+# NAME: NTP
+# AUTHOR: myself
+# UPDATED: 2026-04-21
+
+DOMAIN-SUFFIX,ntp.org
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,time.euro.apple.com
+DOMAIN-SUFFIX,time.windows.com
+DOMAIN-SUFFIX,time.nist.gov
+DOMAIN-SUFFIX,time.google.com
+DOMAIN-SUFFIX,time.cloudflare.com
+DOMAIN-SUFFIX,time.android.com
+DOMAIN-SUFFIX,time.apple.com // Apple Time Sync
+DOMAIN-SUFFIX,time.asia.apple.com // Apple Time Sync

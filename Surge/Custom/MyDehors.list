@@ -10,5 +10,3 @@ DOMAIN-SUFFIX,modengine.com
 DOMAIN-SUFFIX,hero-sms.com // 接码平台
 DOMAIN-SUFFIX,wenziwanka.com
 DOMAIN-SUFFIX,mtn.co
-DOMAIN-SUFFIX,time.apple.com,Dehors,extended-matching // Apple Time Sync
-DOMAIN-SUFFIX,time.asia.apple.com,Dehors,extended-matching // Apple Time Sync
