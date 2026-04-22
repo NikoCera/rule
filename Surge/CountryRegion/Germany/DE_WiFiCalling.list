@@ -5,7 +5,7 @@
 # > O2 WiFi Calling
 DOMAIN,epdg.epc.mnc003.mcc262.pub.3gppnetwork.org
 DOMAIN,epdg.epc.mnc005.mcc262.pub.3gppnetwork.org
-DOMAIN,epdg.epc.mnc007.mcc262.pub.3gppnetwork.org
+DOMAIN,epdg.epc.mnc007.mcc262.pub.3gppnetwork.org // O2使用 UDP 4500 和 500 端口
 DOMAIN,epdg.epc.mnc008.mcc262.pub.3gppnetwork.org
 DOMAIN,epdg.epc.mnc011.mcc262.pub.3gppnetwork.org
 DOMAIN,epdg.epc.mnc012.mcc262.pub.3gppnetwork.org
