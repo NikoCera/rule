@@ -42,8 +42,8 @@ IP-ASN,399358,no-resolve
 
 # > 进程匹配
 PROCESS-NAME,Claude
-PROCESS-NAME,"Claude Helper"
-PROCESS-NAME,"Claude Helper (Renderer)"
+PROCESS-NAME,Claude Helper
+PROCESS-NAME,Claude Helper (Renderer)
 
 # > Grok
 DOMAIN-SUFFIX,x.ai
