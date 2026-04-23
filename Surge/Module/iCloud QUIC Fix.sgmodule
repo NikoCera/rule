@@ -5,4 +5,4 @@
 # 只 block WeatherKit 域名的 QUIC
 AND,((DOMAIN-SUFFIX,weatherkit.apple.com),(PROTOCOL,QUIC)),REJECT-DROP
 # 其余 Apple QUIC 放行
-AND,((OR,((IP-ASN,714,no-resolve),(IP-ASN,6185,no-resolve))),(PROTOCOL,QUIC)),DIRECT
+AND,((OR,((IP-ASN,714,no-resolve),(IP-ASN,6185,no-resolve))),(PROTOCOL,QUIC)),Apple
