@@ -1,4 +1,4 @@
-#!name=iCloud QUIC Fix
+#!name=🌤 WeatherKit QUIC Fix
 #!desc=覆盖 iRingo WeatherKit 的 QUIC REJECT 规则
 #!category=自定义
 [Rule]
