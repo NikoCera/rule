@@ -2,6 +2,11 @@
 # AUTHOR: myself
 # UPDATED: 2026-04-20
 
+# ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
+DOMAIN-SUFFIX,test-ipv6.com
+DOMAIN-SUFFIX,testipv6.cn
+DOMAIN-SUFFIX,dyebean.com // NAT 检测, 需要 DIRECT
+# ═══════════════════════ 网速测试 ═══════════════════════
 DOMAIN-SUFFIX,test.ustc.edu.cn // 需要始终 DIRECT 测速
 DOMAIN-SUFFIX,speedtest.cn // 需要始终 DIRECT 测速
 DOMAIN-SUFFIX,kelee.one // 可莉插件中心

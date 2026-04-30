@@ -42,12 +42,6 @@ DOMAIN-SUFFIX,spamhaus.org
 DOMAIN-SUFFIX,talosintelligence.com
 DOMAIN-SUFFIX,virustotal.com
 
-# ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
-DOMAIN-SUFFIX,test-ipv6.com
-DOMAIN-SUFFIX,testipv6.cn
-DOMAIN-SUFFIX,dyebean.com // NAT 检测
-
 # ═══════════════════════ 网速测试 ═══════════════════════
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,api-huacloud.dev
-# DOMAIN-SUFFIX,test.ustc.edu.cn // 需要始终DIRECT
