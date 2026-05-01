@@ -1,0 +1,18 @@
+---
+payload:
+- DOMAIN-SUFFIX,test-ipv6.com
+- DOMAIN-SUFFIX,testipv6.cn
+- DOMAIN-SUFFIX,dyebean.com
+- DOMAIN-SUFFIX,mao.fan
+- DOMAIN-SUFFIX,test.ustc.edu.cn
+- DOMAIN-SUFFIX,speedtest.cn
+- DOMAIN-SUFFIX,kelee.one
+- DOMAIN-SUFFIX,max-c.com
+- DOMAIN-SUFFIX,appinn.net
+- DOMAIN-SUFFIX,zjcdn.com
+- DOMAIN-SUFFIX,wttr.in
+- DOMAIN-SUFFIX,jkwskh.xyz
+- DOMAIN-SUFFIX,vrqfmm.xyz
+- IP-CIDR,47.246.0.0/16,no-resolve
+- IP-CIDR,163.181.0.0/16,no-resolve
+- IP-CIDR,155.102.0.0/16,no-resolve

@@ -1,0 +1,23 @@
+---
+payload:
+- DOMAIN-SUFFIX,cloudflare.com
+- DOMAIN-SUFFIX,cloudflare.net
+- DOMAIN-SUFFIX,cloudflare.tv
+- DOMAIN-SUFFIX,cloudflare-dns.com
+- DOMAIN-SUFFIX,one.one.one
+- DOMAIN-SUFFIX,every1dns.net
+- DOMAIN-SUFFIX,cloudflareclient.com
+- DOMAIN-SUFFIX,cloudflarewarp.com
+- DOMAIN-SUFFIX,warp.plus
+- DOMAIN-SUFFIX,cloudflareaccess.com
+- DOMAIN-SUFFIX,workers.dev
+- DOMAIN-SUFFIX,pages.dev
+- DOMAIN-SUFFIX,trycloudflare.com
+- DOMAIN-SUFFIX,cloudflarestream.com
+- DOMAIN-SUFFIX,videodelivery.net
+- DOMAIN-SUFFIX,cloudflarestorage.com
+- DOMAIN-SUFFIX,cloudflarestatus.com
+- DOMAIN-SUFFIX,cloudflaressl.com
+- DOMAIN-SUFFIX,cloudflareinsights.com
+- DOMAIN-SUFFIX,cloudflare-ipfs.com
+- DOMAIN-SUFFIX,cf-ipfs.com

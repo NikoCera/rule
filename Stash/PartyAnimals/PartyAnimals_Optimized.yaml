@@ -1,0 +1,10 @@
+---
+payload:
+- DOMAIN-SUFFIX,partyanimalsgame.com
+- DOMAIN-SUFFIX,partyanimals.com
+- DOMAIN-SUFFIX,partyanimals.cn
+- DOMAIN-SUFFIX,recreategames.com.cn
+- DOMAIN-KEYWORD,partyanimals.api
+- DOMAIN-SUFFIX,amazonaws.com.cn
+- DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
+- DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn

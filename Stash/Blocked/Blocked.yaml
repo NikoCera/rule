@@ -1,0 +1,7 @@
+---
+payload:
+- AND,((NETWORK,UDP),(DST-PORT,3478))
+- AND,((NETWORK,UDP),(DST-PORT,19302))
+- DOMAIN,ios.ngp.prod.cloud.netflix.com
+- DOMAIN,ios.prod.cloud.netflix.com
+- DOMAIN,appboot.netflix.com

@@ -1,0 +1,22 @@
+---
+payload:
+- DOMAIN-SUFFIX,monzo.com
+- DOMAIN-SUFFIX,monzo.me
+- DOMAIN-SUFFIX,monzo-alt.net
+- DOMAIN-SUFFIX,braze.eu
+- DOMAIN-SUFFIX,wise.com
+- DOMAIN-SUFFIX,transferwise.com
+- DOMAIN-SUFFIX,singular.net
+- DOMAIN-SUFFIX,wirexapp.com
+- DOMAIN-SUFFIX,wirex.com
+- DOMAIN-SUFFIX,branch.io
+- DOMAIN-SUFFIX,fra-01.braze.eu
+- DOMAIN-SUFFIX,appsflyer.com
+- DOMAIN-SUFFIX,eu.freshchat.com
+- DOMAIN-SUFFIX,appsflyer.com
+- DOMAIN-SUFFIX,eu-central-1.amazonaws.com
+- DOMAIN-SUFFIX,ifastgb.com
+- DOMAIN-SUFFIX,giffgaff.com
+- DOMAIN-SUFFIX,giffgaff.co.uk
+- DOMAIN-SUFFIX,ctexcel.com
+- DOMAIN-SUFFIX,ctexcel.co.uk

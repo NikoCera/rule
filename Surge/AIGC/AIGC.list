@@ -1,10 +1,14 @@
 # NAME: AIGC
 # AUTHOR: myself
-# UPDATED: 2026-04-20
+# UPDATED: 2026-05-02
 
-# > ChatGPT
+# > ChatGPT & Codex
 PROCESS-NAME,ChatGPT
 PROCESS-NAME,ChatGPTHelper
+PROCESS-NAME,Codex
+PROCESS-NAME,codex
+PROCESS-NAME,Codex Helper
+PROCESS-NAME,Codex Helper (Renderer)
 
 # > ══════════ Claude
 # > 核心域名（DOMAIN-SUFFIX 已覆盖所有 *.anthropic.com 子域名）

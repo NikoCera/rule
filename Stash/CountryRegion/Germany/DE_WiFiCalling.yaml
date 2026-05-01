@@ -1,0 +1,12 @@
+---
+payload:
+- DOMAIN,epdg.epc.mnc003.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc005.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc007.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc008.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc011.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc012.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc016.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc017.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc020.mcc262.pub.3gppnetwork.org
+- DOMAIN,epdg.epc.mnc077.mcc262.pub.3gppnetwork.org
