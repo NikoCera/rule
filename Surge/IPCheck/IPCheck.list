@@ -25,6 +25,7 @@ DOMAIN-SUFFIX,db-ip.com
 DOMAIN-SUFFIX,ip-api.com // 网络信息 X 模块检测出口域名
 DOMAIN-SUFFIX,ifconfig.me
 DOMAIN-SUFFIX,ip.sy
+DOMAIN-SUFFIX,ipip.la
 DOMAIN-SUFFIX,iplark.com
 DOMAIN-SUFFIX,meowvps.com
 
