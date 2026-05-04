@@ -35,6 +35,8 @@ DOMAIN-SUFFIX,tello.com
 # > T-Mobile
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,tmobile.com
+DOMAIN-SUFFIX,t-mobile.scene7.com
+DOMAIN-KEYWORD,t-mobile
 
 # > AT&T
 DOMAIN-SUFFIX,att.com

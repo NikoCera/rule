@@ -3,6 +3,8 @@
 # UPDATED: 2026-04-21
 
 # > AT&T & T-Mobile
+DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,att-idns.net
 DOMAIN-SUFFIX,epdg.epc.att.net
 DOMAIN-SUFFIX,fp-us-att.rcs.telephony.goog
