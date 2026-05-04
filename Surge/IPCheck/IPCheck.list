@@ -4,7 +4,7 @@
 
 # ═══════════════════════ 代理 / VPN / 风控检测 ═══════════════════════
 DOMAIN-SUFFIX,scamalytics.com
-DOMAIN-SUFFIX,ipqualityscore.com
+# DOMAIN-SUFFIX,ipqualityscore.com // 风控严, 需要纯净 IP 进入...
 DOMAIN-SUFFIX,proxycheck.io
 DOMAIN-SUFFIX,ipapi.is
 DOMAIN-SUFFIX,maxmind.com

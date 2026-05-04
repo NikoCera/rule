@@ -52,3 +52,4 @@ DOMAIN-SUFFIX,vzw.com
 # ═══════════════════════ Other ═══════════════════════
 # > osu!
 # DOMAIN-SUFFIX,osu.ppy.sh
+DOMAIN-SUFFIX,ipqualityscore.com // 需要干净 IP 访问
