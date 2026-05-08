@@ -12,9 +12,11 @@ DOMAIN-SUFFIX,spur.us
 DOMAIN-SUFFIX,ippure.com
 DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,ipjiance.com
+DOMAIN-SUFFIX,net-lsp-x.com
 DOMAIN-SUFFIX,cc.mastersgo.cc // Claude AI IP 风险检测
 DOMAIN-SUFFIX,ip.net.coffee // Claude AI IP 风险检测
-DOMAIN-SUFFIX,net-lsp-x.com
+DOMAIN-SUFFIX,bfo.cc // Claude AI IP 风险检测
+DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ipinfo.io
