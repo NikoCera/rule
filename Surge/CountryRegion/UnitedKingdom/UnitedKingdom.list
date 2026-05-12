@@ -1,6 +1,6 @@
 # NAME: UnitedKingdom
 # AUTHOR: myself
-# UPDATED: 2026-04-20
+# UPDATED: 2026-05-12
 
 # > Monzo
 DOMAIN-SUFFIX,monzo.com
@@ -12,18 +12,6 @@ DOMAIN-SUFFIX,braze.eu
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,singular.net
-
-# > Wirex
-DOMAIN-SUFFIX,wirexapp.com
-DOMAIN-SUFFIX,wirex.com
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,fra-01.braze.eu
-# DOMAIN-SUFFIX,amplitude.com // UR already use
-# DOMAIN-SUFFIX,eu.sardine.ai // Kast already ues
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,eu.freshchat.com
-DOMAIN-SUFFIX,appsflyer.com
-DOMAIN-SUFFIX,eu-central-1.amazonaws.com
 
 # > iFAST Global Bank
 DOMAIN-SUFFIX,ifastgb.com
@@ -43,9 +31,6 @@ DOMAIN-SUFFIX,ctexcel.co.uk
 
 # ══════════ UK WiFi Calling
 # Move to other list due to UDP not support. 
-
-# > ═══════════════════════ Crypto ═══════════════════════
-# > untitled
 
 # > ═══════════════════════ Other ═══════════════════════
 # > untitled

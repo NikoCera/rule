@@ -1,6 +1,6 @@
 # NAME: Germany
 # AUTHOR: myself
-# UPDATED: 2026-04-22
+# UPDATED: 2026-05-12
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > N26
@@ -19,26 +19,6 @@ DOMAIN-SUFFIX,auth-main-1.external.core-production.keyless.technology
 # > LemFi
 DOMAIN-SUFFIX,lemfi.com
 DOMAIN-SUFFIX,lemonade.finance
-
-# > Krak
-DOMAIN-SUFFIX,krak.app
-DOMAIN-SUFFIX,kraken.com
-DOMAIN-SUFFIX,u.expo.dev
-DOMAIN-SUFFIX,d.sardine.ai
-DOMAIN-SUFFIX,launchdarkly.com
-
-# > Bybit EU
-DOMAIN-SUFFIX,bybit.eu
-# DOMAIN-SUFFIX,bybdc6.com // Bybit already use
-# DOMAIN-SUFFIX,byabcde.com // Bybit already use
-
-# > Kast
-DOMAIN-SUFFIX,kast.xyz
-DOMAIN-SUFFIX,id-01.braze.com
-DOMAIN-SUFFIX,lokalise.com
-DOMAIN-SUFFIX,kastapi.com
-DOMAIN-SUFFIX,eu.sardine.ai
-DOMAIN-SUFFIX,kastofficial.zendesk.com
 
 # ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
 # ══════════ DE 运营商
@@ -64,9 +44,6 @@ DOMAIN-SUFFIX,readid.com // identity online App
 
 # ══════════ DE WiFi Calling
 # Move to other list due to UDP not support. 
-
-# ═══════════════════════ Crypto ═══════════════════════
-# > untitled
 
 # ═══════════════════════ Other ═══════════════════════
 # > untitled

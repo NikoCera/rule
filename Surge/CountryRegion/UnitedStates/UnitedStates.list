@@ -1,6 +1,6 @@
 # NAME: UnitedStates
 # AUTHOR: myself
-# UPDATED: 2026-04-20
+# UPDATED: 2026-05-12
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > PayPal US
@@ -49,9 +49,6 @@ DOMAIN-SUFFIX,vzw.com
 
 # ══════════ US WiFi Calling
 # Move to other list due to UDP not support. 
-
-# ═══════════════════════ Crypto ═══════════════════════
-# > untitled
 
 # ═══════════════════════ Other ═══════════════════════
 # > osu!
