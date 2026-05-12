@@ -1,6 +1,6 @@
 # NAME: IPCheck
 # AUTHOR: myself
-# UPDATED: 2026-04-28
+# UPDATED: 2026-05-12
 
 # ═══════════════════════ 代理 / VPN / 风控检测 ═══════════════════════
 DOMAIN-SUFFIX,scamalytics.com
@@ -20,16 +20,24 @@ DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipapi.co
 DOMAIN-SUFFIX,ipdata.co
 DOMAIN-SUFFIX,ipquery.io
 DOMAIN-SUFFIX,ip2location.com
 DOMAIN-SUFFIX,db-ip.com
 DOMAIN-SUFFIX,ip-api.com // 网络信息 X 模块检测出口域名
+DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,ifconfig.me
 DOMAIN-SUFFIX,ip.sy
+DOMAIN-SUFFIX,ip.im
+DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,ipip.la
 DOMAIN-SUFFIX,iplark.com
 DOMAIN-SUFFIX,meowvps.com
+DOMAIN-SUFFIX,icanhazip.com
+DOMAIN-SUFFIX,123169.xyz
+DOMAIN-SUFFIX,999831.xyz
+DOMAIN-SUFFIX,111666.best
 
 # ═══════════════════════ 泄露检测 / WebRTC / 浏览器指纹 ═══════════════════════
 DOMAIN-SUFFIX,whoer.net
