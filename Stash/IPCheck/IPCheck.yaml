@@ -1,7 +1,6 @@
 ---
 payload:
 - DOMAIN-SUFFIX,scamalytics.com
-- DOMAIN-SUFFIX,ipqualityscore.com
 - DOMAIN-SUFFIX,proxycheck.io
 - DOMAIN-SUFFIX,ipapi.is
 - DOMAIN-SUFFIX,maxmind.com
@@ -9,19 +8,31 @@ payload:
 - DOMAIN-SUFFIX,ippure.com
 - DOMAIN-SUFFIX,ping0.cc
 - DOMAIN-SUFFIX,ipjiance.com
+- DOMAIN-SUFFIX,net-lsp-x.com
 - DOMAIN-SUFFIX,cc.mastersgo.cc
 - DOMAIN-SUFFIX,ip.net.coffee
-- DOMAIN-SUFFIX,net-lsp-x.com
+- DOMAIN-SUFFIX,bfo.cc
+- DOMAIN-SUFFIX,yanchufasui.com
+- DOMAIN-SUFFIX,ip.net.coffee
 - DOMAIN-SUFFIX,ipinfo.io
+- DOMAIN-SUFFIX,ipapi.co
 - DOMAIN-SUFFIX,ipdata.co
 - DOMAIN-SUFFIX,ipquery.io
 - DOMAIN-SUFFIX,ip2location.com
 - DOMAIN-SUFFIX,db-ip.com
 - DOMAIN-SUFFIX,ip-api.com
+- DOMAIN-SUFFIX,ipify.org
 - DOMAIN-SUFFIX,ifconfig.me
 - DOMAIN-SUFFIX,ip.sy
+- DOMAIN-SUFFIX,ip.im
+- DOMAIN-SUFFIX,ipip.net
+- DOMAIN-SUFFIX,ipip.la
 - DOMAIN-SUFFIX,iplark.com
 - DOMAIN-SUFFIX,meowvps.com
+- DOMAIN-SUFFIX,icanhazip.com
+- DOMAIN-SUFFIX,123169.xyz
+- DOMAIN-SUFFIX,999831.xyz
+- DOMAIN-SUFFIX,111666.best
 - DOMAIN-SUFFIX,whoer.net
 - DOMAIN-SUFFIX,browserleaks.net
 - DOMAIN-SUFFIX,browserleaks.com

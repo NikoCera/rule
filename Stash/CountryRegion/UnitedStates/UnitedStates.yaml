@@ -12,6 +12,11 @@ payload:
 - DOMAIN-SUFFIX,tello.com
 - DOMAIN-SUFFIX,t-mobile.com
 - DOMAIN-SUFFIX,tmobile.com
+- DOMAIN-SUFFIX,t-mobile.scene7.com
+- DOMAIN-SUFFIX,tmobilees.mpeasylink.com
+- DOMAIN-KEYWORD,t-mobile
+- DOMAIN-KEYWORD,tmobilees
 - DOMAIN-SUFFIX,att.com
 - DOMAIN-SUFFIX,verizon.com
 - DOMAIN-SUFFIX,vzw.com
+- DOMAIN-SUFFIX,ipqualityscore.com
