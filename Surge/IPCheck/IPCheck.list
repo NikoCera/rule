@@ -6,7 +6,6 @@
 DOMAIN-SUFFIX,scamalytics.com
 # DOMAIN-SUFFIX,ipqualityscore.com // 风控严, 需要纯净 IP 进入...
 DOMAIN-SUFFIX,proxycheck.io
-DOMAIN-SUFFIX,ipapi.is
 DOMAIN-SUFFIX,maxmind.com
 DOMAIN-SUFFIX,spur.us
 DOMAIN-SUFFIX,ippure.com
@@ -21,7 +20,10 @@ DOMAIN-SUFFIX,ip.net.coffee
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ipinfo.io
-DOMAIN-SUFFIX,ipapi.co
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ipapi.is
+DOMAIN-SUFFIX,ipapi.is
+DOMAIN-SUFFIX,ipwho.is
 DOMAIN-SUFFIX,ipdata.co
 DOMAIN-SUFFIX,ipquery.io
 DOMAIN-SUFFIX,ip2location.com
