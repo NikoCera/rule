@@ -112,8 +112,6 @@ payload:
 - DOMAIN-SUFFIX,aiv-delivery.net
 - DOMAIN-SUFFIX,pv-cdn.net
 - DOMAIN-SUFFIX,amazon-lantern.com
-- USER-AGENT,InstantVideo.US*
-- USER-AGENT,Prime%20Video*
 - PROCESS-NAME,com.amazon.avod.thirdpartyclient
 - DOMAIN-SUFFIX,kindle
 - DOMAIN-SUFFIX,kindle.cn
