@@ -1,6 +1,6 @@
 # NAME: WindowsGaming
 # AUTHOR: myself
-# UPDATED: 2026-05-18
+# UPDATED: 2026-05-29
 # DESCRIPTION: Windows gateway gaming/P2P helper rules for Surge. Assumes the Windows PC source IP is 192.168.0.5.
 
 # ═══════════════════════ Windows 网关设备 ═══════════════════════
@@ -11,6 +11,7 @@
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,ts.net
 IP-CIDR,100.64.0.0/10,no-resolve
+IP-CIDR6,fd7a:115c:a1e0::/48,no-resolve
 AND,((SRC-IP,192.168.0.5),(PROTOCOL,UDP),(DEST-PORT,41641))
 
 # ═══════════════════════ STUN / TURN / WebRTC / P2P 探测 ═══════════════════════
