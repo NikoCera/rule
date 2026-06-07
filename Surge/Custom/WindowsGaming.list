@@ -1,10 +1,10 @@
 # NAME: WindowsGaming
 # AUTHOR: myself
-# UPDATED: 2026-05-29
-# DESCRIPTION: Windows gateway gaming/P2P helper rules for Surge. Assumes the Windows PC source IP is 192.168.0.100.
+# UPDATED: 2026-06-08
+# DESCRIPTION: Windows gateway gaming/P2P helper rules for Surge.
 
 # ═══════════════════════ Windows 网关设备 ═══════════════════════
-# WorldMachine / Windows PC (Ethernet): 192.168.0.100
+# WorldMachine / Windows PC (Ethernet / WiFi): 192.168.0.100, 192.168.0.105
 # 不单独写 SRC-IP, 避免整台 Windows 的所有 TCP/HTTPS 流量都被直连。
 
 # ═══════════════════════ Tailscale / 私网联机 ═══════════════════════
@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,ts.net
 IP-CIDR,100.64.0.0/10,no-resolve
 IP-CIDR6,fd7a:115c:a1e0::/48,no-resolve
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,41641))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,41641))
 
 # ═══════════════════════ STUN / TURN / WebRTC / P2P 探测 ═══════════════════════
 DOMAIN-KEYWORD,stun
@@ -21,6 +22,9 @@ PROTOCOL,STUN
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,3478-3481))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,5349))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,19302-19309))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,3478-3481))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,5349))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,19302-19309))
 
 # ═══════════════════════ Xbox / Windows 游戏常见 UDP ═══════════════════════
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,88))
@@ -28,11 +32,19 @@ AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,500))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,3074))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,3544))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,4500))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,88))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,500))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,3074))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,3544))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,4500))
 
 # ═══════════════════════ Steam / PC 联机常见 UDP ═══════════════════════
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,4380))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,27000-27100))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,4380))
+AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,27000-27100))
 
 # ═══════════════════════ 临时全 UDP 直连开关 ═══════════════════════
 # 遇到 NAT 类型严格、匹配失败、房间无法发现或 P2P 连接不稳时，可以临时取消下一行注释。
 # AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP))
+# AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP))
