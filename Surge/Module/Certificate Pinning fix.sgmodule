@@ -14,4 +14,3 @@
 
 [MITM]
 hostname = -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -101.227.133.99, -tnc*-*.zijieapi.com, -api.vc.bilibili.com, -pay.bilibili.com, -grpc.biliapi.net, -i0.hdslb.com, -aisubtitle.hdslb.com, -219.135.97.183, -171.105.220.192, -59.42.240.87, -119.147.55.78, -119.147.55.123, %APPEND%
-hostname-disabled = sub.store, google.cn, otheve.beacon.qq.com, www.bing.com, cn.bing.com, edith.xiaohongshu.com, ci.xiaohongshu.com, lng.xiaohongshu.com, apm-native.xiaohongshu.com, apm-fe.xiaohongshu.com, t2.xiaohongshu.com, spider-tracker.xiaohongshu.com, 101.227.133.99, tnc*-*.zijieapi.com, api.vc.bilibili.com, pay.bilibili.com, grpc.biliapi.net, i0.hdslb.com, aisubtitle.hdslb.com, 219.135.97.183, 171.105.220.192, 59.42.240.87, 119.147.55.78, 119.147.55.123
