@@ -8,9 +8,9 @@
 # - 百度搜索去广告@limbopro：www.bing.com, cn.bing.com
 # - 小红书去广告@ddgksf2013：edith/ci/lng/apm/t2/spider-tracker xiaohongshu hosts；101.227.133.99 为 edith.xiaohongshu.com QUIC 目标 IP
 # - 汽水音乐去广告@ddgksf2013：tnc*-*.zijieapi.com
-# - 哔哩哔哩去广告@ddgksf2013 / BiliUniverse ADBlock / BiliUniverse Global / B站字幕功能增强@ddgksf2013：
-#   api.vc.bilibili.com, pay.bilibili.com, grpc.biliapi.net, i0.hdslb.com, aisubtitle.hdslb.com
+# - 哔哩哔哩Lite去广告@ddgksf2013 / 哔哩哔哩去广告@ddgksf2013 / BiliUniverse ADBlock / BiliUniverse Global / B站字幕功能增强@ddgksf2013：
+#   app.bilibili.com, api.vc.bilibili.com, pay.bilibili.com, grpc.biliapi.net, i0.hdslb.com, aisubtitle.hdslb.com
 # - 截图 IP-only MitM Failed（未保留 SNI）：219.135.97.183, 171.105.220.192, 59.42.240.87, 119.147.55.78, 119.147.55.123
 
 [MITM]
-hostname = %INSERT% -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -101.227.133.99, -tnc*-*.zijieapi.com, -api.vc.bilibili.com, -pay.bilibili.com, -grpc.biliapi.net, -i0.hdslb.com, -aisubtitle.hdslb.com, -219.135.97.183, -171.105.220.192, -59.42.240.87, -119.147.55.78, -119.147.55.123
+hostname = %INSERT% -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -101.227.133.99, -tnc*-*.zijieapi.com, -app.bilibili.com, -api.vc.bilibili.com, -pay.bilibili.com, -grpc.biliapi.net, -i0.hdslb.com, -aisubtitle.hdslb.com, -219.135.97.183, -171.105.220.192, -59.42.240.87, -119.147.55.78, -119.147.55.123
