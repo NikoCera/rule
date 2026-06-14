@@ -1,6 +1,6 @@
 # NAME: IPCheck
 # AUTHOR: myself
-# UPDATED: 2026-05-12
+# UPDATED: 2026-06-14
 
 # ═══════════════════════ 代理 / VPN / 风控检测 ═══════════════════════
 DOMAIN-SUFFIX,scamalytics.com
@@ -31,6 +31,10 @@ DOMAIN-SUFFIX,db-ip.com
 DOMAIN-SUFFIX,ip-api.com // 网络信息 X 模块检测出口域名
 DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,ifconfig.me
+DOMAIN-SUFFIX,ifconfig.co
+DOMAIN-SUFFIX,ident.me
+DOMAIN,checkip.amazonaws.com
+DOMAIN,myip.dnsomatic.com
 DOMAIN-SUFFIX,ip.sy
 DOMAIN-SUFFIX,ip.im
 DOMAIN-SUFFIX,ipip.net
