@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,ip.net.coffee // Claude AI IP 风险检测
 DOMAIN-SUFFIX,bfo.cc // Claude AI IP 风险检测
 DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
 DOMAIN-SUFFIX,ip.net.coffee
+DOMAIN-SUFFIX,cleanip.io
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ipinfo.io
