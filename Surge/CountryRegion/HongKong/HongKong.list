@@ -84,3 +84,6 @@ DOMAIN-SUFFIX,lowiro.com
 
 # > App Store
 # DOMAIN,downloaddispatch.itunes.apple.com // 字节系App下载，禁止走US
+
+# > Deltarune.cn
+DOMAIN-SUFFIX,deltarune.cn,"🇭🇰 Hong Kong",extended-matching
