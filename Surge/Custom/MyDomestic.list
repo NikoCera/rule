@@ -1,6 +1,6 @@
 # NAME: MyDomestic
 # AUTHOR: myself
-# UPDATED: 2026-04-20
+# UPDATED: 2026-06-17
 
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
@@ -12,6 +12,7 @@ DOMAIN-SUFFIX,test.ustc.edu.cn // 需要始终 DIRECT 测速
 DOMAIN-SUFFIX,speedtest.cn // 需要始终 DIRECT 测速
 DOMAIN-SUFFIX,kelee.one // 可莉插件中心
 DOMAIN-SUFFIX,max-c.com // 小黑盒heybox
+DOMAIN-SUFFIX,xiaoheihe.cn // 小黑盒heybox
 DOMAIN-SUFFIX,appinn.net
 DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,wttr.in
