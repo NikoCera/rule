@@ -1,6 +1,6 @@
 # NAME: HongKong
 # AUTHOR: myself
-# UPDATED: 2026-04-15
+# UPDATED: 2026-06-24
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > ZA Bank (众安银行)
@@ -86,4 +86,4 @@ DOMAIN-SUFFIX,lowiro.com
 # DOMAIN,downloaddispatch.itunes.apple.com // 字节系App下载，禁止走US
 
 # > Deltarune.cn
-DOMAIN-SUFFIX,deltarune.cn,"🇭🇰 Hong Kong",extended-matching
+DOMAIN-SUFFIX,deltarune.cn

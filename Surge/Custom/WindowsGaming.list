@@ -1,24 +1,18 @@
 # NAME: WindowsGaming
 # AUTHOR: myself
-# UPDATED: 2026-06-08
+# UPDATED: 2026-06-24
 # DESCRIPTION: Windows gateway gaming/P2P helper rules for Surge.
 
 # ═══════════════════════ Windows 网关设备 ═══════════════════════
 # WorldMachine / Windows PC (Ethernet / WiFi): 192.168.0.100, 192.168.0.105
 # 不单独写 SRC-IP, 避免整台 Windows 的所有 TCP/HTTPS 流量都被直连。
 
-# ═══════════════════════ Tailscale / 私网联机 ═══════════════════════
-DOMAIN-SUFFIX,tailscale.com
-DOMAIN-SUFFIX,ts.net
-IP-CIDR,100.64.0.0/10,no-resolve
-IP-CIDR6,fd7a:115c:a1e0::/48,no-resolve
+# ═══════════════════════ Tailscale UDP 打洞 ═══════════════════════
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,41641))
 AND,((SRC-IP,192.168.0.105),(PROTOCOL,UDP),(DEST-PORT,41641))
 
 # ═══════════════════════ STUN / TURN / WebRTC / P2P 探测 ═══════════════════════
-DOMAIN-KEYWORD,stun
 # DOMAIN-KEYWORD,turn
-PROTOCOL,STUN
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,3478-3481))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,5349))
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,19302-19309))
