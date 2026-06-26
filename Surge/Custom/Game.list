@@ -1,16 +1,11 @@
 # NAME: Game
 # AUTHOR: myself
 # UPDATED: 2026-06-26
-# DESCRIPTION: Game device/P2P helper rules for Surge.
+# DESCRIPTION: Windows gateway gaming/P2P helper rules for Surge.
 
 # ═══════════════════════ 游戏设备 ═══════════════════════
 # WorldMachine / Windows PC (Ethernet / WiFi): 192.168.0.100, 192.168.0.105
-# Nintendo Switch (Ethernet / WiFi): 192.168.0.120, 192.168.0.125
 # 不单独写 SRC-IP, 避免整台 Windows 的所有 TCP/HTTPS 流量都被直连。
-
-# ═══════════════════════ Switch 全流量规则 ═══════════════════════
-SRC-IP,192.168.0.120 // Switch Eth
-SRC-IP,192.168.0.125 // Switch WiFi
 
 # ═══════════════════════ Tailscale UDP 打洞 ═══════════════════════
 AND,((SRC-IP,192.168.0.100),(PROTOCOL,UDP),(DEST-PORT,41641)) // Tailscale/WireGuard 打洞
