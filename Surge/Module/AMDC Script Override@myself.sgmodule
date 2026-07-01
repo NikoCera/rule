@@ -3,4 +3,4 @@
 #!category=功能增强
 
 [Script]
-amdc = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch", script-path=https://cdn.jsdelivr.net/gh/NikoCera/rule@main/Surge/Script/amdc.noop.js, requires-body=true, max-size=-1, timeout=60
+amdc = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch", script-path=https://raw.githubusercontent.com/NikoCera/rule/main/Surge/Script/amdc.noop.js, requires-body=true, max-size=-1, timeout=60
