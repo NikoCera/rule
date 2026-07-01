@@ -1,0 +1,30 @@
+# NAME: SteamDownload
+# AUTHOR: myself
+# UPDATED: 2026-07-02
+# DESCRIPTION: Steam game download and depot CDN rules only. Keep account, store, community, chat, and user content on the normal Steam proxy policy.
+---
+payload:
+- DOMAIN-SUFFIX,steamcontent.com
+- DOMAIN-SUFFIX,steamserver.net
+- DOMAIN-SUFFIX,steampipe.akamaized.net
+- DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+- DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+- DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+- DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+- DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+- DOMAIN,dl.steam.clngaa.com
+- DOMAIN,dl.steam.ksyna.com
+- DOMAIN,st.dl.bscstorage.net
+- DOMAIN,st.dl.eccdnx.com
+- DOMAIN,st.dl.pinyuncloud.com
+- DOMAIN,steampipe.steamcontent.tnkjmec.com
+- DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
+- DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+- DOMAIN-SUFFIX,steam.apac.qtlglb.com
+- DOMAIN-SUFFIX,steam.eca.qtlglb.com
+- DOMAIN-SUFFIX,steam.naeu.qtlglb.com
+- DOMAIN-SUFFIX,steam.ru.qtlglb.com
+- DOMAIN-SUFFIX,steam.cdn.on.net
+- DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
+- DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
+- DOMAIN-SUFFIX,steam.cdn.webra.ru
