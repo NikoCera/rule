@@ -1,6 +1,6 @@
 # NAME: AIGC
 # AUTHOR: myself
-# UPDATED: 2026-06-08
+# UPDATED: 2026-07-01
 
 # > ChatGPT & Codex
 PROCESS-NAME,ChatGPT
@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 
 # > CDN 和静态资源
@@ -32,17 +33,21 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN,browser-intake-us5-datadoghq.com // Claude 检测域名
 DOMAIN-KEYWORD,datadog
-# DOMAIN-KEYWORD,sift
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,sift
 
 # > 客服 / 第三方 widget
-# DOMAIN-SUFFIX,intercom.io
-# DOMAIN-SUFFIX,intercomcdn.com
-# DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN,cdn.usefathom.com
 
 # > IP 段 / ASN 兜底
 IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
+
+# > 兜底规则来源（geosite:anthropic / geosite:category-ntp）
+# > Surge list 不直接支持 geosite: 语法，已将 keyword:datadog/sentry/sift 转换为 DOMAIN-KEYWORD。
 
 # > 进程匹配
 PROCESS-NAME,Claude
