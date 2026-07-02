@@ -1,5 +1,6 @@
 ---
 payload:
+- DOMAIN-SUFFIX,ui.com
 - DOMAIN-SUFFIX,obsidian.md
 - DOMAIN-SUFFIX,linux.do
 - DOMAIN-SUFFIX,v2ex.com
