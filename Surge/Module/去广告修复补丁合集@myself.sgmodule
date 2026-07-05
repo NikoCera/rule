@@ -34,11 +34,11 @@ DOMAIN,sdk.alibaba.com.ailbaba.me,DIRECT
 DOMAIN-SUFFIX,elemecdn.com,DIRECT
 
 # 放行公共 DNS / HTTPDNS，避免去广告模块误杀后造成卡顿。
-DOMAIN,dns.alidns.com,Domestic
-DOMAIN-SUFFIX,doh.pub,Domestic
-DOMAIN-SUFFIX,dns.pub,Domestic
-DOMAIN-SUFFIX,alidns.com,Domestic
-DOMAIN,doh.360.cn,Domestic
+DOMAIN,dns.alidns.com,DIRECT
+DOMAIN-SUFFIX,doh.pub,DIRECT
+DOMAIN-SUFFIX,dns.pub,DIRECT
+DOMAIN-SUFFIX,alidns.com,DIRECT
+DOMAIN,doh.360.cn,DIRECT
 DOMAIN,dns.weixin.qq.com,DIRECT
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
 DOMAIN,aedns.weixin.qq.com,DIRECT

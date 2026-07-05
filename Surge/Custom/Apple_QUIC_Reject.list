@@ -1,0 +1,8 @@
+# NAME: Apple QUIC Reject
+# AUTHOR: myself
+# UPDATED: 2026-07-06
+
+DOMAIN,weather-analytics-events.apple.com
+DOMAIN-SUFFIX,tthr.apple.com,extended-matching
+DOMAIN,tether.edge.apple,extended-matching
+AND,((OR,((IP-ASN,714,no-resolve),(IP-ASN,6185,no-resolve))),(PROTOCOL,QUIC))
