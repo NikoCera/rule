@@ -1,0 +1,6 @@
+---
+payload:
+- DOMAIN,weather-analytics-events.apple.com
+- DOMAIN-SUFFIX,tthr.apple.com
+- DOMAIN,tether.edge.apple
+- AND,((OR,((IP-ASN,714,no-resolve),(IP-ASN,6185,no-resolve))),(PROTOCOL,QUIC))
