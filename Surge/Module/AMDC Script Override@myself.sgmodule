@@ -1,6 +1,0 @@
-#!name=AMDC Script Override@myself
-#!desc=前置覆盖 ddgksf2013 的 amdc/mobileDispatch 响应脚本，保持 AMDC 调度响应原样返回。
-#!category=功能增强
-
-[Script]
-amdc = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch", script-path=https://raw.githubusercontent.com/NikoCera/rule/main/Surge/Script/amdc.noop.js, requires-body=true, max-size=-1, timeout=60

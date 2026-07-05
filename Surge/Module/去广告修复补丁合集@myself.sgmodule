@@ -1,0 +1,55 @@
+#!name=去广告修复补丁合集@myself
+#!desc=合并去广告防卡顿与 HTTPDNS 白名单、AMDC 响应覆盖、Certificate Pinning/MITM 排除，用于修复其他去广告模块带来的副作用。
+#!category=功能增强
+#!author=@myself
+
+# 关联来源模块：
+# - 去广告防卡顿与HTTPDNS白名单
+# - AMDC Script Override@myself
+# - Certificate Pinning fix
+
+[Rule]
+# 以域名关键字命中，放在前面覆盖部分误杀规则。
+DOMAIN-KEYWORD,httpdns-sdk,REJECT
+DOMAIN-KEYWORD,tracker-httpdns,REJECT
+URL-REGEX,^https?://.*\/httpdns\/.*tracker,REJECT
+
+# 1. 核心网关与组件放行（修复淘宝、支付宝加载缓慢与 UI 残缺）
+URL-REGEX,^http:\/\/.+\/amdc\/mobileDispatch,DIRECT
+DOMAIN,amdc.alipay.com,DIRECT
+DOMAIN,atoken.m.taobao.com,DIRECT
+DOMAIN,ossgw.alicdn.com,DIRECT
+DOMAIN,hudong.alicdn.com,DIRECT
+DOMAIN,retcode.alicdn.com,DIRECT
+DOMAIN,arms-retcode.aliyuncs.com,DIRECT
+
+# 放行公共 DNS / HTTPDNS，避免去广告模块误杀后造成卡顿。
+DOMAIN,dns.alidns.com,Domestic
+DOMAIN-SUFFIX,doh.pub,Domestic
+DOMAIN-SUFFIX,dns.pub,Domestic
+DOMAIN-SUFFIX,alidns.com,Domestic
+DOMAIN,doh.360.cn,Domestic
+DOMAIN,dns.weixin.qq.com,DIRECT
+DOMAIN,dns.weixin.qq.com.cn,DIRECT
+DOMAIN,aedns.weixin.qq.com,DIRECT
+DOMAIN-KEYWORD,httpdns,DIRECT
+DOMAIN-KEYWORD,httpsdns,DIRECT
+DOMAIN,httpdns.alicdn.com,DIRECT
+DOMAIN,httpdns-api.aliyuncs.com,DIRECT
+DOMAIN,httpdns-sc.aliyuncs.com,DIRECT
+DOMAIN,httpdns.meituan.com,DIRECT
+DOMAIN,httpdnsmultiapi.meituan.com,DIRECT
+DOMAIN,httpdnsmultiapivip.meituan.com,DIRECT
+DOMAIN,dns.jd.com,DIRECT
+DOMAIN,httpdns.baidu.com,DIRECT
+DOMAIN,httpsdns.baidu.com,DIRECT
+DOMAIN,httpdns.music.163.com,DIRECT
+DOMAIN,httpdns.n.netease.com,DIRECT
+
+[Script]
+# 前置覆盖 ddgksf2013 的 amdc/mobileDispatch 响应脚本，保持 AMDC 调度响应原样返回。
+amdc = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch", script-path=https://raw.githubusercontent.com/NikoCera/rule/main/Surge/Script/amdc.noop.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+# 排除已确认或疑似 certificate pinning / MITM 失效域名，减少 MitM Failed 与连接中断。
+hostname = %INSERT% -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -tnc*-*.zijieapi.com
