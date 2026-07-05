@@ -23,6 +23,16 @@ DOMAIN,hudong.alicdn.com,DIRECT
 DOMAIN,retcode.alicdn.com,DIRECT
 DOMAIN,arms-retcode.aliyuncs.com,DIRECT
 
+# StartUpAds 阿里系临时放行：DIRECT 只能覆盖连接策略，真正避免卡顿还要配合 MITM 排除，跳过 Body Rewrite/Map Local 解密改写。
+DOMAIN,acs.m.taobao.com,DIRECT
+DOMAIN,guide-acs.m.taobao.com,DIRECT
+DOMAIN,acs.m.goofish.com,DIRECT
+DOMAIN,g-acs.m.goofish.com,DIRECT
+DOMAIN,acs-m.freshippo.com,DIRECT
+DOMAIN,zconfig.alibabausercontent.com,DIRECT
+DOMAIN,sdk.alibaba.com.ailbaba.me,DIRECT
+DOMAIN-SUFFIX,elemecdn.com,DIRECT
+
 # 放行公共 DNS / HTTPDNS，避免去广告模块误杀后造成卡顿。
 DOMAIN,dns.alidns.com,Domestic
 DOMAIN-SUFFIX,doh.pub,Domestic
@@ -52,4 +62,5 @@ amdc = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1
 
 [MITM]
 # 排除已确认或疑似 certificate pinning / MITM 失效域名，减少 MitM Failed 与连接中断。
-hostname = %INSERT% -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -tnc*-*.zijieapi.com
+# StartUpAds 阿里系营销/主题接口临时排除 MITM，避免每次解密后再跑 JQ/Map Local 造成 App 内页加载慢。
+hostname = %INSERT% -otheve.beacon.qq.com, -www.bing.com, -cn.bing.com, -edith.xiaohongshu.com, -ci.xiaohongshu.com, -lng.xiaohongshu.com, -apm-native.xiaohongshu.com, -apm-fe.xiaohongshu.com, -t2.xiaohongshu.com, -spider-tracker.xiaohongshu.com, -tnc*-*.zijieapi.com, -acs.m.taobao.com, -guide-acs.m.taobao.com, -acs.m.goofish.com, -g-acs.m.goofish.com, -acs-m.freshippo.com, -zconfig.alibabausercontent.com, -sdk.alibaba.com.ailbaba.me, -elemecdn.com, -fuss10.elemecdn.com
