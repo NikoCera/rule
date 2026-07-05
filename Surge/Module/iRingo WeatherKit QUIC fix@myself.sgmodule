@@ -1,5 +1,5 @@
 #!name= iRingo: 🌤 WeatherKit fix@myself
-#!desc=自维护 WeatherKit 模块；合并 iRingo WeatherKit 脚本与规则，规则动作统一使用 REJECT
+#!desc=自维护 WeatherKit 模块；合并 iRingo WeatherKit 脚本与规则。Apple ASN QUIC 统一 REJECT 快速拒绝（逼回 TCP 供 MITM）；内含可选的 Private Relay QUIC 直连放行规则（默认注释）
 #!openUrl=http://boxjs.com/#/app/iRingo.WeatherKit
 #!author=VirgilClyne[https://github.com/VirgilClyne],WordlessEcho[https://github.com/WordlessEcho],001[https://github.com/001ProMax],myself
 #!homepage=https://NSRingo.github.io/guide/Weather/weather-kit
@@ -14,8 +14,23 @@
 DOMAIN,weather-analytics-events.apple.com,REJECT
 DOMAIN-SUFFIX,tthr.apple.com,REJECT,extended-matching
 DOMAIN,tether.edge.apple,REJECT,extended-matching
-AND,((DOMAIN-SUFFIX,weatherkit.apple.com),(PROTOCOL,QUIC)),REJECT
+# Private Relay QUIC 直连放行（需要时取消注释；依赖 always-real-ip 中的 mask/apple-dns 条目，且必须位于下方 QUIC 拒绝规则之前）
+# AND,((DOMAIN,mask.icloud.com),(PROTOCOL,QUIC)),DIRECT
+# AND,((DOMAIN,mask-h2.icloud.com),(PROTOCOL,QUIC)),DIRECT
+# AND,((DOMAIN-SUFFIX,apple-dns.net),(PROTOCOL,QUIC)),DIRECT
+# Apple 全系(ASN 714/6185) QUIC 快速拒绝：REJECT 回 ICMP，设备毫秒级回退 TCP 供 MITM
+# 勿删勿改为 REJECT-DROP：all-proxy 内置屏蔽为静默丢弃，会导致 64s 挂死与 iCloud 认证类"未知错误"
+# 注意：主配置的 Apple ruleset 只负责"路由去向"，替代不了本条——没有本条，Apple QUIC 会被路由到代理
+# 后撞上 all-proxy 的静默丢弃；PROTOCOL 级的拦截必须由显式规则完成
 AND,((OR,((IP-ASN,714,no-resolve),(IP-ASN,6185,no-resolve))),(PROTOCOL,QUIC)),REJECT
+
+# ───── 历史规则存档（仅对照参考，勿启用）─────
+# ① 等效的 CIDR 简写（Apple 独占 17.0.0.0/8，即 AS714/AS6185 宣告的生产网段），日志显示更短，
+#    但不含 IPv6；内网启用 IPv6 后请勿使用此版本
+# AND,((IP-CIDR,17.0.0.0/8,no-resolve),(PROTOCOL,QUIC)),REJECT
+# ② 原版 iRingo 按域名单独拦 WeatherKit QUIC：作用域是 ASN 规则的真子集（weatherkit.apple.com 在 17/8 内），
+#    完全冗余；且动作是 REJECT-DROP 静默丢弃——正是造成 64s 挂死的有害写法，仅留档说明来历
+# AND,((DOMAIN-SUFFIX,weatherkit.apple.com),(PROTOCOL,QUIC)),REJECT-DROP
 
 [Script]
 🌤 WeatherKit.api.v1.availability.response = type=http-response, pattern=^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/, requires-body=1, engine=webview, script-path=https://github.com/NSRingo/WeatherKit/releases/download/v3.1.0/response.bundle.js, argument=Weather.Provider="{{{Weather.Provider}}}"&NextHour.Provider="{{{NextHour.Provider}}}"&AirQuality.Calculate.Algorithm="{{{AirQuality.Calculate.Algorithm}}}"&API.ColorfulClouds.Token="{{{API.ColorfulClouds.Token}}}"&API.QWeather.Host="{{{API.QWeather.Host}}}"&API.QWeather.Token="{{{API.QWeather.Token}}}"&API.WAQI.Token="{{{API.WAQI.Token}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"

@@ -1,6 +1,6 @@
 # NAME: NTP
 # AUTHOR: myself
-# UPDATED: 2026-04-21
+# UPDATED: 2026-07-06
 
 DOMAIN-SUFFIX,ntp.org
 DOMAIN-SUFFIX,pool.ntp.org
@@ -12,3 +12,8 @@ DOMAIN-SUFFIX,time.cloudflare.com
 DOMAIN-SUFFIX,time.android.com
 DOMAIN-SUFFIX,time.apple.com // Apple Time Sync
 DOMAIN-SUFFIX,time.asia.apple.com // Apple Time Sync
+# NTP(UDP 123) 钉到 UDP 原生协议节点: 保持代理(防 App 借 NTP 探测真实 IP), 但绕开 smart 组——
+# smart 组可能选中不支持 UDP 的节点(AnyTLS/Trojan 未开 udp-relay), 触发 udp-policy-not-supported-behaviour=reject,
+# 实测 Apple TV 曾因此 NTP 持续被拒重试(日志大量 17.253.x.x:123 REJECT); 时钟漂移会引发 TLS 证书错误
+# 验证: reload 后 Dashboard 中 :123 会话应有下行字节; 若仍为 0 = VPS 出口封了 NTP(防放大攻击常见), 需换节点或权衡直连
+AND,((PROTOCOL,UDP),(DEST-PORT,123))
