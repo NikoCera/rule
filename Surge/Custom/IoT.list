@@ -1,0 +1,60 @@
+# IoT.list — 家中 IoT 设备厂商域名（官网 / 云接入点 / 固件 OTA / App API）
+# 用途: IoT 设备恢复 Surge 接管后, 将这些域名指向 DIRECT——App 功能不受影响, 同时在请求日志中留痕便于排障
+# 主配置建议写法(放在 GEOIP 之前即可):
+#   RULE-SET,https://raw.githubusercontent.com/NikoCera/rule/main/Surge/Custom/IoT.list,DIRECT,extended-matching,no-resolve
+#
+# ⚠️ 前提与注意:
+# 1. DIRECT 仅适用于「绑定中国区账号」或「未绑定云(纯 HomeKit)」的设备。若设备仍绑海外区
+#    (连 tuyaus / mqtt-us 等), 其云端点直连 = 跨境裸奔, 会复发 6 分钟断连循环(见排查笔记·病因二),
+#    此时应让对应设备域名走代理或先重新配网到中国区
+# 2. 这些域名多数已在 always-real-ip 中(返回真实 IP); TLS 流量靠 SNI 嗅探命中本列表,
+#    偶发裸 IP 流量命中不了域名规则时会落到 GEOIP,CN → Domestic 兜底, 中国区端点不受影响
+# 3. NTP 域名刻意不收录——统一由主配置的 UDP 123 端口规则处理, 避免策略冲突
+# 4. 新增设备时: 接管状态下看 Surge 请求日志里它连什么域名, 补进对应分组即可
+# Updated: 2026-07-07
+
+# ═══════ 小米 / 米家生态 (Mijia Light 1S: yeelink, Mijia Kettle 3 Pro: xiaomi, Mijia Camera C700: chuangmi/创米) ═══════
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,mijia.tech
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,yeelight.com
+DOMAIN-SUFFIX,imilab.com
+
+# ═══════ Roborock G30 Space (roborock-vacuum-a157, Roborock App) ═══════
+DOMAIN-SUFFIX,roborock.com
+DOMAIN-SUFFIX,rockrobo.com
+
+# ═══════ Meross ×3 (mss210p 智能插座: 65W/120W Charger 所插插座, ScreenBar Halo 2; Meross App) ═══════
+# mqtt-cn / mqtt-us-N / iot / api / 固件均为其子域
+DOMAIN-SUFFIX,meross.com
+
+# ═══════ Tuya 涂鸦生态 (Air Purifier; App: 智能生活 Smart Life / Tuya Smart) ═══════
+DOMAIN-SUFFIX,tuyacn.com
+DOMAIN-SUFFIX,tuya.com
+DOMAIN-SUFFIX,smart321.com
+# ⚠️ 以下为海外区接入点: 设备重新配网到中国区之前, 净化器连的是 m2.tuyaus.com——
+# 若该设备尚未换区, tuyaus 直连会复发跨境断连, 换区完成前建议注释掉
+DOMAIN-SUFFIX,tuyaus.com
+DOMAIN-SUFFIX,tuyaeu.com
+
+# ═══════ CozyLife (PC Boot 开机卡, hostname: CozyLife_NCB6; App: CozyLife) ═══════
+# 当前纯 HomeKit 使用、无云流量; 以下为配网到 App 后预期的域名, 未实测——
+# 配网后请从 Surge 请求日志确认实际云端点并修正
+DOMAIN-SUFFIX,cozylife.app
+
+# ═══════ LG webOS TV (hostname: LGwebOSTV; App: LG ThinQ) ═══════
+# 刻意不收录广告域名(lgads.tv / lgsmartad.com 等), 让其走默认规则或另行 REJECT
+# 参考过 blackmatrix7 LG.list(2026-07): 其内容面向 LG 集团/韩国 ISP(uplus.co.kr/kidc.net + 韩国 IP 段),
+# 不适合家用 webOS TV 场景, 未采纳任何条目(lg.com 为企业官网, 与 IoT 功能无关, 亦不收录)
+DOMAIN-SUFFIX,lgthinq.com
+DOMAIN-SUFFIX,lge.com
+DOMAIN-SUFFIX,lgtvsdp.com
+DOMAIN-SUFFIX,lgappstv.com
+DOMAIN-SUFFIX,lgtvcommon.com
+
+# ═══════ Pet Dryer (Espressif 芯片, 方案商未知) ═══════
+# Espressif 是芯片商(ESP32/8266), 没有自有 App; 具体 App 取决于产品方案商固件
+# (同为 Espressif 芯片的 PC Boot 即 CozyLife 方案)。此设备 hostname 为 ESP 默认值,
+# 可能从未配网到任何云。若配网 App: 先在包装/说明书找 App 名, 或接管后看请求日志确认云端点再补域名
