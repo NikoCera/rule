@@ -21,6 +21,7 @@ DOMAIN-SUFFIX,cleanip.io
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ip125.com
+DOMAIN-SUFFIX,ipinfo.cv
 DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ipapi.is
