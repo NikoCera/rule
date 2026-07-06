@@ -34,10 +34,10 @@ DOMAIN-SUFFIX,meross.com
 DOMAIN-SUFFIX,tuyacn.com
 DOMAIN-SUFFIX,tuya.com
 DOMAIN-SUFFIX,smart321.com
-# ⚠️ 以下为海外区接入点: 设备重新配网到中国区之前, 净化器连的是 m2.tuyaus.com——
-# 若该设备尚未换区, tuyaus 直连会复发跨境断连, 换区完成前建议注释掉
-DOMAIN-SUFFIX,tuyaus.com
-DOMAIN-SUFFIX,tuyaeu.com
+# ⚠️ 以下为海外区接入点, 默认注释: 净化器原绑美区(m2.tuyaus.com), 若设备仍绑海外区,
+# 这两行 DIRECT 会复发跨境断连(病因二); 确认设备已换中国区/脱云后再取消注释
+# DOMAIN-SUFFIX,tuyaus.com
+# DOMAIN-SUFFIX,tuyaeu.com
 
 # ═══════ CozyLife (PC Boot 开机卡, hostname: CozyLife_NCB6; App: CozyLife) ═══════
 # 当前纯 HomeKit 使用、无云流量; 以下为配网到 App 后预期的域名, 未实测——
