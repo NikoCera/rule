@@ -17,3 +17,12 @@ payload:
 - IP-CIDR,47.246.0.0/16,no-resolve
 - IP-CIDR,163.181.0.0/16,no-resolve
 - IP-CIDR,155.102.0.0/16,no-resolve
+- PROCESS-NAME,PartyAnimals.exe
+- DOMAIN-SUFFIX,partyanimalsgame.com
+- DOMAIN-SUFFIX,partyanimals.com
+- DOMAIN-SUFFIX,partyanimals.cn
+- DOMAIN-SUFFIX,recreategames.com.cn
+- DOMAIN-KEYWORD,partyanimals.api
+- DOMAIN-SUFFIX,amazonaws.com.cn
+- DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
+- DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn

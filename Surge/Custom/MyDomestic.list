@@ -1,6 +1,6 @@
 # NAME: MyDomestic
 # AUTHOR: myself
-# UPDATED: 2026-06-17
+# UPDATED: 2026-07-13
 
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
@@ -21,6 +21,16 @@ DOMAIN-SUFFIX,vrqfmm.xyz // Nexitally
 IP-CIDR,47.246.0.0/16,no-resolve // 闲鱼
 IP-CIDR,163.181.0.0/16,no-resolve // 闲鱼
 IP-CIDR,155.102.0.0/16,no-resolve // 闲鱼
+# ═══════════════════ Party Animals / 猛兽派对 ═══════════════════
+PROCESS-NAME,PartyAnimals.exe
+DOMAIN-SUFFIX,partyanimalsgame.com
+DOMAIN-SUFFIX,partyanimals.com
+DOMAIN-SUFFIX,partyanimals.cn
+DOMAIN-SUFFIX,recreategames.com.cn
+DOMAIN-KEYWORD,partyanimals.api
+DOMAIN-SUFFIX,amazonaws.com.cn
+DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
+DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn
 # DOMAIN-SUFFIX,orb.local
 # DOMAIN-SUFFIX,localhost
 # DOMAIN,localhost
