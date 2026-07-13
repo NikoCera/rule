@@ -1,6 +1,9 @@
 # NAME: PartyAnimals_Optimized
 # DESCRIPTION: Party Animals 专用直连规则，仅包含游戏核心域名 + 可选 AWS 精准匹配
-# UPDATED: 2026-04-17
+# UPDATED: 2026-07-13
+
+# ---- 游戏进程 ----
+PROCESS-NAME,PartyAnimals.exe
 
 # ---- 游戏核心 ----
 DOMAIN-SUFFIX,partyanimalsgame.com

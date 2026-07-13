@@ -1,5 +1,6 @@
 ---
 payload:
+- PROCESS-NAME,PartyAnimals.exe
 - DOMAIN-SUFFIX,partyanimalsgame.com
 - DOMAIN-SUFFIX,partyanimals.com
 - DOMAIN-SUFFIX,partyanimals.cn
