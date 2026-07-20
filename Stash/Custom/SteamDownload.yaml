@@ -1,7 +1,3 @@
-# NAME: SteamDownload
-# AUTHOR: myself
-# UPDATED: 2026-07-02
-# DESCRIPTION: Steam game download and depot CDN rules only. Keep account, store, community, chat, and user content on the normal Steam proxy policy.
 ---
 payload:
 - DOMAIN-SUFFIX,steamcontent.com

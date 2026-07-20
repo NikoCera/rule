@@ -14,6 +14,9 @@ payload:
 - DOMAIN-SUFFIX,yanchufasui.com
 - DOMAIN-SUFFIX,ip.net.coffee
 - DOMAIN-SUFFIX,cleanip.io
+- DOMAIN-SUFFIX,iping.cc
+- DOMAIN-SUFFIX,ip125.com
+- DOMAIN-SUFFIX,ipinfo.cv
 - DOMAIN-SUFFIX,ipinfo.io
 - DOMAIN-SUFFIX,ip.sb
 - DOMAIN-SUFFIX,ipapi.is
@@ -57,3 +60,4 @@ payload:
 - DOMAIN-SUFFIX,speed.dler.io
 - DOMAIN-SUFFIX,cegesu.com
 - DOMAIN-KEYWORD,speedtest
+- USER-AGENT,SpeedTest*
