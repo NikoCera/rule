@@ -73,8 +73,6 @@ DOMAIN-SUFFIX,rpc.xlayer.tech
 # > UR Card
 DOMAIN-SUFFIX,ur.io
 DOMAIN-SUFFIX,ur.app
-DOMAIN-SUFFIX,ur.io
-DOMAIN-SUFFIX,ur.io
 DOMAIN-SUFFIX,urcard.io
 DOMAIN-SUFFIX,amplitude.com
 DOMAIN-SUFFIX,turingfraud.net
@@ -149,9 +147,7 @@ DOMAIN-SUFFIX,bithumb.com
 DOMAIN-SUFFIX,bitmex.com
 DOMAIN-SUFFIX,bitstamp.net
 DOMAIN-SUFFIX,bittrex.com
-DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybit.eu
-DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,coincheck.com
 DOMAIN-SUFFIX,coinone.co.kr
 DOMAIN-SUFFIX,gemini.com
@@ -167,12 +163,9 @@ DOMAIN-SUFFIX,btcbox.co.jp
 DOMAIN-SUFFIX,cex.io
 DOMAIN-SUFFIX,dogecoin.com
 DOMAIN-SUFFIX,paxful.com
-DOMAIN-SUFFIX,tether.to
 DOMAIN-SUFFIX,dydx.exchange
 DOMAIN-SUFFIX,solana.com
 DOMAIN-SUFFIX,avax.network
-DOMAIN-SUFFIX,optimism.io
-DOMAIN-SUFFIX,arbitrum.io
 DOMAIN-SUFFIX,poly.network
 DOMAIN-SUFFIX,zkscan.io
 DOMAIN-SUFFIX,zksync.io
@@ -181,7 +174,6 @@ DOMAIN-SUFFIX,boba.network
 # > Binance
 DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.cloud
-DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.im
 DOMAIN-SUFFIX,binance.me
 DOMAIN-SUFFIX,binance.us
@@ -193,14 +185,11 @@ DOMAIN-SUFFIX,binance.charity
 DOMAIN-SUFFIX,binance.co
 DOMAIN-SUFFIX,binance.info
 DOMAIN-SUFFIX,binance.net
-DOMAIN-SUFFIX,binance.org
-DOMAIN-SUFFIX,binance.vision
 DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binancezh.be
 DOMAIN-SUFFIX,binancezh.biz
 DOMAIN-SUFFIX,binancezh.cc
 DOMAIN-SUFFIX,binancezh.co
-DOMAIN-SUFFIX,binancezh.com
 DOMAIN-SUFFIX,binancezh.info
 DOMAIN-SUFFIX,binancezh.ink
 DOMAIN-SUFFIX,binancezh.kim
@@ -229,20 +218,16 @@ DOMAIN-SUFFIX,huobigroup.com
 DOMAIN-SUFFIX,huobitoken.com
 DOMAIN-SUFFIX,heco-scan.com
 DOMAIN-SUFFIX,hecoview.com
-DOMAIN-SUFFIX,hbfile.net
 DOMAIN-SUFFIX,huobi.br.com
 DOMAIN-SUFFIX,bitderiv.com
 DOMAIN-SUFFIX,hecochain.com
 DOMAIN-SUFFIX,huobi.ws
 DOMAIN-SUFFIX,huobi.ug
 DOMAIN-SUFFIX,huobi.co.ma
-DOMAIN-SUFFIX,huobi.br.com
 PROCESS-NAME,Huobi
 DOMAIN-KEYWORD,huobi
 
 # > OKX
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,okx.com
 PROCESS-NAME,OKX
 DOMAIN-KEYWORD,okx
 
@@ -260,7 +245,6 @@ DOMAIN-SUFFIX,bisq.network
 DOMAIN-SUFFIX,bitsquare.io
       
 # > coinone
-DOMAIN-SUFFIX,coinone.co.kr
 DOMAIN-SUFFIX,coinonecore.com
 DOMAIN-SUFFIX,coinonecorp.com
       
@@ -274,7 +258,6 @@ DOMAIN-SUFFIX,ethgasstation.info
 DOMAIN-SUFFIX,watchtheburn.com
 DOMAIN-SUFFIX,flashbots.net
 DOMAIN-SUFFIX,cryptofees.info
-DOMAIN-SUFFIX,etherscan.io
 DOMAIN-SUFFIX,ethereum-magicians.org
 DOMAIN-SUFFIX,vitalik.ca
 DOMAIN-SUFFIX,ethfans.org
@@ -320,7 +303,6 @@ DOMAIN-SUFFIX,loanscan.io
 DOMAIN-SUFFIX,defirate.com
 DOMAIN-SUFFIX,defipulse.com
 DOMAIN-SUFFIX,apy999.com
-DOMAIN-SUFFIX,defieye.io
 DOMAIN-SUFFIX,dextools.io
 DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,dcabtc.com
@@ -337,7 +319,6 @@ DOMAIN-SUFFIX,cryptorank.io
 DOMAIN-SUFFIX,tradeblock.com
 DOMAIN-SUFFIX,nyctale.io
 DOMAIN-SUFFIX,dovemetrics.com
-DOMAIN-SUFFIX,cryptorank.io
 DOMAIN-SUFFIX,icodrops.com
 DOMAIN-SUFFIX,chainbroker.io
 DOMAIN-SUFFIX,crunchbase.com
@@ -402,7 +383,6 @@ DOMAIN-SUFFIX,bloks.io
 DOMAIN-SUFFIX,lightning.engineering
 DOMAIN-SUFFIX,lightning.community
 DOMAIN-SUFFIX,acinq.co
-DOMAIN-SUFFIX,1ml.com
 
 # > Token
 DOMAIN-SUFFIX,tokenpocket.pro
