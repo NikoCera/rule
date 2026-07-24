@@ -12,3 +12,5 @@ DOMAIN-SUFFIX,1passwordservices.com // 避开本地 DNS lookup
 DOMAIN-SUFFIX,hero-sms.com // 接码平台
 DOMAIN-SUFFIX,wenziwanka.com
 DOMAIN-SUFFIX,mtn.co
+DOMAIN-SUFFIX,dutils.com // 掌之淘妙验SDK 用于设备信息收集(旧版) EdgeOne
+DOMAIN-SUFFIX,zztfly.com // 掌之淘妙验SDK 用于设备信息收集(新域名) EdgeOne

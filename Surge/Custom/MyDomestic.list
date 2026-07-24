@@ -18,8 +18,6 @@ DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,wttr.in
 DOMAIN-SUFFIX,jkwskh.xyz // Nexitally
 DOMAIN-SUFFIX,vrqfmm.xyz // Nexitally
-DOMAIN-SUFFIX,dutils.com // 掌之淘妙验SDK 用于设备信息收集(旧版) EdgeOne
-DOMAIN-SUFFIX,zztfly.com // 掌之淘妙验SDK 用于设备信息收集(新域名) EdgeOne
 IP-CIDR,47.246.0.0/16,no-resolve // 闲鱼
 IP-CIDR,163.181.0.0/16,no-resolve // 闲鱼
 IP-CIDR,155.102.0.0/16,no-resolve // 闲鱼

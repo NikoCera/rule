@@ -14,8 +14,6 @@ payload:
 - DOMAIN-SUFFIX,wttr.in
 - DOMAIN-SUFFIX,jkwskh.xyz
 - DOMAIN-SUFFIX,vrqfmm.xyz
-- DOMAIN-SUFFIX,dutils.com
-- DOMAIN-SUFFIX,zztfly.com
 - IP-CIDR,47.246.0.0/16,no-resolve
 - IP-CIDR,163.181.0.0/16,no-resolve
 - IP-CIDR,155.102.0.0/16,no-resolve
