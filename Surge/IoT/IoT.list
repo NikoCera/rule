@@ -1,7 +1,7 @@
 # IoT.list — 家中 IoT 设备厂商域名（官网 / 云接入点 / 固件 OTA / App API）
 # 用途: IoT 设备恢复 Surge 接管后, 将这些域名指向 DIRECT——App 功能不受影响, 同时在请求日志中留痕便于排障
 # 主配置建议写法(放在 GEOIP 之前即可):
-#   RULE-SET,https://raw.githubusercontent.com/NikoCera/rule/main/Surge/Custom/IoT.list,DIRECT,extended-matching,no-resolve
+#   RULE-SET,https://raw.githubusercontent.com/NikoCera/rule/main/Surge/IoT/IoT.list,DIRECT,extended-matching,no-resolve
 #
 # ⚠️ 前提与注意:
 # 1. DIRECT 仅适用于「绑定中国区账号」或「未绑定云(纯 HomeKit)」的设备。若设备仍绑海外区
