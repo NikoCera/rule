@@ -1,0 +1,6 @@
+# NAME: TikTok_Douyin
+# AUTHOR: myself
+# UPDATED: 2026-07-26
+
+DOMAIN-SUFFIX,ttcdn-us.com,TikTok
+DOMAIN-SUFFIX,snssdk.com,TikTok,extended-matching // 字节调度域名, DouYin / TikTok 共用
