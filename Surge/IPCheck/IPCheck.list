@@ -70,5 +70,6 @@ DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,speed.dler.io
 DOMAIN-SUFFIX,cegesu.com
+DOMAIN-SUFFIX,fiber.google.com
 DOMAIN-KEYWORD,speedtest
 USER-AGENT,SpeedTest*
