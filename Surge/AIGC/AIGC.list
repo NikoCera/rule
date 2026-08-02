@@ -1,17 +1,52 @@
 # NAME: AIGC
 # AUTHOR: myself
-# UPDATED: 2026-07-01
+# UPDATED: 2026-08-03
 
-# > ChatGPT & Codex
+# > OpenAI / ChatGPT
+# 核心域名与存储
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+# CDN 与验证服务；精确子域名优先，父级后缀兜底
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,imgix.net
+# ChatGPT 语音与实时通信；精确子域名优先，LiveKit 父级后缀兜底
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,livekit.cloud
+# 进程兜底
 PROCESS-NAME,ChatGPT
 PROCESS-NAME,ChatGPTHelper
 PROCESS-NAME,Codex
 PROCESS-NAME,codex
 PROCESS-NAME,Codex Helper
+PROCESS-NAME,Codex Helper (GPU)
+PROCESS-NAME,Codex Helper (Plugin)
 PROCESS-NAME,Codex Helper (Renderer)
+PROCESS-NAME,Codex (GPU)
+PROCESS-NAME,Codex (Service)
+PROCESS-NAME,Codex (Alerts)
+PROCESS-NAME,Codex (Renderer)
+PROCESS-NAME,codex-code-mode-host
+PROCESS-NAME,codex-macos
+PROCESS-NAME,codex_chronicle
+PROCESS-NAME,CodexDockTilePlugin
+PROCESS-NAME,SkyComputerUseClient
+PROCESS-NAME,SkyComputerUseService
 
-# > ══════════ Claude
-# > 核心域名（DOMAIN-SUFFIX 已覆盖所有 *.anthropic.com 子域名）
+# > Claude
+# 核心域名
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
@@ -19,132 +54,67 @@ DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claudemcpclient.com
 DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
-
-# > CDN 和静态资源
+# CDN 和静态资源
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,anthropic.com.cdn.cloudflare.net
-
-# > 认证 / 内容
+# 认证与内容；精确子域名优先，Auth0 父级后缀兜底
 DOMAIN,anthropic.auth0.com
+DOMAIN-SUFFIX,auth0.com
 DOMAIN,anthropic-com.ghost.io
-
-# > 监控和遥测
+# 监控和遥测；精确域名优先，关键词规则兜底
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
-DOMAIN,browser-intake-us5-datadoghq.com // Claude 检测域名
 DOMAIN-KEYWORD,datadog
 DOMAIN-KEYWORD,sentry
 DOMAIN-KEYWORD,sift
-
-# > 客服 / 第三方 widget
+# 客服与第三方组件
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN,cdn.usefathom.com
-
-# > IP 段 / ASN 兜底
+# IP 段与 ASN 兜底
 IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
-
-# > 兜底规则来源（geosite:anthropic / geosite:category-ntp）
-# > Surge list 不直接支持 geosite: 语法，已将 keyword:datadog/sentry/sift 转换为 DOMAIN-KEYWORD。
-
-# > 进程匹配
+# 规则来源：geosite:anthropic / geosite:category-ntp
+# Surge list 不直接支持 geosite 语法，已将 keyword:datadog/sentry/sift 转换为 DOMAIN-KEYWORD
+# 进程兜底
+# 当前已观察到的进程
 PROCESS-NAME,Claude
 PROCESS-NAME,Claude Helper
 PROCESS-NAME,Claude Helper (Renderer)
+# 应用包预留进程（当前未运行，预防性覆盖）
+PROCESS-NAME,Claude Helper (GPU)
+PROCESS-NAME,Claude Helper (Plugin)
+PROCESS-NAME,claude-ios-sim
+
+# > Google AI / Gemini
+# 核心域名；精确子域名优先，Google 通用后缀兜底
+DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,apis.google.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,clients4.google.com
+DOMAIN-SUFFIX,developerprofiles.google.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,googleapis.com
+# Google Colab
+DOMAIN-SUFFIX,colab.google.com
+DOMAIN-SUFFIX,colab.research.google.com
+# 进程兜底
+PROCESS-NAME,Gemini
+PROCESS-NAME,GeminiAppLauncher
 
 # > Grok
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
-
-# > Gemini
-PROCESS-NAME,Gemini
-PROCESS-NAME,GeminiAppLauncher
-
-# > ddgksf2013 Ai general rules
-# DOMAIN,api.statsig.com
-# DOMAIN,browser-intake-datadoghq.com
-# DOMAIN,static.cloudflareinsights.com
-# DOMAIN-SUFFIX,algolia.net
-# DOMAIN-SUFFIX,auth0.com
-# DOMAIN-SUFFIX,cloudflare.com
-# DOMAIN-SUFFIX,arkoselabs.com
-# DOMAIN-SUFFIX,featuregates.org
-# DOMAIN-SUFFIX,identrust.com
-# DOMAIN-SUFFIX,launchdarkly.com
-# DOMAIN-SUFFIX,segment.io
-# DOMAIN-SUFFIX,amazonaws.com
-# DOMAIN-SUFFIX,wp.com
-# DOMAIN-SUFFIX,stripe.com
-
-# > Cursor
-DOMAIN-SUFFIX,cursor.sh
-
-# > Dify AI
-DOMAIN-SUFFIX,dify.ai
-
-# > Google AI (Gemini/Bard)
-DOMAIN,ai.google.dev
-DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,gemini.google.com
-# DOMAIN-SUFFIX,apis.google.com
-# DOMAIN-SUFFIX,clients6.google.com
-# DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativeai.google
-# DOMAIN-SUFFIX,colab.google.com
-# DOMAIN-SUFFIX,colab.research.google.com
-# DOMAIN-SUFFIX,developerprofiles.google.com
-# DOMAIN-SUFFIX,googleusercontent.com
-# DOMAIN-SUFFIX,googleapis.com
-# DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-
-# > JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
-
-# > Meta
-DOMAIN-SUFFIX,meta.ai
-# DOMAIN-SUFFIX,meta.com
-
-# > Notebooklm
-DOMAIN-SUFFIX,notebooklm.google.com
-DOMAIN-SUFFIX,notebooklm.google
-
-# > Microsoft Copilot
-# DOMAIN,api.msn.com
-# DOMAIN,assets.msn.com
-DOMAIN,copilot.microsoft.com
-DOMAIN,gateway.bingviz.microsoft.net
-DOMAIN,gateway.bingviz.microsoftapp.net
-DOMAIN,in.appcenter.ms
-# DOMAIN,location.microsoft.com
-# DOMAIN,odc.officeapps.live.com
-# DOMAIN,r.bing.com
-# DOMAIN,self.events.data.microsoft.com
-# DOMAIN,services.bingapis.com
-DOMAIN,sydney.bing.com
-# DOMAIN,www.bing.com
-# DOMAIN-SUFFIX,api.microsoftapp.net
-DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
-# DOMAIN-SUFFIX,edgeservices.bing.com
-
-# > Midjourney
-DOMAIN-SUFFIX,midjourney.com
-
-# > OpenAI/ChatGPT
-DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
-DOMAIN,openaicomproductionae4b.blob.core.windows.net
-DOMAIN,production-openaicom-storage.azureedge.net
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,chatgpt.com
-# DOMAIN-SUFFIX,livekit.cloud
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-# DOMAIN-SUFFIX,azureedge.net
-# DOMAIN-SUFFIX,imgix.net
 
 # > Perplexity
 DOMAIN,pplx-res.cloudinary.com
@@ -152,6 +122,60 @@ DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,perplexity.com
 
+# > Microsoft Copilot
+# 核心域名
+DOMAIN,copilot.microsoft.com
+DOMAIN,gateway.bingviz.microsoft.net
+DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN,services.bingapis.com
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
+DOMAIN-SUFFIX,edgeservices.bing.com
+# MSN、Bing 搜索与 Microsoft 通用服务兜底
+DOMAIN,api.msn.com
+DOMAIN,assets.msn.com
+DOMAIN,in.appcenter.ms
+DOMAIN,location.microsoft.com
+DOMAIN,odc.officeapps.live.com
+DOMAIN,r.bing.com
+DOMAIN,self.events.data.microsoft.com
+DOMAIN,www.bing.com
+DOMAIN-SUFFIX,api.microsoftapp.net
+
+# > Meta AI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,meta.com
+
+# > Midjourney
+DOMAIN-SUFFIX,midjourney.com
+
+# > NotebookLM
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+
 # > Poe
 DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,poecdn.net
+
+# > Cursor
+DOMAIN-SUFFIX,cursor.sh
+
+# > Dify AI
+DOMAIN-SUFFIX,dify.ai
+
+# > JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+
+# > 共享第三方服务兜底
+# 来源：ddgksf2013；这些域名由多种应用共用，放在各 AI 专用规则之后兜底
+DOMAIN,api.statsig.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,amazonaws.com
+DOMAIN-SUFFIX,wp.com
+DOMAIN-SUFFIX,stripe.com

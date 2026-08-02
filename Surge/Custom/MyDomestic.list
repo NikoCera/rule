@@ -10,6 +10,8 @@ DOMAIN-SUFFIX,mao.fan // NAT 检测, 需要 DIRECT
 # ═══════════════════════ 网速测试 ═══════════════════════
 DOMAIN-SUFFIX,test.ustc.edu.cn // 需要始终 DIRECT 测速
 DOMAIN-SUFFIX,speedtest.cn // 需要始终 DIRECT 测速
+DOMAIN-SUFFIX,cnspeedtest.cn // 需要始终 DIRECT 测速
+DOMAIN-KEYWORD,cnspeedtest
 DOMAIN-SUFFIX,kelee.one // 可莉插件中心
 DOMAIN-SUFFIX,max-c.com // 小黑盒heybox
 DOMAIN-SUFFIX,xiaoheihe.cn // 小黑盒heybox

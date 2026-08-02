@@ -6,6 +6,8 @@ payload:
 - DOMAIN-SUFFIX,mao.fan
 - DOMAIN-SUFFIX,test.ustc.edu.cn
 - DOMAIN-SUFFIX,speedtest.cn
+- DOMAIN-SUFFIX,cnspeedtest.cn
+- DOMAIN-KEYWORD,cnspeedtest
 - DOMAIN-SUFFIX,kelee.one
 - DOMAIN-SUFFIX,max-c.com
 - DOMAIN-SUFFIX,xiaoheihe.cn
