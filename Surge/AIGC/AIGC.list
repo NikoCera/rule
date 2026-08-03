@@ -17,16 +17,14 @@ DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openai-api.arkoselabs.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
-# 范围过大的父级后缀，保留禁用
-# DOMAIN-SUFFIX,arkoselabs.com
-# DOMAIN-SUFFIX,azureedge.net
-# DOMAIN-SUFFIX,imgix.net
+DOMAIN-SUFFIX,arkoselabs.com
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,imgix.net
 # ChatGPT 语音与实时通信
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,turn.livekit.cloud
-# LiveKit 父级后缀范围过大，保留禁用
-# DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,livekit.cloud
 # 进程兜底
 PROCESS-NAME,ChatGPT
 PROCESS-NAME,ChatGPTHelper
@@ -69,8 +67,8 @@ DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
-# 关键词规则范围过大，保留禁用
-# DOMAIN-KEYWORD,datadog
+# 关键词规则范围过大，保留禁用, 仅 datadog 启用
+DOMAIN-KEYWORD,datadog
 # DOMAIN-KEYWORD,sentry
 # DOMAIN-KEYWORD,sift
 # 客服与第三方组件
