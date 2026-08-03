@@ -12,19 +12,21 @@ DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
-# CDN 与验证服务；精确子域名优先，父级后缀兜底
+# CDN 与验证服务
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openai-api.arkoselabs.com
-DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
-DOMAIN-SUFFIX,imgix.net
-# ChatGPT 语音与实时通信；精确子域名优先，LiveKit 父级后缀兜底
+# 范围过大的父级后缀，保留禁用
+# DOMAIN-SUFFIX,arkoselabs.com
+# DOMAIN-SUFFIX,azureedge.net
+# DOMAIN-SUFFIX,imgix.net
+# ChatGPT 语音与实时通信
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,host.livekit.cloud
 DOMAIN-SUFFIX,turn.livekit.cloud
-DOMAIN-SUFFIX,livekit.cloud
+# LiveKit 父级后缀范围过大，保留禁用
+# DOMAIN-SUFFIX,livekit.cloud
 # 进程兜底
 PROCESS-NAME,ChatGPT
 PROCESS-NAME,ChatGPTHelper
@@ -57,18 +59,20 @@ DOMAIN-SUFFIX,claudeusercontent.com
 # CDN 和静态资源
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,anthropic.com.cdn.cloudflare.net
-# 认证与内容；精确子域名优先，Auth0 父级后缀兜底
+# 认证与内容
 DOMAIN,anthropic.auth0.com
-DOMAIN-SUFFIX,auth0.com
 DOMAIN,anthropic-com.ghost.io
-# 监控和遥测；精确域名优先，关键词规则兜底
+# Auth0 父级后缀范围过大，保留禁用
+# DOMAIN-SUFFIX,auth0.com
+# 监控和遥测
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sentry
-DOMAIN-KEYWORD,sift
+# 关键词规则范围过大，保留禁用
+# DOMAIN-KEYWORD,datadog
+# DOMAIN-KEYWORD,sentry
+# DOMAIN-KEYWORD,sift
 # 客服与第三方组件
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
@@ -90,7 +94,7 @@ PROCESS-NAME,Claude Helper (Plugin)
 PROCESS-NAME,claude-ios-sim
 
 # > Google AI / Gemini
-# 核心域名；精确子域名优先，Google 通用后缀兜底
+# 核心域名
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,makersuite.google.com
@@ -99,12 +103,13 @@ DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,clients6.google.com
-DOMAIN-SUFFIX,clients4.google.com
-DOMAIN-SUFFIX,developerprofiles.google.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,googleapis.com
+# Google 通用后缀范围过大，保留禁用
+# DOMAIN-SUFFIX,apis.google.com
+# DOMAIN-SUFFIX,clients6.google.com
+# DOMAIN-SUFFIX,clients4.google.com
+# DOMAIN-SUFFIX,developerprofiles.google.com
+# DOMAIN-SUFFIX,googleusercontent.com
+# DOMAIN-SUFFIX,googleapis.com
 # Google Colab
 DOMAIN-SUFFIX,colab.google.com
 DOMAIN-SUFFIX,colab.research.google.com
@@ -132,19 +137,21 @@ DOMAIN,sydney.bing.com
 DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
 DOMAIN-SUFFIX,edgeservices.bing.com
 # MSN、Bing 搜索与 Microsoft 通用服务兜底
-DOMAIN,api.msn.com
-DOMAIN,assets.msn.com
-DOMAIN,in.appcenter.ms
-DOMAIN,location.microsoft.com
-DOMAIN,odc.officeapps.live.com
-DOMAIN,r.bing.com
-DOMAIN,self.events.data.microsoft.com
-DOMAIN,www.bing.com
-DOMAIN-SUFFIX,api.microsoftapp.net
+# 范围过大，保留禁用；主配置中的 Copilot.list 继续作为补充兜底
+# DOMAIN,api.msn.com
+# DOMAIN,assets.msn.com
+# DOMAIN,in.appcenter.ms
+# DOMAIN,location.microsoft.com
+# DOMAIN,odc.officeapps.live.com
+# DOMAIN,r.bing.com
+# DOMAIN,self.events.data.microsoft.com
+# DOMAIN,www.bing.com
+# DOMAIN-SUFFIX,api.microsoftapp.net
 
 # > Meta AI
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-SUFFIX,meta.com
+# meta.com 覆盖 Meta 其他产品，保留禁用
+# DOMAIN-SUFFIX,meta.com
 
 # > Midjourney
 DOMAIN-SUFFIX,midjourney.com
@@ -167,15 +174,15 @@ DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,grazie.ai
 
 # > 共享第三方服务兜底
-# 来源：ddgksf2013；这些域名由多种应用共用，放在各 AI 专用规则之后兜底
-DOMAIN,api.statsig.com
-DOMAIN,static.cloudflareinsights.com
-DOMAIN-SUFFIX,algolia.net
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,featuregates.org
-DOMAIN-SUFFIX,identrust.com
-DOMAIN-SUFFIX,launchdarkly.com
-DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-SUFFIX,wp.com
-DOMAIN-SUFFIX,stripe.com
+# 来源：ddgksf2013；这些域名由多种应用共用，范围过大，保留禁用
+# DOMAIN,api.statsig.com
+# DOMAIN,static.cloudflareinsights.com
+# DOMAIN-SUFFIX,algolia.net
+# DOMAIN-SUFFIX,cloudflare.com
+# DOMAIN-SUFFIX,featuregates.org
+# DOMAIN-SUFFIX,identrust.com
+# DOMAIN-SUFFIX,launchdarkly.com
+# DOMAIN-SUFFIX,segment.io
+# DOMAIN-SUFFIX,amazonaws.com
+# DOMAIN-SUFFIX,wp.com
+# DOMAIN-SUFFIX,stripe.com

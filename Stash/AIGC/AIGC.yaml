@@ -10,15 +10,15 @@ payload:
 - DOMAIN-SUFFIX,openai.com
 - DOMAIN,chat.openai.com.cdn.cloudflare.net
 - DOMAIN,openai-api.arkoselabs.com
-- DOMAIN-SUFFIX,arkoselabs.com
+# - DOMAIN-SUFFIX,arkoselabs.com
 - DOMAIN-SUFFIX,openaiapi-site.azureedge.net
-- DOMAIN-SUFFIX,azureedge.net
+# - DOMAIN-SUFFIX,azureedge.net
 - DOMAIN-SUFFIX,openaicom.imgix.net
-- DOMAIN-SUFFIX,imgix.net
+# - DOMAIN-SUFFIX,imgix.net
 - DOMAIN-SUFFIX,chatgpt.livekit.cloud
 - DOMAIN-SUFFIX,host.livekit.cloud
 - DOMAIN-SUFFIX,turn.livekit.cloud
-- DOMAIN-SUFFIX,livekit.cloud
+# - DOMAIN-SUFFIX,livekit.cloud
 - PROCESS-NAME,ChatGPT
 - PROCESS-NAME,ChatGPTHelper
 - PROCESS-NAME,Codex
@@ -47,15 +47,15 @@ payload:
 - DOMAIN,servd-anthropic-website.b-cdn.net
 - DOMAIN,anthropic.com.cdn.cloudflare.net
 - DOMAIN,anthropic.auth0.com
-- DOMAIN-SUFFIX,auth0.com
+# - DOMAIN-SUFFIX,auth0.com
 - DOMAIN,anthropic-com.ghost.io
 - DOMAIN,browser-intake-us5-datadoghq.com
 - DOMAIN,browser-intake-datadoghq.com
 - DOMAIN-SUFFIX,sentry.io
 - DOMAIN-SUFFIX,statsigapi.net
-- DOMAIN-KEYWORD,datadog
-- DOMAIN-KEYWORD,sentry
-- DOMAIN-KEYWORD,sift
+# - DOMAIN-KEYWORD,datadog
+# - DOMAIN-KEYWORD,sentry
+# - DOMAIN-KEYWORD,sift
 - DOMAIN-SUFFIX,intercom.io
 - DOMAIN-SUFFIX,intercomcdn.com
 - DOMAIN,cdn.usefathom.com
@@ -76,12 +76,12 @@ payload:
 - DOMAIN-SUFFIX,deepmind.google
 - DOMAIN-SUFFIX,generativeai.google
 - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-- DOMAIN-SUFFIX,apis.google.com
-- DOMAIN-SUFFIX,clients6.google.com
-- DOMAIN-SUFFIX,clients4.google.com
-- DOMAIN-SUFFIX,developerprofiles.google.com
-- DOMAIN-SUFFIX,googleusercontent.com
-- DOMAIN-SUFFIX,googleapis.com
+# - DOMAIN-SUFFIX,apis.google.com
+# - DOMAIN-SUFFIX,clients6.google.com
+# - DOMAIN-SUFFIX,clients4.google.com
+# - DOMAIN-SUFFIX,developerprofiles.google.com
+# - DOMAIN-SUFFIX,googleusercontent.com
+# - DOMAIN-SUFFIX,googleapis.com
 - DOMAIN-SUFFIX,colab.google.com
 - DOMAIN-SUFFIX,colab.research.google.com
 - PROCESS-NAME,Gemini
@@ -99,17 +99,17 @@ payload:
 - DOMAIN,sydney.bing.com
 - DOMAIN-SUFFIX,bing-shopping.microsoft-falcon.io
 - DOMAIN-SUFFIX,edgeservices.bing.com
-- DOMAIN,api.msn.com
-- DOMAIN,assets.msn.com
-- DOMAIN,in.appcenter.ms
-- DOMAIN,location.microsoft.com
-- DOMAIN,odc.officeapps.live.com
-- DOMAIN,r.bing.com
-- DOMAIN,self.events.data.microsoft.com
-- DOMAIN,www.bing.com
-- DOMAIN-SUFFIX,api.microsoftapp.net
+# - DOMAIN,api.msn.com
+# - DOMAIN,assets.msn.com
+# - DOMAIN,in.appcenter.ms
+# - DOMAIN,location.microsoft.com
+# - DOMAIN,odc.officeapps.live.com
+# - DOMAIN,r.bing.com
+# - DOMAIN,self.events.data.microsoft.com
+# - DOMAIN,www.bing.com
+# - DOMAIN-SUFFIX,api.microsoftapp.net
 - DOMAIN-SUFFIX,meta.ai
-- DOMAIN-SUFFIX,meta.com
+# - DOMAIN-SUFFIX,meta.com
 - DOMAIN-SUFFIX,midjourney.com
 - DOMAIN-SUFFIX,notebooklm.google.com
 - DOMAIN-SUFFIX,notebooklm.google
@@ -118,14 +118,14 @@ payload:
 - DOMAIN-SUFFIX,cursor.sh
 - DOMAIN-SUFFIX,dify.ai
 - DOMAIN-SUFFIX,grazie.ai
-- DOMAIN,api.statsig.com
-- DOMAIN,static.cloudflareinsights.com
-- DOMAIN-SUFFIX,algolia.net
-- DOMAIN-SUFFIX,cloudflare.com
-- DOMAIN-SUFFIX,featuregates.org
-- DOMAIN-SUFFIX,identrust.com
-- DOMAIN-SUFFIX,launchdarkly.com
-- DOMAIN-SUFFIX,segment.io
-- DOMAIN-SUFFIX,amazonaws.com
-- DOMAIN-SUFFIX,wp.com
-- DOMAIN-SUFFIX,stripe.com
+# - DOMAIN,api.statsig.com
+# - DOMAIN,static.cloudflareinsights.com
+# - DOMAIN-SUFFIX,algolia.net
+# - DOMAIN-SUFFIX,cloudflare.com
+# - DOMAIN-SUFFIX,featuregates.org
+# - DOMAIN-SUFFIX,identrust.com
+# - DOMAIN-SUFFIX,launchdarkly.com
+# - DOMAIN-SUFFIX,segment.io
+# - DOMAIN-SUFFIX,amazonaws.com
+# - DOMAIN-SUFFIX,wp.com
+# - DOMAIN-SUFFIX,stripe.com
