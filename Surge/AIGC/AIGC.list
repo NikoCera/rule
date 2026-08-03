@@ -60,8 +60,8 @@ DOMAIN,anthropic.com.cdn.cloudflare.net
 # 认证与内容
 DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic-com.ghost.io
-# Auth0 父级后缀范围过大，保留禁用
-# DOMAIN-SUFFIX,auth0.com
+# OpenAI.list 中启用的 Auth0 父级后缀兜底
+DOMAIN-SUFFIX,auth0.com
 # 监控和遥测
 DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,browser-intake-datadoghq.com
@@ -101,8 +101,9 @@ DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-# Google 通用后缀范围过大，保留禁用
-# DOMAIN-SUFFIX,apis.google.com
+# Gemini.list 中启用的 Google API 后缀兜底
+DOMAIN-SUFFIX,apis.google.com
+# 其余 Google 通用规则范围过大，保留禁用
 # DOMAIN-SUFFIX,clients6.google.com
 # DOMAIN-SUFFIX,clients4.google.com
 # DOMAIN-SUFFIX,developerprofiles.google.com
@@ -172,15 +173,16 @@ DOMAIN-SUFFIX,dify.ai
 DOMAIN-SUFFIX,grazie.ai
 
 # > 共享第三方服务兜底
-# 来源：ddgksf2013；这些域名由多种应用共用，范围过大，保留禁用
-# DOMAIN,api.statsig.com
-# DOMAIN,static.cloudflareinsights.com
-# DOMAIN-SUFFIX,algolia.net
+# OpenAI.list 中已启用的依赖；api.statsig.com 保留更窄的 DOMAIN 匹配
+DOMAIN,api.statsig.com
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,stripe.com
+# 其余共享域名范围过大，保留禁用
 # DOMAIN-SUFFIX,cloudflare.com
-# DOMAIN-SUFFIX,featuregates.org
-# DOMAIN-SUFFIX,identrust.com
-# DOMAIN-SUFFIX,launchdarkly.com
-# DOMAIN-SUFFIX,segment.io
 # DOMAIN-SUFFIX,amazonaws.com
 # DOMAIN-SUFFIX,wp.com
-# DOMAIN-SUFFIX,stripe.com
