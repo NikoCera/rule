@@ -21,6 +21,7 @@ payload:
 - DOMAIN-SUFFIX,ipinfo.io
 - DOMAIN-SUFFIX,ip.sb
 - DOMAIN-SUFFIX,ipapi.is
+- DOMAIN-SUFFIX,ipapi.co
 - DOMAIN-SUFFIX,ipwho.is
 - DOMAIN-SUFFIX,ipdata.co
 - DOMAIN-SUFFIX,ipquery.io
