@@ -67,10 +67,9 @@ DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,statsigapi.net
-# 关键词规则范围过大，保留禁用, 仅 datadog 启用
 DOMAIN-KEYWORD,datadog
-# DOMAIN-KEYWORD,sentry
-# DOMAIN-KEYWORD,sift
+DOMAIN-KEYWORD,sentry
+DOMAIN-KEYWORD,sift
 # 客服与第三方组件
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com

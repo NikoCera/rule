@@ -54,6 +54,8 @@ payload:
 - DOMAIN-SUFFIX,sentry.io
 - DOMAIN-SUFFIX,statsigapi.net
 - DOMAIN-KEYWORD,datadog
+- DOMAIN-KEYWORD,sentry
+- DOMAIN-KEYWORD,sift
 - DOMAIN-SUFFIX,intercom.io
 - DOMAIN-SUFFIX,intercomcdn.com
 - DOMAIN,cdn.usefathom.com
