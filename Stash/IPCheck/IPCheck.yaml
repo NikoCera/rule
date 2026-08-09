@@ -45,10 +45,11 @@ payload:
 - DOMAIN-SUFFIX,999831.xyz
 - DOMAIN-SUFFIX,111666.best
 - DOMAIN-SUFFIX,whoer.net
-- DOMAIN-SUFFIX,browserleaks.net
+# DNS leak 探针必须经过正常规则路径；用 IPCheck 提前命中只会美化测试结果并掩盖实际 DNS 出口。
+# - DOMAIN-SUFFIX,browserleaks.net
 - DOMAIN-SUFFIX,browserleaks.com
-- DOMAIN-SUFFIX,browserleaks.org
-- DOMAIN-SUFFIX,ipleak.net
+# - DOMAIN-SUFFIX,browserleaks.org
+# - DOMAIN-SUFFIX,ipleak.net # 主站与随机 DNS 探针共用此后缀，无法用 DOMAIN-SUFFIX 分离
 - DOMAIN-SUFFIX,whatismyipaddress.com
 - DOMAIN-SUFFIX,abuseipdb.com
 - DOMAIN-SUFFIX,spamhaus.org
