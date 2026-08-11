@@ -12,10 +12,10 @@ DOMAIN-SUFFIX,ippure.com
 DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,ipjiance.com
 DOMAIN-SUFFIX,net-lsp-x.com
-DOMAIN-SUFFIX,cc.mastersgo.cc // Claude AI IP 风险检测
-DOMAIN-SUFFIX,ip.net.coffee // Claude AI IP 风险检测
-DOMAIN-SUFFIX,bfo.cc // Claude AI IP 风险检测
-DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
+DOMAIN-SUFFIX,cc.mastersgo.cc
+DOMAIN-SUFFIX,ip.net.coffee
+DOMAIN-SUFFIX,bfo.cc
+DOMAIN-SUFFIX,yanchufasui.com
 DOMAIN-SUFFIX,cleanip.io
 DOMAIN-SUFFIX,ipsuper.com
 
@@ -33,7 +33,7 @@ DOMAIN-SUFFIX,ipdata.co
 DOMAIN-SUFFIX,ipquery.io
 DOMAIN-SUFFIX,ip2location.com
 DOMAIN-SUFFIX,db-ip.com
-DOMAIN-SUFFIX,ip-api.com // 网络信息 X 模块检测出口域名
+DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,ipify.org
 DOMAIN-SUFFIX,ifconfig.me
 DOMAIN-SUFFIX,ifconfig.co

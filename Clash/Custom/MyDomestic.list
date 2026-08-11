@@ -5,29 +5,29 @@
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
 DOMAIN-SUFFIX,testipv6.cn
-DOMAIN-SUFFIX,dyebean.com // NAT 检测, 需要 DIRECT
-DOMAIN-SUFFIX,mao.fan // NAT 检测, 需要 DIRECT
+DOMAIN-SUFFIX,dyebean.com
+DOMAIN-SUFFIX,mao.fan
 # ═══════════════════════ 出口 IP 检测 ═══════════════════════
-DOMAIN,rmb.pingan.com.cn // net-lsp-x 默认 spcn 首次本地出口 IPv4 探测实际使用
+DOMAIN,rmb.pingan.com.cn
 # ═══════════════════════ 网速测试 ═══════════════════════
-DOMAIN-SUFFIX,test.ustc.edu.cn // 需要始终 DIRECT 测速
-DOMAIN-SUFFIX,speedtest.cn // 测速及 net-lsp-x spcn 指定 IP 查询需要始终 DIRECT
-DOMAIN-SUFFIX,cnspeedtest.cn // 需要始终 DIRECT 测速
+DOMAIN-SUFFIX,test.ustc.edu.cn
+DOMAIN-SUFFIX,speedtest.cn
+DOMAIN-SUFFIX,cnspeedtest.cn
 DOMAIN-KEYWORD,cnspeedtest
 # ══════════════════════ 自定义网站 ══════════════════════
 DOMAIN-SUFFIX,right.com.cn
-DOMAIN-SUFFIX,kelee.one // 可莉插件中心
-DOMAIN-SUFFIX,max-c.com // 小黑盒heybox
-DOMAIN-SUFFIX,xiaoheihe.cn // 小黑盒heybox
+DOMAIN-SUFFIX,kelee.one
+DOMAIN-SUFFIX,max-c.com
+DOMAIN-SUFFIX,xiaoheihe.cn
 DOMAIN-SUFFIX,appinn.net
 DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,wttr.in
-DOMAIN-SUFFIX,jkwskh.xyz // Nexitally
-DOMAIN-SUFFIX,vrqfmm.xyz // Nexitally
-DOMAIN-SUFFIX,ddgksf2013.top // 墨鱼模块集合
-IP-CIDR,47.246.0.0/16,no-resolve // 闲鱼
-IP-CIDR,163.181.0.0/16,no-resolve // 闲鱼
-IP-CIDR,155.102.0.0/16,no-resolve // 闲鱼
+DOMAIN-SUFFIX,jkwskh.xyz
+DOMAIN-SUFFIX,vrqfmm.xyz
+DOMAIN-SUFFIX,ddgksf2013.top
+IP-CIDR,47.246.0.0/16,no-resolve
+IP-CIDR,163.181.0.0/16,no-resolve
+IP-CIDR,155.102.0.0/16,no-resolve
 # DOMAIN-SUFFIX,orb.local
 # DOMAIN-SUFFIX,localhost
 # DOMAIN,localhost

@@ -1,0 +1,36 @@
+# NAME: UnitedKingdom
+# AUTHOR: myself
+# UPDATED: 2026-05-12
+
+# > Monzo
+DOMAIN-SUFFIX,monzo.com
+DOMAIN-SUFFIX,monzo.me
+DOMAIN-SUFFIX,monzo-alt.net
+DOMAIN-SUFFIX,braze.eu
+
+# > Wise
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,singular.net
+
+# > iFAST Global Bank
+DOMAIN-SUFFIX,ifastgb.com
+
+# > PayPal UK
+# > USe PayPal.list to switch
+
+# ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
+# ══════════ UK 运营商
+# > GiffGaff
+DOMAIN-SUFFIX,giffgaff.com
+DOMAIN-SUFFIX,giffgaff.co.uk
+
+# > CT Excel
+DOMAIN-SUFFIX,ctexcel.com
+DOMAIN-SUFFIX,ctexcel.co.uk
+
+# ══════════ UK WiFi Calling
+# Move to other list due to UDP not support.
+
+# > ═══════════════════════ Other ═══════════════════════
+# > untitled

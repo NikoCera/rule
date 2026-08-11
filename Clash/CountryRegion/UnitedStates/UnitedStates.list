@@ -1,0 +1,56 @@
+# NAME: UnitedStates
+# AUTHOR: myself
+# UPDATED: 2026-05-12
+
+# ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
+# > PayPal US
+# USe PayPal.list to switch
+
+# > Capital One
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitaloneshopping.com
+
+# > Bank of America
+DOMAIN-SUFFIX,bankofamerica.com
+DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,bofaml.com
+
+# > Revolut US
+DOMAIN-SUFFIX,revolut.com
+
+# ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
+# ══════════ US 运营商
+# > Ultramobile
+DOMAIN-SUFFIX,ultramobile.com
+
+# > RedPocket
+DOMAIN-SUFFIX,redpocket.com
+
+# > MintMobile
+DOMAIN-SUFFIX,mintmobile.com
+
+# > Tello
+DOMAIN-SUFFIX,tello.com
+
+# > T-Mobile
+DOMAIN-SUFFIX,t-mobile.com
+DOMAIN-SUFFIX,tmobile.com
+DOMAIN-SUFFIX,t-mobile.scene7.com
+DOMAIN-SUFFIX,tmobilees.mpeasylink.com
+DOMAIN-KEYWORD,t-mobile
+DOMAIN-KEYWORD,tmobilees
+
+# > AT&T
+DOMAIN-SUFFIX,att.com
+
+# > Verizon
+DOMAIN-SUFFIX,verizon.com
+DOMAIN-SUFFIX,vzw.com
+
+# ══════════ US WiFi Calling
+# Move to other list due to UDP not support.
+
+# ═══════════════════════ Other ═══════════════════════
+# > osu!
+# DOMAIN-SUFFIX,osu.ppy.sh
+DOMAIN-SUFFIX,ipqualityscore.com

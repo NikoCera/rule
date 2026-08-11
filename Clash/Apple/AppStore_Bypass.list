@@ -1,0 +1,9 @@
+# NAME: App Store
+# AUTHOR: myself
+# UPDATED: 2026-07-24
+
+# App Store下载调度和内容
+DOMAIN,downloaddispatch.itunes.apple.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,osxapps.itunes.apple.com
+DOMAIN,odr.itunes.apple.com

@@ -2,6 +2,7 @@
 # AUTHOR: myself
 # UPDATED: 2026-07-03
 
+DOMAIN-SUFFIX,browserleaks.com // 修正 ChinaMax 分流错误
 DOMAIN-SUFFIX,ui.com
 DOMAIN-SUFFIX,obsidian.md
 DOMAIN-SUFFIX,linux.do
