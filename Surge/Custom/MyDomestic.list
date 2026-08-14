@@ -1,6 +1,6 @@
 # NAME: MyDomestic
 # AUTHOR: myself
-# UPDATED: 2026-08-11
+# UPDATED: 2026-08-14
 
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
@@ -33,4 +33,94 @@ IP-CIDR,155.102.0.0/16,no-resolve // 闲鱼
 # DOMAIN,localhost
 # DOMAIN-SUFFIX,local // mDNS / Bonjour
 # DOMAIN-SUFFIX,qaq.wiki // Asspp 本地安装(不一定需要)
-# DOMAIN-SUFFIX,miwifi.com // 小米路由器,已用 xiaomi.list 代替
+
+# ═══════════════════════ Steam 下载 ═══════════════════════
+# 官方内容 CDN
+DOMAIN-SUFFIX,steamcontent.com
+DOMAIN-SUFFIX,steamserver.net
+DOMAIN-SUFFIX,steampipe.akamaized.net
+DOMAIN-SUFFIX,steampipe-kr.akamaized.net
+DOMAIN-SUFFIX,steampipe-partner.akamaized.net
+
+# Steam 中国及中国大陆内容镜像
+DOMAIN-SUFFIX,cdn-ali.content.steamchina.com
+DOMAIN-SUFFIX,cdn-qc.content.steamchina.com
+DOMAIN-SUFFIX,cdn-ws.content.steamchina.com
+DOMAIN,dl.steam.clngaa.com
+DOMAIN,dl.steam.ksyna.com
+DOMAIN,st.dl.bscstorage.net
+DOMAIN,st.dl.eccdnx.com
+DOMAIN,st.dl.pinyuncloud.com
+DOMAIN,steampipe.steamcontent.tnkjmec.com
+
+# ISP / 第三方 Steam 内容服务器
+DOMAIN-SUFFIX,edge.steam-dns.top.comcast.net
+DOMAIN-SUFFIX,f3b7q2p3.ssl.hwcdn.net
+DOMAIN-SUFFIX,steam.apac.qtlglb.com
+DOMAIN-SUFFIX,steam.eca.qtlglb.com
+DOMAIN-SUFFIX,steam.naeu.qtlglb.com
+DOMAIN-SUFFIX,steam.ru.qtlglb.com
+DOMAIN-SUFFIX,steam.cdn.on.net
+DOMAIN-SUFFIX,steam.cdn.orcon.net.nz
+DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
+DOMAIN-SUFFIX,steam.cdn.webra.ru
+
+# ═══════════════════════ Party Animals ═══════════════════════
+PROCESS-NAME,PartyAnimals.exe
+DOMAIN-SUFFIX,partyanimalsgame.com
+DOMAIN-SUFFIX,partyanimals.com
+DOMAIN-SUFFIX,partyanimals.cn
+DOMAIN-SUFFIX,recreategames.com.cn
+DOMAIN-KEYWORD,partyanimals.api
+DOMAIN-SUFFIX,amazonaws.com.cn
+DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
+DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn
+
+# ═══════════════════════ IoT 设备 ═══════════════════════
+# IoT 设备厂商域名（官网 / 云接入点 / 固件 OTA / App API）。
+# DIRECT 仅适用于绑定中国区账号或未绑定云（纯 HomeKit）的设备。若设备仍绑定海外区
+# （例如 tuyaus / mqtt-us），应让对应域名走代理，或先重新配网到中国区。
+# 这些域名多数已在 always-real-ip 中；偶发裸 IP 流量无法命中域名规则时，
+# 会由 GEOIP,CN -> Domestic 兜底。NTP 域名继续由主配置的 UDP 123 规则处理。
+
+# ═══════ 小米 / 米家生态 ═══════
+DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.com
+DOMAIN-SUFFIX,mi-img.com
+DOMAIN-SUFFIX,mijia.tech
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,yeelight.com
+DOMAIN-SUFFIX,imilab.com
+
+# ═══════ Roborock G30 Space ═══════
+DOMAIN-SUFFIX,roborock.com
+DOMAIN-SUFFIX,rockrobo.com
+
+# ═══════ Meross ═══════
+# mqtt-cn / mqtt-us-N / iot / api / 固件均为其子域
+DOMAIN-SUFFIX,meross.com
+
+# ═══════ Tuya 涂鸦生态 ═══════
+DOMAIN-SUFFIX,tuyacn.com
+DOMAIN-SUFFIX,tuya.com
+DOMAIN-SUFFIX,smart321.com
+# 以下为海外区接入点，默认注释；确认设备已换中国区或脱云后再取消注释。
+# DOMAIN-SUFFIX,tuyaus.com
+# DOMAIN-SUFFIX,tuyaeu.com
+
+# ═══════ CozyLife ═══════
+# 当前纯 HomeKit 使用、无云流量；配网到 App 后应从 Surge 请求日志确认实际云端点。
+DOMAIN-SUFFIX,cozylife.app
+
+# ═══════ LG webOS TV ═══════
+# 不收录广告域名（lgads.tv / lgsmartad.com 等）。
+DOMAIN-SUFFIX,lgthinq.com
+DOMAIN-SUFFIX,lge.com
+DOMAIN-SUFFIX,lgtvsdp.com
+DOMAIN-SUFFIX,lgappstv.com
+DOMAIN-SUFFIX,lgtvcommon.com
+
+# Pet Dryer 使用 Espressif 芯片，但方案商未知；配网后再按请求日志补充云端点。
+
+# ═══════════════════════ Apple ═══════════════════════
+PROCESS-NAME,netbiosd // NetBIOS/SMB 局域网名称发现(旧式)，避免被 Apple 规则集送代理
