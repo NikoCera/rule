@@ -1,7 +1,22 @@
 # NAME: MyDehors
 # AUTHOR: myself
-# UPDATED: 2026-07-03
+# UPDATED: 2026-08-15
 
+# GeoSpoof - 公网 IP 检测端点
+DOMAIN,checkip.amazonaws.com
+DOMAIN,www.cloudflare.com
+DOMAIN,whatismyip.akamai.com
+DOMAIN,api.ipify.org
+
+# GeoSpoof - IP 地理定位、城市搜索及时区数据端点
+DOMAIN,get.geojs.io
+DOMAIN,free.freeipapi.com
+DOMAIN,reallyfreegeoip.org
+DOMAIN,ipinfo.io
+DOMAIN,nominatim.openstreetmap.org
+DOMAIN,cdn.geospoof.com
+
+# 自定义
 DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,ui.com
 DOMAIN-SUFFIX,obsidian.md
