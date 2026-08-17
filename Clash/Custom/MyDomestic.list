@@ -1,6 +1,6 @@
 # NAME: MyDomestic
 # AUTHOR: myself
-# UPDATED: 2026-08-14
+# UPDATED: 2026-08-18
 
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
@@ -32,7 +32,7 @@ IP-CIDR,155.102.0.0/16,no-resolve
 # DOMAIN-SUFFIX,localhost
 # DOMAIN,localhost
 # DOMAIN-SUFFIX,local // mDNS / Bonjour
-# DOMAIN-SUFFIX,qaq.wiki // Asspp 本地安装(不一定需要)
+# qaq.wiki 已移至文件末尾「签名工具本地安装」分组
 
 # ═══════════════════════ Steam 下载 ═══════════════════════
 # 官方内容 CDN
@@ -125,6 +125,17 @@ DOMAIN-SUFFIX,lgtvcommon.com
 # ═══════════════════════ Apple ═══════════════════════
 PROCESS-NAME,netbiosd // NetBIOS/SMB 局域网名称发现(旧式)，避免被 Apple 规则集送代理
 
-# ═══════ LCSign 签名 ═══════
+# ═══════════════════════ 签名工具本地安装 ═══════════════════════
+# 「本地安装」由工具在本机起 HTTPS 服务,再用一个公网 A 记录指向 127.0.0.1 的回环域名
+# 配真证书,交给系统 installd 拉 manifest。发起请求的是系统进程而非工具自身。
+#
+# 这里的 DIRECT 规则不是解药: DIRECT 只决定出口策略,连接仍由内核代为发起,够不到
+# 发起安装那台设备的本机监听(表现为 connection refused 而非超时)。
+# 真正生效的是把这些域名放进 dns.fake-ip-filter,让设备拿到真实回环地址。
+# 保留这些条目的意义: 日志可读,且避免将来落到代理策略变成更难查的超时。
 DOMAIN-SUFFIX,lcsignx.com
 DOMAIN-KEYWORD,lcsignx
+DOMAIN-SUFFIX,qaq.wiki
+DOMAIN-SUFFIX,backloop.dev
+DOMAIN-SUFFIX,localhost.direct
+DOMAIN-SUFFIX,nip.io
