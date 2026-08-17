@@ -121,3 +121,10 @@ DOMAIN-SUFFIX,lgappstv.com
 DOMAIN-SUFFIX,lgtvcommon.com
 
 # Pet Dryer 使用 Espressif 芯片，但方案商未知；配网后再按请求日志补充云端点。
+
+# ═══════════════════════ Apple ═══════════════════════
+PROCESS-NAME,netbiosd // NetBIOS/SMB 局域网名称发现(旧式)，避免被 Apple 规则集送代理
+
+# ═══════ LCSign 签名 ═══════
+DOMAIN-SUFFIX,lcsignx.com
+DOMAIN-KEYWORD,lcsignx
