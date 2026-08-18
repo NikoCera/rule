@@ -1,22 +1,265 @@
 # NAME: UnitedStates
 # AUTHOR: myself
-# UPDATED: 2026-05-12
+# UPDATED: 2026-08-19
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
-# > PayPal US
-# USe PayPal.list to switch
-
-# > Capital One
-DOMAIN-SUFFIX,capitalone.com
-DOMAIN-SUFFIX,capitaloneshopping.com
+# > Chase
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,jpmorganchase.com
+DOMAIN-SUFFIX,jpmorgan.com
+DOMAIN-SUFFIX,chasepaymentech.com
+DOMAIN-KEYWORD,chase
 
 # > Bank of America
 DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,bofa.com
+DOMAIN-SUFFIX,bac.com
+DOMAIN-SUFFIX,baml.com
 DOMAIN-SUFFIX,bofaml.com
+DOMAIN-SUFFIX,ml.com
+DOMAIN-SUFFIX,merrilledge.com
+DOMAIN-KEYWORD,bankofamerica
+
+# > Wells Fargo
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wellsfargoadvisors.com
+DOMAIN-SUFFIX,wf.com
+
+# > Citi
+DOMAIN-SUFFIX,citi.com
+DOMAIN-SUFFIX,citibank.com
+DOMAIN-SUFFIX,citigroup.com
+DOMAIN-SUFFIX,citibankonline.com
+DOMAIN-SUFFIX,citicards.com
+DOMAIN-SUFFIX,citidirect.com
+
+# > US Bank
+DOMAIN-SUFFIX,usbank.com
+DOMAIN-SUFFIX,usbankreliacard.com
+
+# > PNC
+DOMAIN-SUFFIX,pnc.com
+DOMAIN-SUFFIX,pncprepaidcard.com
+DOMAIN-SUFFIX,pncpaycard.com
+
+# > East West Bank
+DOMAIN-SUFFIX,eastwestbank.com
+DOMAIN-SUFFIX,velobank.com
+DOMAIN,eastwestbank.sc.omtrdc.net
+
+# > Alliant Credit Union
+DOMAIN-SUFFIX,alliantcreditunion.com
+
+# > Axos Bank
+DOMAIN-SUFFIX,axosbank.com
+
+# > Citadel
+DOMAIN-SUFFIX,citadelbanking.com
+
+# > Delta Community Credit Union
+DOMAIN-SUFFIX,deltacommunitycu.com
+DOMAIN-SUFFIX,digitalinsight.com
+
+# > First Horizon
+DOMAIN-SUFFIX,firsthorizon.com
+
+# > HSBC US
+DOMAIN-SUFFIX,us.hsbc.com
+
+# > LGE Community Credit Union
+DOMAIN-SUFFIX,lgeccu.org
+
+# > Sunward
+DOMAIN-SUFFIX,banking-slfcu.org
+
+# > University Credit Union
+DOMAIN-SUFFIX,ucu.org
+
+# > Wings Credit Union
+DOMAIN-SUFFIX,wingscu.com
+DOMAIN-SUFFIX,wingsfinancial.com
+
+# > Truist
+DOMAIN-SUFFIX,truist.com
+DOMAIN-SUFFIX,bbt.com
+DOMAIN-SUFFIX,suntrust.com
+
+# > Capital One
+DOMAIN-SUFFIX,capitalone.com
+DOMAIN-SUFFIX,capitalone360.com
+DOMAIN-SUFFIX,capitaloneshopping.com
+
+# > TD Bank
+DOMAIN-SUFFIX,tdbank.com
+DOMAIN-SUFFIX,td.com
+DOMAIN-SUFFIX,tdcommercialbanking.com
+
+# > Marcus / Goldman Sachs
+DOMAIN-SUFFIX,marcus.com
+DOMAIN-SUFFIX,goldmansachs.com
+
+# > Ally
+DOMAIN-SUFFIX,ally.com
+
+# > Fifth Third Bank
+DOMAIN-SUFFIX,53.com
+
+# > Citizens
+DOMAIN-SUFFIX,citizensbank.com
+DOMAIN-SUFFIX,citizensbankonline.com
+DOMAIN-SUFFIX,citizensaccess.com
+
+# > KeyBank
+DOMAIN-SUFFIX,key.com
+
+# > Regions
+DOMAIN-SUFFIX,regions.com
+
+# > Huntington
+DOMAIN-SUFFIX,huntington.com
+
+# > M&T Bank
+DOMAIN-SUFFIX,mtb.com
+
+# > USAA
+DOMAIN-SUFFIX,usaa.com
+
+# > BMO
+DOMAIN-SUFFIX,bmoharris.com
+DOMAIN-SUFFIX,bmo.com
+
+# > SoFi
+DOMAIN-SUFFIX,sofi.com
+
+# > Bluebird
+DOMAIN-SUFFIX,bluebird.com
+
+# > Bluedot
+DOMAIN-SUFFIX,thebluedot.co
+
+# > CauseCard / PrideCard
+DOMAIN-SUFFIX,causecard.co
+DOMAIN-SUFFIX,pridecard.co
+DOMAIN-SUFFIX,liquidity.cc
+
+# > Deserve
+DOMAIN-SUFFIX,deserve.com
+
+# > Future
+DOMAIN-SUFFIX,thefutureapi.com
+DOMAIN-SUFFIX,future.green
+
+# > MoneyLion
+DOMAIN-SUFFIX,moneylion.com
+
+# > Bilt
+DOMAIN-SUFFIX,biltrewards.com
 
 # > Revolut US
 DOMAIN-SUFFIX,revolut.com
+
+# > Charles Schwab
+DOMAIN-SUFFIX,schwab.com
+
+# > Interactive Brokers
+DOMAIN-SUFFIX,interactivebrokers.com
+
+# > E*Trade
+DOMAIN-SUFFIX,etrade.com
+
+# > Fidelity
+DOMAIN-SUFFIX,fidelity.com
+DOMAIN-SUFFIX,fidelitydebitcard.com
+
+# > Robinhood
+DOMAIN-SUFFIX,robinhood.com
+
+# > Empower
+DOMAIN-SUFFIX,empower-retirement.com
+
+# > ChexSystems
+DOMAIN-SUFFIX,fisglobal.com
+DOMAIN-SUFFIX,chexsystems.eto.fiscloudservices.com
+DOMAIN-SUFFIX,chexsystems.com
+DOMAIN-SUFFIX,aa.online-metrix.net
+
+# > Credit Bureaus
+DOMAIN-SUFFIX,creditkarma.com
+DOMAIN-SUFFIX,experian.com
+DOMAIN-SUFFIX,experiancs.com
+DOMAIN-SUFFIX,transunion.com
+
+# > American Express
+DOMAIN-SUFFIX,americanexpress.com
+DOMAIN-SUFFIX,amex.com
+DOMAIN-SUFFIX,amextravel.com
+DOMAIN-SUFFIX,serve.com
+DOMAIN-KEYWORD,amex
+DOMAIN-KEYWORD,americanexpress
+
+# > Discover
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,discovercard.com
+DOMAIN-SUFFIX,discoverbank.com
+DOMAIN-SUFFIX,discoverit.com
+DOMAIN-SUFFIX,discoverpersonalloans.com
+DOMAIN-SUFFIX,discoverbiz.com
+
+# > Payment Platforms
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,squareup.com
+DOMAIN-SUFFIX,square.com
+DOMAIN-SUFFIX,cash.app
+DOMAIN-SUFFIX,cashappapi.com
+DOMAIN-SUFFIX,authorize.net
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,wepay.com
+DOMAIN-SUFFIX,dwolla.com
+DOMAIN-SUFFIX,payoneer.com
+DOMAIN-SUFFIX,zellepay.com
+DOMAIN-SUFFIX,earlywarning.com
+DOMAIN-SUFFIX,xoom.com
+DOMAIN-SUFFIX,bill.com
+DOMAIN-SUFFIX,plaid.com
+DOMAIN-SUFFIX,paywithextend.com
+DOMAIN-SUFFIX,westernunion.com
+
+# > Financial Services / Supporting Domains
+DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,quantummetric.com
+DOMAIN-SUFFIX,varomoney.com
+DOMAIN-SUFFIX,segment.com
+DOMAIN-SUFFIX,iesnare.com
+DOMAIN-SUFFIX,popmoney.com
+DOMAIN-SUFFIX,checkfreeweb.com
+DOMAIN-SUFFIX,cashedge.com
+DOMAIN-SUFFIX,optimizely.com
+DOMAIN-SUFFIX,aexp-static.com
+DOMAIN-SUFFIX,demdex.net
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN-SUFFIX,sablecard.com
+DOMAIN-SUFFIX,joinellis.com
+DOMAIN-SUFFIX,intercom.com
+DOMAIN-SUFFIX,equifax.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,ebay.com
+DOMAIN-SUFFIX,riskified.com
+
+# > App Process Names
+PROCESS-NAME,com.americanexpress.amexservice
+PROCESS-NAME,com.chase
+PROCESS-NAME,com.capitalone.banking
+PROCESS-NAME,com.squareup.cash
+PROCESS-NAME,com.zellepay
+PROCESS-NAME,com.hsbc.us.hsbcus
+PROCESS-NAME,com.revolut.revolut
+PROCESS-NAME,com.stripe.dashboard
+PROCESS-NAME,com.amazon.Amazon
+PROCESS-NAME,net.kortina.labs.Venmo
 
 # ═══════════════════════ Mobile / WiFi Calling ═══════════════════════
 # ══════════ US 运营商
@@ -32,6 +275,13 @@ DOMAIN-SUFFIX,mintmobile.com
 # > Tello
 DOMAIN-SUFFIX,tello.com
 
+# > Helium
+DOMAIN-SUFFIX,hellohelium.com
+DOMAIN-SUFFIX,helium.io
+
+# > KeepCalling
+DOMAIN-SUFFIX,mobileapi.keepcalling.net
+
 # > T-Mobile
 DOMAIN-SUFFIX,t-mobile.com
 DOMAIN-SUFFIX,tmobile.com
@@ -42,6 +292,7 @@ DOMAIN-KEYWORD,tmobilees
 
 # > AT&T
 DOMAIN-SUFFIX,att.com
+DOMAIN-SUFFIX,att.net
 
 # > Verizon
 DOMAIN-SUFFIX,verizon.com
@@ -51,6 +302,35 @@ DOMAIN-SUFFIX,vzw.com
 # Move to other list due to UDP not support. 
 
 # ═══════════════════════ Other ═══════════════════════
+# > Government
+DOMAIN-SUFFIX,irs.gov
+
+# > Utilities
+DOMAIN-SUFFIX,southernco.com
+DOMAIN-SUFFIX,southerncompany.com
+
+# > Insurance / Benefits
+DOMAIN-SUFFIX,deltadental.com
+DOMAIN-SUFFIX,travelers.com
+DOMAIN-SUFFIX,st8fm.com
+DOMAIN-SUFFIX,statefarm.com
+DOMAIN-SUFFIX,progressive.com
+DOMAIN-SUFFIX,aaa.com
+
+# > Property Services
+DOMAIN-SUFFIX,residentportal.com
+DOMAIN-SUFFIX,entrata.com
+
+# > Fluz
+DOMAIN-SUFFIX,power.fluz.app
+DOMAIN-SUFFIX,fluz.app
+DOMAIN-SUFFIX,fluzapp.com
+
+# > Air Canada
+DOMAIN-SUFFIX,aircanada.com
+
 # > osu!
 # DOMAIN-SUFFIX,osu.ppy.sh
+
+# > IP QualityScore
 DOMAIN-SUFFIX,ipqualityscore.com // 需要干净 IP 访问

@@ -18,6 +18,7 @@ DOMAIN-SUFFIX,bfo.cc // Claude AI IP 风险检测
 DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
 DOMAIN-SUFFIX,cleanip.io
 DOMAIN-SUFFIX,ipsuper.com
+DOMAIN-SUFFIX,ipcheck.ing
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,ping.pe
