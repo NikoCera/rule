@@ -8,6 +8,7 @@ DOMAIN-WILDCARD,*.local
 DOMAIN-WILDCARD,*.localdomain
 DOMAIN-WILDCARD,*.home.arpa
 DOMAIN,mac-mini
+DOMAIN,lg-tv
 DOMAIN,link-ip.nextdns.io
 DOMAIN,captive.apple.com
 DOMAIN-WILDCARD,*.msftconnecttest.com
