@@ -34,6 +34,14 @@ IP-CIDR,155.102.0.0/16,no-resolve // 闲鱼
 # DOMAIN-SUFFIX,local // mDNS / Bonjour
 # qaq.wiki 已移至文件末尾「签名工具本地安装」分组
 
+# ═══════════════════════ AWS GameLift ═══════════════════════
+# 区域探测 gamelift-ping.<region>.api.aws:7770 必须直连。
+# 否则每个区域都要先绕代理节点(实测到美国节点单程就 134ms),
+# 测出的延迟全部虚高,游戏选不出就近服务器 —— Party Animals 曾因此显示 800ms+。
+# 本条必须排在 amazon 规则集之前才有效(MyDomestic 在 Surge/mihomo 中都更靠前)。
+DOMAIN-KEYWORD,gamelift
+DOMAIN-SUFFIX,amazonwebservices.com.cn // AWS 中国区(cn-north-1 北京 / cn-northwest-1 宁夏)
+
 # ═══════════════════════ Steam 下载 ═══════════════════════
 # 官方内容 CDN
 DOMAIN-SUFFIX,steamcontent.com
@@ -95,6 +103,7 @@ DOMAIN-SUFFIX,imilab.com
 # ═══════ Roborock G30 Space ═══════
 DOMAIN-SUFFIX,roborock.com
 DOMAIN-SUFFIX,rockrobo.com
+DOMAIN-SUFFIX,roborocklimited.zendesk.com
 
 # ═══════ Meross ═══════
 # mqtt-cn / mqtt-us-N / iot / api / 固件均为其子域

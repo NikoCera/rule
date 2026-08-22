@@ -34,6 +34,15 @@ IP-CIDR,155.102.0.0/16,no-resolve
 # DOMAIN-SUFFIX,local // mDNS / Bonjour
 # qaq.wiki 已移至文件末尾「签名工具本地安装」分组
 
+# ═══════════════════════ AWS GameLift ═══════════════════════
+# 区域探测 gamelift-ping.<region>.api.aws:7770 必须直连。
+# 否则每个区域都要先绕代理节点(实测到美国节点单程就 134ms),
+# 测出的延迟全部虚高,游戏选不出就近服务器 —— Party Animals 曾因此显示 800ms+。
+# 本条必须排在 amazon 规则集之前才有效(MyDomestic 在 Surge/mihomo 中都更靠前)。
+DOMAIN-KEYWORD,gamelift
+# AWS 中国区(cn-north-1 北京 / cn-northwest-1 宁夏)
+DOMAIN-SUFFIX,amazonwebservices.com.cn
+
 # ═══════════════════════ Steam 下载 ═══════════════════════
 # 官方内容 CDN
 DOMAIN-SUFFIX,steamcontent.com
@@ -95,6 +104,7 @@ DOMAIN-SUFFIX,imilab.com
 # ═══════ Roborock G30 Space ═══════
 DOMAIN-SUFFIX,roborock.com
 DOMAIN-SUFFIX,rockrobo.com
+DOMAIN-SUFFIX,roborocklimited.zendesk.com
 
 # ═══════ Meross ═══════
 # mqtt-cn / mqtt-us-N / iot / api / 固件均为其子域
@@ -123,15 +133,15 @@ DOMAIN-SUFFIX,lgtvcommon.com
 # Pet Dryer 使用 Espressif 芯片，但方案商未知；配网后再按请求日志补充云端点。
 
 # ═══════════════════════ Apple ═══════════════════════
-PROCESS-NAME,netbiosd // NetBIOS/SMB 局域网名称发现(旧式)，避免被 Apple 规则集送代理
+PROCESS-NAME,netbiosd
 
 # ═══════════════════════ 签名工具本地安装 ═══════════════════════
 # 「本地安装」由工具在本机起 HTTPS 服务,再用一个公网 A 记录指向 127.0.0.1 的回环域名
 # 配真证书,交给系统 installd 拉 manifest。发起请求的是系统进程而非工具自身。
 #
-# 这里的 DIRECT 规则不是解药: DIRECT 只决定出口策略,连接仍由内核代为发起,够不到
+# 这里的 DIRECT 规则不是解药: DIRECT 只决定出口策略,连接仍由 Surge 代为发起,够不到
 # 发起安装那台设备的本机监听(表现为 connection refused 而非超时)。
-# 真正生效的是把这些域名放进 dns.fake-ip-filter,让设备拿到真实回环地址。
+# 真正生效的是主配置 always-real-ip —— 让设备拿到真实回环地址,包压根不出本机。
 # 保留这些条目的意义: 日志可读,且避免将来落到代理策略变成更难查的超时。
 DOMAIN-SUFFIX,lcsignx.com
 DOMAIN-KEYWORD,lcsignx

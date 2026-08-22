@@ -17,7 +17,6 @@ DOMAIN,nominatim.openstreetmap.org
 DOMAIN,cdn.geospoof.com
 
 # 自定义
-DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,ui.com
 DOMAIN-SUFFIX,obsidian.md
 DOMAIN-SUFFIX,linux.do

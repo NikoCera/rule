@@ -66,6 +66,10 @@ DOMAIN-WILDCARD,*.partyanimalsgame.com
 DOMAIN,partyanimals.com
 DOMAIN,partyanimals.cn
 DOMAIN-WILDCARD,*.recreategames.com.cn
+# AWS GameLift:游戏用它做匹配与区域选择,拿真实 IP 后 IP 层规则才能正确识别 AWS 中国区。
+# 注意游戏自身域名(上面几条)和 GameLift 基础设施是两套,只加前者不够。
+DOMAIN-KEYWORD,gamelift
+DOMAIN-WILDCARD,*.amazonwebservices.com.cn
 
 # Localhost, connectivity tests and direct markers
 DOMAIN-WILDCARD,*.qaq.wiki
