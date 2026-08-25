@@ -2,84 +2,38 @@
 # Domains in this list return real DNS answers instead of Fake-IP addresses.
 # Format: Mihomo classical text rule provider.
 #
-# 收录标准: 只放行"拿不到真实地址就会坏"的域名。每多一条,就多一批客户端会拿到真实 IP、
-# 从而可能绕开策略表(尤其在有多个 IPv6 路由器的网段上会直接逃出旁路由)。
-# 仅仅"走 DIRECT"不构成放行理由 —— fake-IP 不改变对端看到的源地址,DIRECT 时对端看到的
-# 仍是真实出口。
+# 收录标准 —— 只有这几类才值得放行:
+#   1. 域名解析到回环或局域网地址, 客户端必须自己连上去(拿假地址会被送进代理, connection refused)
+#   2. 应用自己拿它做延迟探测或选路, 假地址会让测量失真
+#   3. 设备的连通性检测, 失败会让整机误判无网络
+#   4. 协议需要真实端点(STUN/NAT 穿透)
+#
+# 不成立的理由:
+#   "它走 DIRECT" —— fake-IP 不改变对端看到的源地址, DIRECT 时对端看到的仍是真实出口。
+#   "让它直连" —— 放行不影响选路。实测 time.g.aaplimg.com 拿真实 IP 后依然被域名规则
+#                 送去了美国中继; mihomo/Surge 对真实 IP 也能反查域名并套用域名规则。
+#                 要改路径就改规则, 不要往这里加。
+#
+# 每多一条, 就多一批客户端会拿到真实地址, 从而可能绕开策略表 ——
+# 在存在多个 IPv6 路由器的网段上, 这类连接会直接逃出旁路由。
 #
 # 注意: mihomo 的 DOMAIN-WILDCARD 中 * 是跨标签通配(*.mi.com 能命中 a.b.mi.com),
-# 与 Surge always-real-ip 的语义不完全一致,增删通配条目时两边都要验证。
+# 与 Surge always-real-ip 的语义不完全一致, 增删通配条目时两边都要验证。
 
-# Local and captive-network domains
+# ── 1. 回环与本地域名 ──────────────────────────────────
+# 唯一"不放行就一定坏"的一类。
 DOMAIN-WILDCARD,*.lan
 DOMAIN-WILDCARD,*.local
 DOMAIN-WILDCARD,*.localdomain
 DOMAIN-WILDCARD,*.home.arpa
 DOMAIN,mac-mini
 DOMAIN,lg-tv
-DOMAIN,link-ip.nextdns.io
-DOMAIN,captive.apple.com
-DOMAIN-WILDCARD,*.msftconnecttest.com
-DOMAIN-WILDCARD,*.msftncsi.com
+DOMAIN-WILDCARD,localhost.*.qq.com
+DOMAIN-WILDCARD,localhost.*.weixin.qq.com
 
-# Device connectivity and Apple services
-# allawntech = 广东欢太科技(OPPO/OnePlus/realme 云服务)。conn-service-cn-* 是连通性检测端点,
-# 等同于 captive.apple.com —— 返回假地址会让检测失去意义,可能被误判为强制门户。
-DOMAIN-WILDCARD,*.allawntech.com
-# iCloud 私人转发(Private Relay)入口。放行是为了让它原生工作或能在 IP 层被干净拒绝。
-# 不放行整个 *.apple-dns.net: 那是 Apple 的 CDN 命名, 覆盖面极大,
-# 会让 gateway.fe2.apple-dns.net 之类的 iCloud 连接拿到真实地址并逃出 Apple 策略。
-DOMAIN,mask.icloud.com
-DOMAIN,mask-h2.icloud.com
-DOMAIN,mask-api.icloud.com
-DOMAIN,mask-canary.icloud.com
-DOMAIN-WILDCARD,mask*.apple.com
-DOMAIN,mask.apple-dns.net
-
-# NTP and time synchronization
-DOMAIN-WILDCARD,*.ntp.org
-DOMAIN-WILDCARD,ntp.*.com
-DOMAIN,ntp1.aliyun.com
-DOMAIN,ntp2.aliyun.com
-DOMAIN-WILDCARD,time.*.com
-DOMAIN-WILDCARD,time.*.edu.cn
-DOMAIN,time1.cloud.tencent.com
-
-# Smart-home and consumer devices
-# 这些设备不经过 nikki 代理, 拿到假地址会彻底连不上云端。
-DOMAIN-WILDCARD,*.mi.com
-DOMAIN-WILDCARD,*.miwifi.com
-DOMAIN-WILDCARD,*.mijia.tech
-DOMAIN-WILDCARD,*.roborock.com
-DOMAIN-WILDCARD,*.meross.com
-DOMAIN-WILDCARD,*.lgthinq.com
-DOMAIN-WILDCARD,*.lge.com
-DOMAIN-WILDCARD,*.lgappstv.com
-
-# Game, console, STUN and peer-to-peer services
-# STUN/TURN 做 NAT 穿透需要真实端点。不用 *stun* 那种全域子串匹配 ——
-# 实测它会命中任意位置含 stun 的域名(xxstunxx.example.com 都能中)。
-DOMAIN-WILDCARD,*.srv.nintendo.net
-DOMAIN-WILDCARD,*.stun.playstation.net
-DOMAIN-WILDCARD,xbox.*.microsoft.com
-DOMAIN-WILDCARD,*.xboxlive.com
-DOMAIN-WILDCARD,*.logon.battlenet.com.cn
-DOMAIN-WILDCARD,*.logon.battle.net
-DOMAIN-WILDCARD,stun.*
-DOMAIN-WILDCARD,stun6.*
-DOMAIN,n2n.s1.bugxia.com
-DOMAIN-WILDCARD,*.partyanimalsgame.com
-DOMAIN,partyanimals.com
-DOMAIN,partyanimals.cn
-DOMAIN-WILDCARD,*.recreategames.com.cn
-# AWS GameLift:游戏用它做匹配与区域选择,拿真实 IP 后 IP 层规则才能正确识别 AWS 中国区。
-# 注意游戏自身域名(上面几条)和 GameLift 基础设施是两套,只加前者不够。
-DOMAIN-KEYWORD,gamelift
-DOMAIN-WILDCARD,*.amazonwebservices.com.cn
-
-# Localhost, connectivity tests and direct markers
-# 这些是"公网 A 记录指向 127.0.0.1"的回环域名, 假地址会让本机监听彻底够不到。
-# 不用 *.direct: .direct 是真实存在的顶级域, 那等于放行整个 TLD。
+# 签名工具的「本地安装」: 工具在本机起 HTTPS 服务, 用一个 A 记录指向 127.0.0.1 的
+# 公网域名配真证书, 交给系统 installd 拉 manifest。拿到假地址就够不到本机监听。
+# 不用 *.direct —— .direct 是真实存在的顶级域, 那等于放行整个 TLD。
 DOMAIN-WILDCARD,*.qaq.wiki
 DOMAIN-WILDCARD,*.lcsignx.com
 DOMAIN,lcsignx.com
@@ -89,20 +43,48 @@ DOMAIN-WILDCARD,*.localhost.direct
 DOMAIN,localhost.direct
 DOMAIN-WILDCARD,*.nip.io
 DOMAIN,nip.io
-DOMAIN,cable.auth.com
-DOMAIN,network-test.debian.org
-DOMAIN,detectportal.firefox.com
-DOMAIN,resolver1.opendns.com
-DOMAIN,global.turn.twilio.com
-DOMAIN,global.stun.twilio.com
-DOMAIN,app.yinxiang.com
-DOMAIN,injections.adguard.org
-DOMAIN,local.adguard.org
-DOMAIN-WILDCARD,localhost.*.qq.com
-DOMAIN-WILDCARD,localhost.*.weixin.qq.com
 
-# Carrier authentication and banking services
-# 一键登录/身份核验依赖运营商侧看到的网络路径, 低频但失败后极难排查。
+# ── 2. 应用自测速与选路 ────────────────────────────────
+# AWS GameLift: 游戏逐个区域探测延迟后选服。走假地址时握手都是和本机瞬间完成的,
+# 测出的延迟全部失真, 选不出就近服务器 —— Party Animals 曾因此显示 800ms+。
+DOMAIN-KEYWORD,gamelift
+DOMAIN-WILDCARD,*.amazonwebservices.com.cn
+
+# ── 3. 连通性检测 ──────────────────────────────────────
+# 失败会让设备整机误判无网络、弹强制门户页, 排查代价远高于保留代价。
+# allawntech = 广东欢太科技(OPPO/OnePlus/realme 云服务), conn-service-* 是其检测端点。
+DOMAIN,captive.apple.com
+DOMAIN-WILDCARD,*.msftconnecttest.com
+DOMAIN-WILDCARD,*.msftncsi.com
+DOMAIN-WILDCARD,*.allawntech.com
+
+# ── 4. 主机 STUN 与 NAT 穿透 ───────────────────────────
+# NAT 类型与 P2P 依赖真实端点。Switch 在客户端网段用 R5S 的 DNS, 受此影响。
+# 不用 *stun* —— 实测它会命中任意位置含 stun 的域名(xxstunxx.example.com 都能中)。
+DOMAIN-WILDCARD,*.srv.nintendo.net
+DOMAIN-WILDCARD,*.stun.playstation.net
+DOMAIN-WILDCARD,xbox.*.microsoft.com
+DOMAIN-WILDCARD,*.xboxlive.com
+DOMAIN-WILDCARD,*.logon.battlenet.com.cn
+DOMAIN-WILDCARD,*.logon.battle.net
+DOMAIN-WILDCARD,stun.*
+DOMAIN-WILDCARD,stun6.*
+
+# ── 5. IoT 厂商域名 ────────────────────────────────────
+# 当前不起作用: IoT 在独立 VLAN, DNS 指向主路由并直接转发到 ISP, 从不经过 nikki 或 Surge。
+# 保留是为了将来若改回由 Surge 网关接管 IoT —— 那时这些设备会拿到假地址而彻底失联。
+DOMAIN-WILDCARD,*.mi.com
+DOMAIN-WILDCARD,*.miwifi.com
+DOMAIN-WILDCARD,*.mijia.tech
+DOMAIN-WILDCARD,*.roborock.com
+DOMAIN-WILDCARD,*.meross.com
+DOMAIN-WILDCARD,*.lgthinq.com
+DOMAIN-WILDCARD,*.lge.com
+DOMAIN-WILDCARD,*.lgappstv.com
+
+# ── 6. 运营商一键登录与银行核验 ────────────────────────
+# 低频触发, 失败时只报"验证失败"这类模糊错误, 极难联想到 DNS。
+# 均为国内域名, 真实地址同样是 GEOIP CN -> DIRECT, 基本不构成策略绕过, 保留成本接近零。
 DOMAIN-WILDCARD,*.cmpassport.com
 DOMAIN,id6.me
 DOMAIN,open.e.189.cn
@@ -120,10 +102,3 @@ DOMAIN-WILDCARD,*.cmbchina.com
 DOMAIN-WILDCARD,*.10099.com.cn
 DOMAIN-WILDCARD,*.microdone.cn
 DOMAIN,easy-login.10099.com.cn
-
-# Additional NTP and updater domains
-DOMAIN-WILDCARD,ntp?.*.com
-DOMAIN-WILDCARD,time?.*.com
-DOMAIN-WILDCARD,time.*.gov
-DOMAIN-WILDCARD,*.ntp.org.cn
-DOMAIN-WILDCARD,*-update.xoyocdn.com
