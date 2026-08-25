@@ -1,6 +1,14 @@
 # Fake-IP Filter
 # Domains in this list return real DNS answers instead of Fake-IP addresses.
 # Format: Mihomo classical text rule provider.
+#
+# 收录标准: 只放行"拿不到真实地址就会坏"的域名。每多一条,就多一批客户端会拿到真实 IP、
+# 从而可能绕开策略表(尤其在有多个 IPv6 路由器的网段上会直接逃出旁路由)。
+# 仅仅"走 DIRECT"不构成放行理由 —— fake-IP 不改变对端看到的源地址,DIRECT 时对端看到的
+# 仍是真实出口。
+#
+# 注意: mihomo 的 DOMAIN-WILDCARD 中 * 是跨标签通配(*.mi.com 能命中 a.b.mi.com),
+# 与 Surge always-real-ip 的语义不完全一致,增删通配条目时两边都要验证。
 
 # Local and captive-network domains
 DOMAIN-WILDCARD,*.lan
@@ -15,19 +23,20 @@ DOMAIN-WILDCARD,*.msftconnecttest.com
 DOMAIN-WILDCARD,*.msftncsi.com
 
 # Device connectivity and Apple services
-DOMAIN,conn-service-cn-04.allawntech.com
-DOMAIN,conn-service-cn-05.allawntech.com
+# allawntech = 广东欢太科技(OPPO/OnePlus/realme 云服务)。conn-service-cn-* 是连通性检测端点,
+# 等同于 captive.apple.com —— 返回假地址会让检测失去意义,可能被误判为强制门户。
 DOMAIN-WILDCARD,*.allawntech.com
+# iCloud 私人转发(Private Relay)入口。放行是为了让它原生工作或能在 IP 层被干净拒绝。
+# 不放行整个 *.apple-dns.net: 那是 Apple 的 CDN 命名, 覆盖面极大,
+# 会让 gateway.fe2.apple-dns.net 之类的 iCloud 连接拿到真实地址并逃出 Apple 策略。
 DOMAIN,mask.icloud.com
 DOMAIN,mask-h2.icloud.com
 DOMAIN,mask-api.icloud.com
 DOMAIN,mask-canary.icloud.com
 DOMAIN-WILDCARD,mask*.apple.com
 DOMAIN,mask.apple-dns.net
-DOMAIN-WILDCARD,*.apple-dns.net
 
 # NTP and time synchronization
-DOMAIN-WILDCARD,*.pool.ntp.org
 DOMAIN-WILDCARD,*.ntp.org
 DOMAIN-WILDCARD,ntp.*.com
 DOMAIN,ntp1.aliyun.com
@@ -37,9 +46,7 @@ DOMAIN-WILDCARD,time.*.edu.cn
 DOMAIN,time1.cloud.tencent.com
 
 # Smart-home and consumer devices
-DOMAIN,ot.io.mi.com
-DOMAIN,ott.io.mi.com
-DOMAIN-WILDCARD,*.io.mi.com
+# 这些设备不经过 nikki 代理, 拿到假地址会彻底连不上云端。
 DOMAIN-WILDCARD,*.mi.com
 DOMAIN-WILDCARD,*.miwifi.com
 DOMAIN-WILDCARD,*.mijia.tech
@@ -50,17 +57,16 @@ DOMAIN-WILDCARD,*.lge.com
 DOMAIN-WILDCARD,*.lgappstv.com
 
 # Game, console, STUN and peer-to-peer services
+# STUN/TURN 做 NAT 穿透需要真实端点。不用 *stun* 那种全域子串匹配 ——
+# 实测它会命中任意位置含 stun 的域名(xxstunxx.example.com 都能中)。
 DOMAIN-WILDCARD,*.srv.nintendo.net
 DOMAIN-WILDCARD,*.stun.playstation.net
 DOMAIN-WILDCARD,xbox.*.microsoft.com
 DOMAIN-WILDCARD,*.xboxlive.com
 DOMAIN-WILDCARD,*.logon.battlenet.com.cn
 DOMAIN-WILDCARD,*.logon.battle.net
-DOMAIN,stun.l.google.com
-DOMAIN,stun.parsec.app
 DOMAIN-WILDCARD,stun.*
 DOMAIN-WILDCARD,stun6.*
-DOMAIN-WILDCARD,*stun*
 DOMAIN,n2n.s1.bugxia.com
 DOMAIN-WILDCARD,*.partyanimalsgame.com
 DOMAIN,partyanimals.com
@@ -72,16 +78,17 @@ DOMAIN-KEYWORD,gamelift
 DOMAIN-WILDCARD,*.amazonwebservices.com.cn
 
 # Localhost, connectivity tests and direct markers
+# 这些是"公网 A 记录指向 127.0.0.1"的回环域名, 假地址会让本机监听彻底够不到。
+# 不用 *.direct: .direct 是真实存在的顶级域, 那等于放行整个 TLD。
 DOMAIN-WILDCARD,*.qaq.wiki
-DOMAIN,app.localhost.qaq.wiki
 DOMAIN-WILDCARD,*.lcsignx.com
 DOMAIN,lcsignx.com
 DOMAIN-WILDCARD,*.backloop.dev
 DOMAIN,backloop.dev
 DOMAIN-WILDCARD,*.localhost.direct
+DOMAIN,localhost.direct
 DOMAIN-WILDCARD,*.nip.io
 DOMAIN,nip.io
-DOMAIN-WILDCARD,*.direct
 DOMAIN,cable.auth.com
 DOMAIN,network-test.debian.org
 DOMAIN,detectportal.firefox.com
@@ -94,34 +101,8 @@ DOMAIN,local.adguard.org
 DOMAIN-WILDCARD,localhost.*.qq.com
 DOMAIN-WILDCARD,localhost.*.weixin.qq.com
 
-# Music and media services
-DOMAIN-WILDCARD,*.blzstatic.cn
-DOMAIN,music.163.com
-DOMAIN-WILDCARD,*.music.163.com
-DOMAIN-WILDCARD,*.126.net
-DOMAIN,musicapi.taihe.com
-DOMAIN,music.taihe.com
-DOMAIN,songsearch.kugou.com
-DOMAIN,trackercdn.kugou.com
-DOMAIN-WILDCARD,*.kuwo.cn
-DOMAIN,api-jooxtt.sanook.com
-DOMAIN,api.joox.com
-DOMAIN,joox.com
-DOMAIN,y.qq.com
-DOMAIN-WILDCARD,*.y.qq.com
-DOMAIN,streamoc.music.tc.qq.com
-DOMAIN,mobileoc.music.tc.qq.com
-DOMAIN,isure.stream.qqmusic.qq.com
-DOMAIN,dl.stream.qqmusic.qq.com
-DOMAIN,aqqmusic.tc.qq.com
-DOMAIN,amobile.music.tc.qq.com
-DOMAIN-WILDCARD,*.xiami.com
-DOMAIN-WILDCARD,*.music.migu.cn
-DOMAIN,music.migu.cn
-DOMAIN,proxy.golang.org
-DOMAIN-WILDCARD,*.mcdn.bilivideo.cn
-
 # Carrier authentication and banking services
+# 一键登录/身份核验依赖运营商侧看到的网络路径, 低频但失败后极难排查。
 DOMAIN-WILDCARD,*.cmpassport.com
 DOMAIN,id6.me
 DOMAIN,open.e.189.cn
@@ -138,15 +119,11 @@ DOMAIN-WILDCARD,*.pingan.com.cn
 DOMAIN-WILDCARD,*.cmbchina.com
 DOMAIN-WILDCARD,*.10099.com.cn
 DOMAIN-WILDCARD,*.microdone.cn
+DOMAIN,easy-login.10099.com.cn
 
-# Additional NTP, Microsoft discovery and updater domains
-DOMAIN,pool.ntp.org
+# Additional NTP and updater domains
 DOMAIN-WILDCARD,ntp?.*.com
 DOMAIN-WILDCARD,time?.*.com
 DOMAIN-WILDCARD,time.*.gov
 DOMAIN-WILDCARD,*.ntp.org.cn
-DOMAIN-WILDCARD,PDC._msDCS.*.*
-DOMAIN-WILDCARD,DC._msDCS.*.*
-DOMAIN-WILDCARD,GC._msDCS.*.*
-DOMAIN,easy-login.10099.com.cn
 DOMAIN-WILDCARD,*-update.xoyocdn.com
