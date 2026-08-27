@@ -22,8 +22,6 @@ DOMAIN-SUFFIX,xiaoheihe.cn // 小黑盒heybox
 DOMAIN-SUFFIX,appinn.net
 DOMAIN-SUFFIX,zjcdn.com
 DOMAIN-SUFFIX,wttr.in
-DOMAIN-SUFFIX,jkwskh.xyz // Nexitally
-DOMAIN-SUFFIX,vrqfmm.xyz // Nexitally
 DOMAIN-SUFFIX,ddgksf2013.top // 墨鱼模块集合
 IP-CIDR,47.246.0.0/16,no-resolve // 闲鱼
 IP-CIDR,163.181.0.0/16,no-resolve // 闲鱼
@@ -74,7 +72,6 @@ DOMAIN-SUFFIX,steam.cdn.slingshot.co.nz
 DOMAIN-SUFFIX,steam.cdn.webra.ru
 
 # ═══════════════════════ Party Animals ═══════════════════════
-PROCESS-NAME,PartyAnimals.exe
 DOMAIN-SUFFIX,partyanimalsgame.com
 DOMAIN-SUFFIX,partyanimals.com
 DOMAIN-SUFFIX,partyanimals.cn
@@ -83,6 +80,7 @@ DOMAIN-KEYWORD,partyanimals.api
 DOMAIN-SUFFIX,amazonaws.com.cn
 DOMAIN-SUFFIX,execute-api.cn-north-1.amazonaws.com.cn
 DOMAIN-SUFFIX,execute-api.cn-northwest-1.amazonaws.com.cn
+PROCESS-NAME,PartyAnimals.exe
 
 # ═══════════════════════ IoT 设备 ═══════════════════════
 # IoT 设备厂商域名（官网 / 云接入点 / 固件 OTA / App API）。
