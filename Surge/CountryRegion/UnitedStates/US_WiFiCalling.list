@@ -1,6 +1,14 @@
 # NAME: US_WiFiCalling
 # AUTHOR: myself
-# UPDATED: 2026-04-21
+# UPDATED: 2026-09-01
+
+# > NTP 端口兜底
+# category-ntp 是域名规则集, 只拦得住用域名的 NTP。App 若直接向硬编码 IP 发 UDP 123,
+# 无域名可匹配, 会一路落到 GEOIP,CN -> Domestic 直连, 真实 IP 随之暴露 ——
+# 借 NTP 探测真实出口是常见的代理绕过手段, 因此按端口而非域名兜底。
+# 借用本规则集是因为它同样指向 Relay-US, 策略一致; 与 WiFi Calling 无关。
+# 为与 Clash 侧保持一致未限定 UDP; TCP 123 实际无人使用, 一并接管无害。
+DEST-PORT,123
 
 # > AT&T & T-Mobile
 DOMAIN-SUFFIX,epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
