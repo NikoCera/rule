@@ -87,7 +87,11 @@ PROCESS-NAME,PartyAnimals.exe
 # DIRECT 仅适用于绑定中国区账号或未绑定云（纯 HomeKit）的设备。若设备仍绑定海外区
 # （例如 tuyaus / mqtt-us），应让对应域名走代理，或先重新配网到中国区。
 # 这些域名多数已在 always-real-ip 中；偶发裸 IP 流量无法命中域名规则时，
-# 会由 GEOIP,CN -> Domestic 兜底。NTP 域名继续由主配置的 UDP 123 规则处理。
+# 会由 GEOIP,CN -> Domestic 兜底。
+# NTP 不在此文件处理：主配置由 RULE-SET,category-ntp 统一接管，当前指向海外中继。
+# 若要让 NTP 直连，应改那条规则的策略 —— 往 always-real-ip 里加域名是无效的，
+# 放行只改变客户端拿到的地址，不影响选路（实测 time.g.aaplimg.com 拿真实 IP 后
+# 仍被域名规则送去了海外）。
 
 # ═══════ 小米 / 米家生态 ═══════
 DOMAIN-SUFFIX,mi.com
