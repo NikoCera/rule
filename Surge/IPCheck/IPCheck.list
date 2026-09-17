@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,ipsuper.com
 DOMAIN-SUFFIX,ipcheck.ing
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
+DOMAIN-SUFFIX,iplense.cc
+DOMAIN-SUFFIX,ip.cx
 DOMAIN-SUFFIX,ping.pe
 DOMAIN-SUFFIX,iping.cc
 DOMAIN-SUFFIX,ip125.com
