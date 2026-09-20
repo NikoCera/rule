@@ -10,6 +10,7 @@ DOMAIN-SUFFIX,epdg.epc.att.net
 DOMAIN-SUFFIX,fp-us-att.rcs.telephony.goog
 DOMAIN-SUFFIX,eas3.msg.t-mobile.com
 DOMAIN-SUFFIX,msg.t-mobile.com
+DOMAIN-SUFFIX,t-mobile.idemia.io
 IP-CIDR,66.94.0.0/19,no-resolve // T-Mobile/ATT WiFi Calling
 IP-CIDR,107.122.0.0/16,no-resolve // T-Mobile/ATT WiFi Calling
 IP-CIDR,208.54.0.0/16,no-resolve // T-Mobile/ATT WiFi Calling
