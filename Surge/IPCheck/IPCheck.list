@@ -19,6 +19,7 @@ DOMAIN-SUFFIX,yanchufasui.com // Claude AI IP 风险检测
 DOMAIN-SUFFIX,cleanip.io
 DOMAIN-SUFFIX,ipsuper.com
 DOMAIN-SUFFIX,ipcheck.ing
+DOMAIN-SUFFIX,proxycheck.io
 
 # ═══════════════════════ 地理位置 / ASN / 运营商信息 ═══════════════════════
 DOMAIN-SUFFIX,iplense.cc
