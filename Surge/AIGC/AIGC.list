@@ -1,6 +1,6 @@
 # NAME: AIGC
 # AUTHOR: myself
-# UPDATED: 2026-08-03
+# UPDATED: 2026-09-27
 
 # > OpenAI / ChatGPT
 # 核心域名与存储
@@ -170,6 +170,11 @@ DOMAIN-SUFFIX,dify.ai
 
 # > JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
+
+# > Muse
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,museai.com
+DOMAIN-SUFFIX,ecto1.ai
 
 # > 共享第三方服务兜底
 # OpenAI.list 中已启用的依赖；api.statsig.com 保留更窄的 DOMAIN 匹配
