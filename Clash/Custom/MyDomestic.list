@@ -150,3 +150,7 @@ DOMAIN-SUFFIX,qaq.wiki
 DOMAIN-SUFFIX,backloop.dev
 DOMAIN-SUFFIX,localhost.direct
 DOMAIN-SUFFIX,nip.io
+
+# ═══════════════════════ SimAirPlus ═══════════════════════
+DOMAIN,simapi.unknowntec.com
+DOMAIN-SUFFIX,unknowntec.com

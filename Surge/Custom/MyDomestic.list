@@ -150,3 +150,7 @@ DOMAIN-SUFFIX,qaq.wiki // Asspp
 DOMAIN-SUFFIX,backloop.dev // Feather 等通用回环域名
 DOMAIN-SUFFIX,localhost.direct
 DOMAIN-SUFFIX,nip.io // 通配 DNS,解析结果取决于子域,仅作兜底
+
+# ═══════════════════════ SimAirPlus ═══════════════════════
+DOMAIN,simapi.unknowntec.com // SimAirPlus域名, 已存在于cn.list, 仅为记录
+DOMAIN-SUFFIX,unknowntec.com // SimAirPlus域名, 已存在于cn.list, 仅为记录
