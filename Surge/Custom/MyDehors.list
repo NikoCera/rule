@@ -1,6 +1,6 @@
 # NAME: MyDehors
 # AUTHOR: myself
-# UPDATED: 2026-08-15
+# UPDATED: 2026-10-20
 
 # GeoSpoof - 公网 IP 检测端点
 DOMAIN,checkip.amazonaws.com
@@ -17,13 +17,13 @@ DOMAIN,nominatim.openstreetmap.org
 DOMAIN,cdn.geospoof.com
 
 # 自定义
-DOMAIN-SUFFIX,ui.com
-DOMAIN-SUFFIX,obsidian.md
-DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,v2ex.com
-DOMAIN-SUFFIX,modengine.com
-DOMAIN-SUFFIX,1password.com // 避开本地 DNS lookup
-DOMAIN-SUFFIX,1passwordservices.com // 避开本地 DNS lookup
+# DOMAIN-SUFFIX,ui.com // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,obsidian.md // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,linux.do // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,v2ex.com // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,modengine.com // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,1password.com // 避开本地 DNS lookup // 已移动到 HongKong.list (CountryRegion/HongKong)
+# DOMAIN-SUFFIX,1passwordservices.com // 避开本地 DNS lookup // 已移动到 HongKong.list (CountryRegion/HongKong)
 DOMAIN-SUFFIX,hero-sms.com // 接码平台
 DOMAIN-SUFFIX,wenziwanka.com
 DOMAIN-SUFFIX,mtn.co

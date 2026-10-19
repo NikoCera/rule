@@ -1,6 +1,6 @@
 # NAME: UnitedStates
 # AUTHOR: myself
-# UPDATED: 2026-08-19
+# UPDATED: 2026-10-20
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > Chase
@@ -204,6 +204,18 @@ DOMAIN-SUFFIX,discoverbank.com
 DOMAIN-SUFFIX,discoverit.com
 DOMAIN-SUFFIX,discoverpersonalloans.com
 DOMAIN-SUFFIX,discoverbiz.com
+
+# > Plasma One
+DOMAIN-SUFFIX,plasma.org
+DOMAIN-SUFFIX,plasma.to
+DOMAIN,plasmaone.onelink.me
+
+# > Ethena
+DOMAIN-SUFFIX,ethena.fi
+DOMAIN-SUFFIX,ethenafoundation.com
+
+# > Pulsar Money
+DOMAIN-SUFFIX,pulsar.money
 
 # > Payment Platforms
 DOMAIN-SUFFIX,paypal.com

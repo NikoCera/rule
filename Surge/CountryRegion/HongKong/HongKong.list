@@ -1,6 +1,6 @@
 # NAME: HongKong
 # AUTHOR: myself
-# UPDATED: 2026-06-24
+# UPDATED: 2026-10-20
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > ZA Bank (众安银行)
@@ -74,10 +74,19 @@ DOMAIN-SUFFIX,bne.li
 
 # ═══════════════════════ Other ═══════════════════════
 # > Naixi Forum
-# DOMAIN-SUFFIX,forum.naixi.net
+DOMAIN-SUFFIX,forum.naixi.net
 
 # > osu!
-# DOMAIN-SUFFIX,osu.ppy.sh
+DOMAIN-SUFFIX,osu.ppy.sh
+DOMAIN,a.ppy.sh
+DOMAIN,assets.ppy.sh
+DOMAIN,c.ppy.sh
+DOMAIN,m1.ppy.sh
+# > osu! lazer
+DOMAIN,lazer.ppy.sh
+DOMAIN,notify.ppy.sh
+DOMAIN,sentry.ppy.sh
+DOMAIN,spectator.ppy.sh
 
 # > lowiro (Arcaea)
 DOMAIN-SUFFIX,lowiro.com
@@ -87,3 +96,86 @@ DOMAIN-SUFFIX,lowiro.com
 
 # > Deltarune.cn
 DOMAIN-SUFFIX,deltarune.cn
+
+# > NodeSeek
+DOMAIN-SUFFIX,22112211.xyz
+DOMAIN-SUFFIX,deepflood.com
+DOMAIN-SUFFIX,nodeget.com
+DOMAIN-SUFFIX,nodeimage.com
+DOMAIN-SUFFIX,nodequality.com
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nodeseek.org
+
+# > Linux DO
+DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,ldstatic.com
+
+# > V2EX
+DOMAIN-SUFFIX,v2ex.com
+
+# > PTT (批踢踢)
+DOMAIN-SUFFIX,ptt.cc
+DOMAIN-SUFFIX,ptt2.cc
+DOMAIN-SUFFIX,ptt3.cc
+
+# > Dcard
+DOMAIN-SUFFIX,dcard.cc
+DOMAIN-SUFFIX,dcard.io
+DOMAIN-SUFFIX,dcard.link
+DOMAIN-SUFFIX,dcard.tw
+
+# > Mobile01
+DOMAIN-SUFFIX,5i01.com
+DOMAIN-SUFFIX,mobile01.com
+
+# > LIHKG (连登)
+DOMAIN-SUFFIX,lih.kg
+DOMAIN-SUFFIX,lihkg.com
+
+# > HKGolden (香港高登)
+DOMAIN-SUFFIX,hkgolden.com
+DOMAIN-SUFFIX,hkgolden.media
+
+# > Panstar
+DOMAIN-SUFFIX,panstar.ai
+
+# > LazyCat
+DOMAIN-SUFFIX,lazycat.wiki
+
+# > Ubiquiti
+DOMAIN-SUFFIX,ui.com
+
+# > VMRack
+DOMAIN-SUFFIX,vmrack.net
+
+# > ISVORO
+DOMAIN-SUFFIX,isvoro.com
+
+# > USVPS24
+DOMAIN-SUFFIX,usvps24.com
+
+# > AaITR
+DOMAIN-SUFFIX,aaitr.com
+
+# > VMISS
+DOMAIN-SUFFIX,vmiss.com
+
+# > DMIT
+DOMAIN-SUFFIX,dmit.io
+
+# > NodeMach
+DOMAIN-SUFFIX,nodemach.com
+
+# > VPS NAT
+DOMAIN-SUFFIX,vpsnat.com
+
+# > 1Password (US)
+DOMAIN-SUFFIX,1password.com
+DOMAIN-SUFFIX,1passwordservices.com
+DOMAIN-SUFFIX,1passwordusercontent.com
+
+# > Obsidian
+DOMAIN-SUFFIX,obsidian.md
+
+# > ModEngine
+DOMAIN-SUFFIX,modengine.com
