@@ -74,7 +74,7 @@ DOMAIN-SUFFIX,bne.li
 
 # ═══════════════════════ Other ═══════════════════════
 # > Naixi Forum
-# DOMAIN-SUFFIX,forum.naixi.net
+DOMAIN-SUFFIX,forum.naixi.net
 
 # > osu!
 DOMAIN-SUFFIX,osu.ppy.sh
