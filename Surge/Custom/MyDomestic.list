@@ -1,6 +1,6 @@
 # NAME: MyDomestic
 # AUTHOR: myself
-# UPDATED: 2026-08-18
+# UPDATED: 2026-10-22
 
 # ═══════════════════════ IPv6 / NAT 检测 ═══════════════════════
 DOMAIN-SUFFIX,test-ipv6.com
@@ -154,3 +154,6 @@ DOMAIN-SUFFIX,nip.io // 通配 DNS,解析结果取决于子域,仅作兜底
 # ═══════════════════════ SimAirPlus ═══════════════════════
 DOMAIN,simapi.unknowntec.com // SimAirPlus域名, 已存在于cn.list, 仅为记录
 DOMAIN-SUFFIX,unknowntec.com // SimAirPlus域名, 已存在于cn.list, 仅为记录
+
+# > GH-Proxy (GitHub 下载加速)
+DOMAIN-SUFFIX,gh-proxy.com
