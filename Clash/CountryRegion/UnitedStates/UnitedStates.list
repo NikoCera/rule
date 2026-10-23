@@ -1,6 +1,6 @@
 # NAME: UnitedStates
 # AUTHOR: myself
-# UPDATED: 2026-10-22
+# UPDATED: 2026-10-23
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > Chase
@@ -347,3 +347,9 @@ DOMAIN-SUFFIX,aircanada.com
 
 # > IP QualityScore
 DOMAIN-SUFFIX,ipqualityscore.com
+
+# > Ether.fi
+DOMAIN-SUFFIX,ether.fi
+
+# > Mastercard
+DOMAIN-SUFFIX,mastercard.com
