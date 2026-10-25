@@ -1,6 +1,6 @@
 # NAME: HongKong
 # AUTHOR: myself
-# UPDATED: 2026-10-23
+# UPDATED: 2026-10-25
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > ZA Bank (众安银行)
@@ -187,6 +187,7 @@ DOMAIN-SUFFIX,blip.net
 DOMAIN-SUFFIX,termius.com
 DOMAIN,auth.split.io
 DOMAIN,streaming.split.io
+DOMAIN,events.split.io
 
 # > Vcards
 DOMAIN,vcards.metowolf.com
@@ -368,3 +369,27 @@ DOMAIN,api.eu.amplitude.com
 DOMAIN,api.bimg.eu.org
 DOMAIN,any.fuckip.me
 DOMAIN,aaid.umeng.com
+
+# > 常用站点 (2026-10-25)
+DOMAIN,www.komari.vip
+DOMAIN,simshops.cc
+DOMAIN,yetanotherbrowser.com
+DOMAIN,cueora.huami.dev
+
+# > SB 社区 (2026-10-25)
+DOMAIN,sb.sb
+DOMAIN,sb.sb.sb
+DOMAIN,linux.sb
+
+# > Get.tech 及专用资源 (2026-10-25)
+DOMAIN,get.tech
+DOMAIN,manage.get.tech
+DOMAIN,helpdesk.namify.tech
+DOMAIN,assets.name.store
+DOMAIN,gettech.b-cdn.net
+
+# > 图片资源 (2026-10-25)
+DOMAIN,cache.imgproxy.org
+DOMAIN,img.css.sd
+DOMAIN,i.miio.cc
+DOMAIN,i.ibb.co
