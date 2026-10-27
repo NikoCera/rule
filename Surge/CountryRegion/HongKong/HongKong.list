@@ -1,6 +1,6 @@
 # NAME: HongKong
 # AUTHOR: myself
-# UPDATED: 2026-10-25
+# UPDATED: 2026-10-27
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > ZA Bank (众安银行)
@@ -140,7 +140,6 @@ DOMAIN-SUFFIX,hkgolden.media
 DOMAIN-SUFFIX,panstar.ai
 
 # > LazyCat
-DOMAIN-SUFFIX,lazycat.wiki
 
 # > Ubiquiti
 DOMAIN-SUFFIX,ui.com
@@ -199,9 +198,7 @@ DOMAIN-SUFFIX,111666.best
 DOMAIN,120-223-160-19-ad112835.bvmlt.top
 DOMAIN,120-223-160-84-add95a8a.bvmlt.top
 DOMAIN,app.trakt.tv
-DOMAIN,apps.sidestore.io
 DOMAIN,assets.pronotes.app
-DOMAIN,bero-host.de
 DOMAIN,betaprofiles.com
 DOMAIN,blog.lwxpz.com
 DOMAIN,ccp.nosla.cloud
@@ -222,7 +219,6 @@ DOMAIN,i.meowimg.com
 DOMAIN,image.dooo.ng
 DOMAIN,ipsw.dev
 DOMAIN,ipsw.me
-DOMAIN,my.vps.taxi
 DOMAIN,neburst.com
 DOMAIN,nexora-panel.org
 DOMAIN,nijia.app
@@ -234,7 +230,6 @@ DOMAIN,s3-88.img.ski
 DOMAIN,sanyuandian.net
 DOMAIN,sdk.split.io
 DOMAIN,shop.hosteye.net
-DOMAIN,sidestore.io
 DOMAIN,speed.skk.moe
 DOMAIN,speed.wangruofeng007.com
 DOMAIN,taptapgo.yldm.ai
@@ -244,7 +239,6 @@ DOMAIN,v.ps
 DOMAIN,v2.typora.io
 DOMAIN,vip.qust.me
 DOMAIN,vps.ss
-DOMAIN,vps.taxi
 DOMAIN,vpschain.nemoy.de
 DOMAIN,winaircast.com
 DOMAIN,www.666clouds.com
@@ -306,7 +300,6 @@ DOMAIN,iimg.pp.ua
 DOMAIN,flagcdn.com
 DOMAIN,errnewlog.umeng.com
 DOMAIN,dash.fuckip.me
-DOMAIN,console.evoxt.com
 DOMAIN,cm-10-170.getui.com
 DOMAIN,cdn.jsdelivr.net
 DOMAIN,c-hzgt2.getui.com
@@ -393,3 +386,17 @@ DOMAIN,cache.imgproxy.org
 DOMAIN,img.css.sd
 DOMAIN,i.miio.cc
 DOMAIN,i.ibb.co
+
+# > 常用服务及子域名 (2026-10-27)
+DOMAIN-SUFFIX,evoxt.com
+DOMAIN-SUFFIX,zouter.io
+DOMAIN-SUFFIX,danyun.com
+DOMAIN-SUFFIX,vps.taxi
+DOMAIN-SUFFIX,akkocloud.com
+DOMAIN-SUFFIX,wap.ac
+DOMAIN-SUFFIX,lazycat.my
+DOMAIN-SUFFIX,lazycat.wiki
+DOMAIN-SUFFIX,greencloudvps.com
+DOMAIN-SUFFIX,green.cloud
+DOMAIN-SUFFIX,saltyfish.io
+DOMAIN-SUFFIX,sidestore.io

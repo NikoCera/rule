@@ -1,6 +1,6 @@
 # NAME: Germany
 # AUTHOR: myself
-# UPDATED: 2026-05-12
+# UPDATED: 2026-10-27
 
 # ═══════════════════════ 金融 / 银行 / 支付 ═══════════════════════
 # > N26
@@ -47,3 +47,8 @@ DOMAIN-SUFFIX,readid.com
 
 # ═══════════════════════ Other ═══════════════════════
 # > untitled
+
+# > Hostleaf / VPS.Hosting / Bero
+DOMAIN-SUFFIX,hostleaf.net
+DOMAIN-SUFFIX,vps.hosting
+DOMAIN-SUFFIX,bero-host.de
