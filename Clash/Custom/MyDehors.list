@@ -1,10 +1,10 @@
 # NAME: MyDehors
 # AUTHOR: myself
-# UPDATED: 2026-10-20
+# UPDATED: 2026-10-28
 
 # GeoSpoof - 公网 IP 检测端点
 DOMAIN,checkip.amazonaws.com
-DOMAIN,www.cloudflare.com
+# DOMAIN,www.cloudflare.com
 DOMAIN,whatismyip.akamai.com
 DOMAIN,api.ipify.org
 
@@ -12,20 +12,314 @@ DOMAIN,api.ipify.org
 DOMAIN,get.geojs.io
 DOMAIN,free.freeipapi.com
 DOMAIN,reallyfreegeoip.org
-DOMAIN,ipinfo.io
+# DOMAIN,ipinfo.io
 DOMAIN,nominatim.openstreetmap.org
 DOMAIN,cdn.geospoof.com
 
 # 自定义
-# DOMAIN-SUFFIX,ui.com // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,obsidian.md // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,linux.do // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,v2ex.com // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,modengine.com // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,1password.com // 避开本地 DNS lookup // 已移动到 HongKong.list (CountryRegion/HongKong)
-# DOMAIN-SUFFIX,1passwordservices.com // 避开本地 DNS lookup // 已移动到 HongKong.list (CountryRegion/HongKong)
-DOMAIN-SUFFIX,hero-sms.com
-DOMAIN-SUFFIX,wenziwanka.com
-DOMAIN-SUFFIX,mtn.co
+# DOMAIN-SUFFIX,1password.com // 避开本地 DNS lookup
+# DOMAIN-SUFFIX,1passwordservices.com // 避开本地 DNS lookup
+# DOMAIN-SUFFIX,hero-sms.com // 接码平台
+# DOMAIN-SUFFIX,wenziwanka.com
+# DOMAIN-SUFFIX,mtn.co
 DOMAIN-SUFFIX,dutils.com
 DOMAIN-SUFFIX,zztfly.com
+
+# ═══════════════════════ 服务器商家 ═══════════════════════
+# 与 FINAL 同用 Dehors 策略组；保留官网 / 客户后台，方便随 Dehors 切换节点。
+# DOMAIN-SUFFIX,666clouds.com
+# DOMAIN-SUFFIX,aaitr.com
+# DOMAIN-SUFFIX,akkocloud.com
+# DOMAIN-SUFFIX,bero-host.de
+# DOMAIN-SUFFIX,brea.cloud
+# DOMAIN-SUFFIX,danyun.com
+# DOMAIN-SUFFIX,dmit.io
+# DOMAIN-SUFFIX,evoxt.com
+# DOMAIN-SUFFIX,fuckip.me
+# DOMAIN-SUFFIX,funidc.com
+# DOMAIN-SUFFIX,greencloudvps.com
+# DOMAIN-SUFFIX,green.cloud
+# DOMAIN-SUFFIX,hkcloudx.com
+# DOMAIN-SUFFIX,hostleaf.net
+# DOMAIN-SUFFIX,isvoro.com
+# DOMAIN-SUFFIX,lazycat.my
+# DOMAIN-SUFFIX,lazycat.wiki
+# DOMAIN-SUFFIX,matrixidc.net
+# DOMAIN-SUFFIX,nodemach.com
+# DOMAIN-SUFFIX,nosla.cloud
+# DOMAIN-SUFFIX,panstar.ai
+# DOMAIN-SUFFIX,po0.io
+# DOMAIN-SUFFIX,saltyfish.io
+# DOMAIN-SUFFIX,hosteye.net
+# DOMAIN-SUFFIX,usvps24.com
+# DOMAIN-SUFFIX,v.ps
+# DOMAIN-SUFFIX,vmiss.com
+# DOMAIN-SUFFIX,vmrack.net
+# DOMAIN-SUFFIX,vps.hosting
+# DOMAIN-SUFFIX,vps.taxi
+# DOMAIN-SUFFIX,vpsnat.com
+# DOMAIN-SUFFIX,wap.ac
+# DOMAIN-SUFFIX,yt.net
+# DOMAIN-SUFFIX,yunyoo.cc
+# DOMAIN-SUFFIX,zouter.io
+
+# ═══════════════════════ 历史日志候选（停用归档） ═══════════════════════
+# 2026-10-28 从 HongKong.list 撤回；不强制固定地区，按其余规则自然匹配。
+# 如以后需要定向分流，可取消单条注释。
+
+# > Naixi Forum
+# DOMAIN-SUFFIX,forum.naixi.net
+
+# > osu!
+# DOMAIN-SUFFIX,osu.ppy.sh
+# DOMAIN,a.ppy.sh
+# DOMAIN,assets.ppy.sh
+# DOMAIN,c.ppy.sh
+# DOMAIN,m1.ppy.sh
+
+# > osu! lazer
+# DOMAIN,lazer.ppy.sh
+# DOMAIN,notify.ppy.sh
+# DOMAIN,sentry.ppy.sh
+# DOMAIN,spectator.ppy.sh
+
+# > lowiro (Arcaea)
+# DOMAIN-SUFFIX,lowiro.com
+
+# > Deltarune.cn
+# DOMAIN-SUFFIX,deltarune.cn
+
+# > 1Password (US)
+# DOMAIN-SUFFIX,1password.com
+# DOMAIN-SUFFIX,1passwordservices.com
+# DOMAIN-SUFFIX,1passwordusercontent.com
+
+# > NodeSeek
+# DOMAIN-SUFFIX,22112211.xyz
+# DOMAIN-SUFFIX,deepflood.com
+# DOMAIN-SUFFIX,nodeget.com
+# DOMAIN-SUFFIX,nodeimage.com
+# DOMAIN-SUFFIX,nodequality.com
+# DOMAIN-SUFFIX,nodeseek.com
+# DOMAIN-SUFFIX,nodeseek.org
+
+# > Linux DO
+# DOMAIN-SUFFIX,linux.do
+# DOMAIN-SUFFIX,ldstatic.com
+
+# > V2EX
+# DOMAIN-SUFFIX,v2ex.com
+
+# > PTT (批踢踢)
+# DOMAIN-SUFFIX,ptt.cc
+# DOMAIN-SUFFIX,ptt2.cc
+# DOMAIN-SUFFIX,ptt3.cc
+
+# > Dcard
+# DOMAIN-SUFFIX,dcard.cc
+# DOMAIN-SUFFIX,dcard.io
+# DOMAIN-SUFFIX,dcard.link
+# DOMAIN-SUFFIX,dcard.tw
+
+# > Mobile01
+# DOMAIN-SUFFIX,5i01.com
+# DOMAIN-SUFFIX,mobile01.com
+
+# > LIHKG (连登)
+# DOMAIN-SUFFIX,lih.kg
+# DOMAIN-SUFFIX,lihkg.com
+
+# > HKGolden (香港高登)
+# DOMAIN-SUFFIX,hkgolden.com
+# DOMAIN-SUFFIX,hkgolden.media
+
+# > Ubiquiti
+# DOMAIN-SUFFIX,ui.com
+
+# > Obsidian
+# DOMAIN-SUFFIX,obsidian.md
+
+# > ModEngine
+# DOMAIN-SUFFIX,modengine.com
+
+# > Blip
+# DOMAIN-SUFFIX,blip.net
+
+# > Termius
+# DOMAIN-SUFFIX,termius.com
+# DOMAIN,auth.split.io
+# DOMAIN,streaming.split.io
+# DOMAIN,events.split.io
+
+# > Vcards
+# DOMAIN,vcards.metowolf.com
+
+# > 16 图床
+# DOMAIN-SUFFIX,111666.best
+
+# > FINAL 日志补充 (2026-10-23)
+# DOMAIN,app.trakt.tv
+# DOMAIN,assets.pronotes.app
+# DOMAIN,betaprofiles.com
+# DOMAIN,blog.lwxpz.com
+# DOMAIN,cdn.anime-planet.com
+# DOMAIN,cdn.skyimg.net
+# DOMAIN,cloudsilk.io
+# DOMAIN,copilot.aptv.app
+# DOMAIN,count.getloli.com
+# DOMAIN,darkreader.org
+# DOMAIN,dashboard.instabox.sh
+# DOMAIN,docs.nexora-panel.org
+# DOMAIN,find.oiloil.org
+# DOMAIN,getrex.tv
+# DOMAIN,hareime.com
+# DOMAIN,i.meowimg.com
+# DOMAIN,image.dooo.ng
+# DOMAIN,ipsw.dev
+# DOMAIN,ipsw.me
+# DOMAIN,neburst.com
+# DOMAIN,nexora-panel.org
+# DOMAIN,nijia.app
+# DOMAIN,noderadar.online
+# DOMAIN,nuggetios.app
+# DOMAIN,releases.raycast.com
+# DOMAIN,rexnow.tv
+# DOMAIN,s3-88.img.ski
+# DOMAIN,sanyuandian.net
+# DOMAIN,sdk.split.io
+# DOMAIN,taptapgo.yldm.ai
+# DOMAIN,tc.kjzl.me
+# DOMAIN,update.greasyfork.org
+# DOMAIN,v2.typora.io
+# DOMAIN,vip.qust.me
+# DOMAIN,vps.ss
+# DOMAIN,vpschain.nemoy.de
+# DOMAIN,winaircast.com
+# DOMAIN,www.anime-planet.com
+# DOMAIN,www.paywallpro.app
+# DOMAIN,www.ppflight.com
+# DOMAIN,www.pronotes.app
+# DOMAIN,www.shandun.net
+# DOMAIN,www.sibker.com
+# DOMAIN,www.tayumon.com
+# DOMAIN,xyp-n.kuiniuca.com
+
+# > FINAL 日志第二批 (2026-10-23)
+# DOMAIN,api.revenuecat.com
+# DOMAIN,oslogs.umeng.com
+# DOMAIN,update.citrolabs.ai
+# DOMAIN,api.rexnow.tv
+# DOMAIN,sdk.open.extension.getui.com
+# DOMAIN,ido.gepush.com
+# DOMAIN,cache.agilebits.com
+# DOMAIN,backend.raycast.com
+# DOMAIN,www.lightcone.hk
+# DOMAIN,secure.globalsign.com
+# DOMAIN,seek.li
+# DOMAIN,drivemby.com
+# DOMAIN,aspect-upush.umeng.com
+# DOMAIN,sdk-open-phone.getui.com
+# DOMAIN,chrome.adtidy.org
+# DOMAIN,sessions.bugsnag.com
+# DOMAIN,sdk.open.talk.getui.com
+# DOMAIN,deff.nelreports.net
+# DOMAIN,x.ss2.us
+# DOMAIN,soulnode.neocities.org
+# DOMAIN,monito-push.dhcp.services
+# DOMAIN,maybe-ange.com
+# DOMAIN,dust.iad-07.braze.com
+# DOMAIN,cartp.de
+# DOMAIN,appcast.pqrs.org
+# DOMAIN,aaid.uyunad.com
+# DOMAIN,ye.i.lencr.org
+# DOMAIN,www.surge-activation.com
+# DOMAIN,url6153.immersve.com
+# DOMAIN,uptime-soulnode.betteruptime.com
+# DOMAIN,static.immersve.com
+# DOMAIN,pqfbxljwujoa.niubi.us.kg
+# DOMAIN,nihaofangke.98lyuxin.workers.dev
+# DOMAIN,image.tmdb.org
+# DOMAIN,iimg.pp.ua
+# DOMAIN,errnewlog.umeng.com
+# DOMAIN,cm-10-170.getui.com
+# DOMAIN,c-hzgt2.getui.com
+# DOMAIN,api.onesignal.com
+# DOMAIN,api.countapi.xyz
+# DOMAIN,8x342pqn.beefree-storage.os-content.com
+# DOMAIN,www.nsloon.com
+# DOMAIN,www.egernlicense.com
+# DOMAIN,utoken.umeng.com
+# DOMAIN,updates.rexnow.app
+# DOMAIN,typora.io
+# DOMAIN,subca.repository.certum.pl
+# DOMAIN,static.intercomassets.eu
+# DOMAIN,sgupd.com
+# DOMAIN,repository.certum.pl
+# DOMAIN,release.files.ghostty.org
+# DOMAIN,node-5.node.web3auth.io
+# DOMAIN,node-4.node.web3auth.io
+# DOMAIN,node-3.node.web3auth.io
+# DOMAIN,node-2.node.web3auth.io
+# DOMAIN,node-1.node.web3auth.io
+# DOMAIN,mpmsldx6cnppzezla8s9w1b6khu7t7vh.d.eu.sardine.ai
+# DOMAIN,mole.fit
+# DOMAIN,moecounter.xxxh.de
+# DOMAIN,models.dev
+# DOMAIN,maxoxo.me
+# DOMAIN,launches.appsflyer.com
+# DOMAIN,inputsource.pro
+# DOMAIN,incidents.betterstack.com
+# DOMAIN,imgbed-99i.pages.dev
+# DOMAIN,img.baka.li
+# DOMAIN,img.078999.xyz
+# DOMAIN,image.object.pp.ua
+# DOMAIN,iaclouds.com
+# DOMAIN,i5jcnk.launches.appsflyersdk.com
+# DOMAIN,i5jcnk.cdn-settings.appsflyersdk.com
+# DOMAIN,gitlab.com
+# DOMAIN,extensions.raycast-releases.com
+# DOMAIN,equaldcdn.com
+# DOMAIN,e.raycast.com
+# DOMAIN,cm-10-172.getui.com
+# DOMAIN,cm-10-139.getui.com
+# DOMAIN,certumdvtlsg2r39ca.repository.certum.pl
+# DOMAIN,card.net.coffee
+# DOMAIN,c-ido.gepush.com
+# DOMAIN,betterstack.com
+# DOMAIN,b-gtc.gepush.com
+# DOMAIN,aws-gate.licelus.com
+# DOMAIN,assets.evanzhou.org
+# DOMAIN,api2.branch.io
+# DOMAIN,api.web3modal.com
+# DOMAIN,api.msime.app
+# DOMAIN,api.eu.amplitude.com
+# DOMAIN,api.bimg.eu.org
+# DOMAIN,aaid.umeng.com
+
+# > 常用站点 (2026-10-25)
+# DOMAIN,www.komari.vip
+# DOMAIN,simshops.cc
+# DOMAIN,yetanotherbrowser.com
+# DOMAIN,cueora.huami.dev
+
+# > SB 社区 (2026-10-25)
+# DOMAIN,sb.sb
+# DOMAIN,sb.sb.sb
+# DOMAIN,linux.sb
+
+# > Get.tech 及专用资源 (2026-10-25)
+# DOMAIN,get.tech
+# DOMAIN,manage.get.tech
+# DOMAIN,helpdesk.namify.tech
+# DOMAIN,assets.name.store
+# DOMAIN,gettech.b-cdn.net
+
+# > 图片资源 (2026-10-25)
+# DOMAIN,cache.imgproxy.org
+# DOMAIN,img.css.sd
+# DOMAIN,i.miio.cc
+# DOMAIN,i.ibb.co
+
+# > 常用服务及子域名 (2026-10-27)
+# DOMAIN-SUFFIX,green.cloud
+# DOMAIN-SUFFIX,sidestore.io

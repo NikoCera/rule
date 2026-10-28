@@ -71,6 +71,7 @@ DOMAIN-SUFFIX,talosintelligence.com
 DOMAIN-SUFFIX,virustotal.com
 
 # ═══════════════════════ 网速测试 ═══════════════════════
+DOMAIN-SUFFIX,speed.skk.moe
 DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
