@@ -77,6 +77,10 @@ DOMAIN,cdn.usefathom.com
 # IP 段与 ASN 兜底
 IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
+IP-CIDR,34.160.81.0/32,no-resolve
+IP-CIDR,34.102.210.18/32,no-resolve
+IP-CIDR6,2600:1901:0:5e8a::/64,no-resolve
+IP-CIDR6,2600:1901:0:7edb::/64,no-resolve
 IP-ASN,399358,no-resolve
 # 规则来源：geosite:anthropic / geosite:category-ntp
 # Surge list 不直接支持 geosite 语法，已将 keyword:datadog/sentry/sift 转换为 DOMAIN-KEYWORD
